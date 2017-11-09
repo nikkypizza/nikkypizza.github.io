@@ -9,10 +9,12 @@
 
 <body>
     <header class="header">
-        <div class="header__logo"></div>
-        <div class="header__login">
-            <button class="header__login-search" type="button"></button>
-            <button class="header__login-register" type="button">LOGIN or REGISTER</button>
+        <div class="header__wrapper">
+            <div class="header__logo"></div>
+            <div class="header__login">
+                <button class="header__login-search" type="button"></button>
+                <button class="header__login-register" type="button">LOGIN or REGISTER</button>
+            </div>
         </div>
         <nav class="nav">
             <ul class="nav__list">
@@ -31,11 +33,9 @@
                 <li class="nav__item">
                     <a class="nav__item-link" href="#">Blog</a>
                 </li>
-                <div>
-                    <li class="nav__item">
-                        <a class="nav__item-link" href="#">Contact </a>
-                    </li>
-                </div>
+                <li class="nav__item">
+                    <a class="nav__item-link" href="#">Contact </a>
+                </li>
             </ul>
             <div class="user">
                 <ul>
@@ -52,23 +52,25 @@
     <main>
         <section class="promo">
             <img class="promo__img" src="#" alt="Pink high heels">
+            <!-- Изображение контентное и подкреплено заголовком, потому не через background -->
             <div class="promo__info">
                 <span class="promo__info-price"></span>
                 <h1 class="promo__info-title">Pink Shoes
                     <br>2013 Collection</h1>
+                <!-- Позже пересмотри изпользование br тут, наверняка можно без него -->
                 <p class="promo__info-details">Nunc non fermentum nunc. Sed ut ante eget leo tampor consequat sit amet eu orci. Donec disgnissim dolor eget...</p>
-                <ul class="">
+                <ul class="promo__interactive">
                     <li>
-                        <button type="button"></button>
+                        <button class="promo__interactive-btn" type="button"></button>
                     </li>
                     <li>
-                        <button type="button"></button>
+                        <button class="promo__interactive-btn" type="button"></button>
                     </li>
                     <li>
-                        <button type="button"></button>
+                        <button class="promo__interactive-btn" type="button"></button>
                     </li>
                     <li>
-                        <button type="button"></button>
+                        <button class="promo__interactive-btn promo__interactive-btn--active" type="button"></button>
                     </li>
                 </ul>
             </div>
