@@ -1,0 +1,17 @@
+.header__wrapper {
+    background-color: $body-bg-color;
+}
+
+.header__login-search {
+    background-color: transparent;
+    border: none;
+}
+
+.header__login-register {
+    font-family: $font-normal;
+    font-size: 11px;
+    line-height: 25px;
+    color: $header-font-color;
+    border: none;
+    background-color: transparent;
+}

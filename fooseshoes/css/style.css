@@ -441,10 +441,10 @@ template {
 }
 
 @font-face {
-  font-family: 'Aller-Italic';
-  src: url("../fonts/Aller-Italic.ttf.woff") format("woff");
+  font-family: 'Aller-Light';
+  src: url("../fonts/Aller-Light.ttf.woff") format("woff");
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
 }
 
 @font-face {
@@ -455,8 +455,107 @@ template {
 }
 
 @font-face {
-  font-family: 'Aller-Light';
-  src: url("../fonts/Aller-Light.ttf.woff") format("woff");
+  font-family: 'Aller-Italic';
+  src: url("../fonts/Aller-Italic.ttf.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
+  font-style: italic;
+}
+
+.display-none {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header__wrapper {
+  background-color: #242424;
+}
+
+.header__login-search {
+  background-color: transparent;
+  border: none;
+}
+
+.header__login-register {
+  font-family: "Aller", "Arial", sans-serif;
+  font-size: 11px;
+  line-height: 25px;
+  color: #7e7e7e;
+  border: none;
+  background-color: transparent;
+}
+
+.nav__list {
+  font-family: "Aller", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav__item-link {
+  color: #242424;
+}
+
+.user ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user__stat button {
+  font-family: "Aller-Bold", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 25px;
+  color: #ffffff;
+  border: none;
+}
+
+.user__stat--rating button {
+  background-color: #ababab;
+}
+
+.user__stat--cart button {
+  background-color: #57c5a0;
+}
+
+.promo {
+  background-image: url("../img/promo-bg.jpg");
+}
+
+.promo__info-title {
+  font-family: "Aller-Light", "Arial", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  color: #242424;
+}
+
+.promo__info-details {
+  font-family: "Aller-Light", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #242424;
+}
+
+.tag-price {
+  font-family: "Aller-Bold", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 25px;
+  color: #ffffff;
+  background-color: #57c5a0;
+}
+
+.product-panel {
+  list-style: none;
+  padding: 0;
+}
+
+.product-panel-btn {
+  display: block;
+  background-color: #ffffff;
+  padding: 15px;
+  margin: 5px;
+  border: none;
 }

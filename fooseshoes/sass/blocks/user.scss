@@ -1,0 +1,19 @@
+.user ul {
+    @include clear-li;
+}
+
+.user__stat button {
+    font-family: $font-bold;
+    font-size: 12px;
+    line-height: 25px;
+    color: $font-light-color;
+    border: none;
+}
+
+.user__stat--rating button {
+    background-color: $user-star-color;
+}
+
+.user__stat--cart button {
+    background-color: $accent-color;
+}

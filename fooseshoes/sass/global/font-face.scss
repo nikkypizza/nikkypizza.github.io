@@ -6,10 +6,10 @@
 }
 
 @font-face {
-    font-family: 'Aller-Italic';
-    src: url('../fonts/Aller-Italic.ttf.woff') format('woff');
+    font-family: 'Aller-Light';
+    src: url('../fonts/Aller-Light.ttf.woff') format('woff');
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 @font-face {
@@ -20,8 +20,8 @@
 }
 
 @font-face {
-    font-family: 'Aller-Light';
-    src: url('../fonts/Aller-Light.ttf.woff') format('woff');
+    font-family: 'Aller-Italic';
+    src: url('../fonts/Aller-Italic.ttf.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 }
