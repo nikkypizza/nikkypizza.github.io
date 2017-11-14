@@ -1,0 +1,25 @@
+.arrivals_header-title {
+  font-family: $font-light;
+  font-size: 25px;
+  line-height: 60px;
+  color: $font-dark-color;
+}
+
+.show-all-btn {
+  font-family: $font-bold;
+  font-size: 14px;
+  line-height: 25px;
+  color: $show-all-btn-color;
+  border: 1px solid $show-all-btn-color;
+  background-color: transparent;
+}
+
+.arrivals__list {
+  @include clear-li;
+}
+
+.arrivals__list-item-title {
+  font-family: $font-normal;
+  font-size: 18px;
+  line-height: 25px;
+}
