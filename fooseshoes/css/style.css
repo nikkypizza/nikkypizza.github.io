@@ -527,6 +527,9 @@ a {
 .slider__list-item-info--active {
   color: #adadad; }
 
+.categories {
+  background-color: #242424; }
+
 .categories__list {
   list-style: none;
   padding: 0;
@@ -551,23 +554,21 @@ a {
 .categories__list-item--must-have {
   background-image: url("../img/must-have.jpg"); }
 
+.arrivals {
+  background-color: #ebe7df; }
+
 .arrivals_header-title {
   font-family: "Aller-Light", "Arial", sans-serif;
   font-size: 25px;
   line-height: 60px;
   color: #242424; }
 
-.show-all-btn {
-  font-family: "Aller-Bold", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 25px;
-  color: #bcb5a7;
-  border: 1px solid #bcb5a7;
-  background-color: transparent; }
-
 .arrivals__list {
   list-style: none;
   padding: 0; }
+
+.arrivals__list-item {
+  background-color: #ffffff; }
 
 .arrivals__list-item-title {
   font-family: "Aller", "Arial", sans-serif;
@@ -579,4 +580,41 @@ a {
   font-size: 13px;
   line-height: 25px;
   background-color: #242424;
+  color: #ffffff; }
+
+.show-all-btn {
+  font-family: "Aller-Bold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  color: #bcb5a7;
+  border: 1px solid #bcb5a7;
+  background-color: transparent; }
+
+.bsellers {
+  background-color: #ebe7df; }
+
+.bsellers__header-title {
+  font-family: "Aller-Light", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 60px;
+  color: #242424; }
+
+.bsellers__list {
+  list-style: none;
+  padding: 0; }
+
+.bsellers__list-item {
+  background-color: #ffffff; }
+
+.bsellers__list-item-title {
+  font-family: "Aller", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  background-color: #ffffff; }
+
+.tag-stock {
+  font-family: "Aller-Bold", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  background-color: #f27e4b;
   color: #ffffff; }

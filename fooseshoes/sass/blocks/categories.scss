@@ -1,3 +1,7 @@
+.categories {
+  background-color: $body-bg-color;
+}
+
 .categories__list {
   @include clear-li;
   font-family: $font-light;

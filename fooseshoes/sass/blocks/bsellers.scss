@@ -1,24 +1,25 @@
-.arrivals {
+.bsellers {
   background-color: $catalog-bg-color;
 }
 
-.arrivals_header-title {
+.bsellers__header-title {
   font-family: $font-light;
   font-size: 25px;
   line-height: 60px;
   color: $font-dark-color;
 }
 
-.arrivals__list {
+.bsellers__list {
   @include clear-li;
 }
 
-.arrivals__list-item {
-  background-color: $bg-white-color;
+.bsellers__list-item {
+    background-color: $bg-white-color;
 }
 
-.arrivals__list-item-title {
+.bsellers__list-item-title {
   font-family: $font-normal;
   font-size: 18px;
   line-height: 25px;
+  background-color: $bg-white-color;
 }
