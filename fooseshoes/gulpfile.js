@@ -1,14 +1,28 @@
-var gulp = require('gulp'), // Подключаем Gulp
-    sass = require('gulp-sass'); // Подключаем Sass пакет
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var browserSync = require('browser-sync');
+var plumber = require('gulp-plumber');
+var postcss = require("gulp-postcss");
+var autoprefixer = require("autoprefixer");
 
-gulp.task('sass', function() { // Создаем таск "sass"
-  return gulp.src(['sass/**/style.sass', 'sass/**/style.scss']) // Берем источник
-    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
-    .pipe(gulp.dest('css')) // Выгружаем результата в папку css
-  });
-
-gulp.task('watch', function() {
-  gulp.watch(['sass/**/*.sass', 'sass/**/*.scss'], ['sass']); // Наблюдение за sass файлами в папке sass
+gulp.task('sass', function() {
+    gulp.src('sass/style.scss')
+        .pipe(plumber())
+        .pipe(sass({ includePaths: ['sass'] }))
+        .pipe(postcss([
+            autoprefixer()
+        ]))
+        .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['watch']);
+gulp.task('browser-sync', function() {
+    browserSync.init(["css/*.css", "js/*.js"], {
+        server: {
+            baseDir: "./"
+        }
+    });
+});
+
+gulp.task('default', ['sass', 'browser-sync'], function() {
+    gulp.watch("sass/**/*.scss", ['sass']);
+});

@@ -13,8 +13,7 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* Sections
    ========================================================================== */
@@ -22,8 +21,7 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 /**
  * Add the correct display in IE 9-.
@@ -34,8 +32,7 @@ footer,
 header,
 nav,
 section {
-  display: block;
-}
+  display: block; }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -43,8 +40,7 @@ section {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
-}
+  margin: 0.67em 0; }
 
 /* Grouping content
    ========================================================================== */
@@ -56,28 +52,26 @@ figcaption,
 figure,
 main {
   /* 1 */
-  display: block;
-}
+  display: block; }
 
 /**
  * Add the correct margin in IE 8.
  */
 figure {
-  margin: 1em 40px;
-}
+  margin: 1em 40px; }
 
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
   overflow: visible;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -87,8 +81,7 @@ pre {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* Text-level semantics
    ========================================================================== */
@@ -100,8 +93,7 @@ a {
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
@@ -112,25 +104,23 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
-}
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */ }
 
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
 b,
 strong {
-  font-weight: inherit;
-}
+  font-weight: inherit; }
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 b,
 strong {
-  font-weight: bolder;
-}
+  font-weight: bolder; }
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -142,30 +132,26 @@ samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Add the correct font style in Android 4.3-.
  */
 dfn {
-  font-style: italic;
-}
+  font-style: italic; }
 
 /**
  * Add the correct background and color in IE 9-.
  */
 mark {
   background-color: #ff0;
-  color: #000;
-}
+  color: #000; }
 
 /**
  * Add the correct font size in all browsers.
  */
 small {
-  font-size: 80%;
-}
+  font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
@@ -176,16 +162,13 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 sub {
-  bottom: -0.25em;
-}
+  bottom: -0.25em; }
 
 sup {
-  top: -0.5em;
-}
+  top: -0.5em; }
 
 /* Embedded content
    ========================================================================== */
@@ -194,30 +177,26 @@ sup {
  */
 audio,
 video {
-  display: inline-block;
-}
+  display: inline-block; }
 
 /**
  * Add the correct display in iOS 4-7.
  */
 audio:not([controls]) {
   display: none;
-  height: 0;
-}
+  height: 0; }
 
 /**
  * Remove the border on images inside links in IE 10-.
  */
 img {
-  border-style: none;
-}
+  border-style: none; }
 
 /**
  * Hide the overflow in IE.
  */
 svg:not(:root) {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 /* Forms
    ========================================================================== */
@@ -237,8 +216,7 @@ textarea {
   line-height: 1.15;
   /* 1 */
   margin: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Show the overflow in IE.
@@ -247,8 +225,7 @@ textarea {
 button,
 input {
   /* 1 */
-  overflow: visible;
-}
+  overflow: visible; }
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -257,8 +234,7 @@ input {
 button,
 select {
   /* 1 */
-  text-transform: none;
-}
+  text-transform: none; }
 
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
@@ -270,8 +246,7 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -281,8 +256,7 @@ button::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
-  padding: 0;
-}
+  padding: 0; }
 
 /**
  * Restore the focus styles unset by the previous rule.
@@ -291,15 +265,13 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
+  outline: 1px dotted ButtonText; }
 
 /**
  * Correct the padding in Firefox.
  */
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
+  padding: 0.35em 0.75em 0.625em; }
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -308,7 +280,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -319,8 +292,7 @@ legend {
   padding: 0;
   /* 3 */
   white-space: normal;
-  /* 1 */
-}
+  /* 1 */ }
 
 /**
  * 1. Add the correct display in IE 9-.
@@ -330,15 +302,13 @@ progress {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Remove the default vertical scrollbar in IE.
  */
 textarea {
-  overflow: auto;
-}
+  overflow: auto; }
 
 /**
  * 1. Add the correct box sizing in IE 10-.
@@ -346,19 +316,18 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
+  height: auto; }
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
@@ -368,16 +337,14 @@ textarea {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -387,8 +354,7 @@ textarea {
   -webkit-appearance: button;
   /* 1 */
   font: inherit;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* Interactive
    ========================================================================== */
@@ -398,15 +364,13 @@ textarea {
  */
 details,
 menu {
-  display: block;
-}
+  display: block; }
 
 /*
  * Add the correct display in all browsers.
  */
 summary {
-  display: list-item;
-}
+  display: list-item; }
 
 /* Scripting
    ========================================================================== */
@@ -414,15 +378,13 @@ summary {
  * Add the correct display in IE 9-.
  */
 canvas {
-  display: inline-block;
-}
+  display: inline-block; }
 
 /**
  * Add the correct display in IE.
  */
 template {
-  display: none;
-}
+  display: none; }
 
 /* Hidden
    ========================================================================== */
@@ -430,53 +392,44 @@ template {
  * Add the correct display in IE 10-.
  */
 [hidden] {
-  display: none;
-}
+  display: none; }
 
 @font-face {
   font-family: "Aller";
   src: url("../fonts/Aller.ttf.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: 'Aller-Light';
   src: url("../fonts/Aller-Light.ttf.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: 'Aller-Bold';
   src: url("../fonts/Aller-Bold.ttf.woff") format("woff");
   font-weight: bold;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: 'Aller-Italic';
   src: url("../fonts/Aller-Italic.ttf.woff") format("woff");
   font-weight: normal;
-  font-style: italic;
-}
+  font-style: italic; }
 
 .display-none {
-  display: none;
-}
+  display: none; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .header__wrapper {
-  background-color: #242424;
-}
+  background-color: #242424; }
 
 .header__login-search {
   background-color: transparent;
-  border: none;
-}
+  border: none; }
 
 .header__login-register {
   font-family: "Aller", "Arial", sans-serif;
@@ -484,78 +437,116 @@ a {
   line-height: 25px;
   color: #7e7e7e;
   border: none;
-  background-color: transparent;
-}
+  background-color: transparent; }
 
 .nav__list {
   font-family: "Aller", "Arial", sans-serif;
   font-size: 16px;
   line-height: 25px;
   list-style: none;
-  padding: 0;
-}
+  padding: 0; }
 
 .nav__item-link {
-  color: #242424;
-}
+  color: #242424; }
 
 .user ul {
   list-style: none;
-  padding: 0;
-}
+  padding: 0; }
 
 .user__stat button {
   font-family: "Aller-Bold", "Arial", sans-serif;
   font-size: 12px;
   line-height: 25px;
   color: #ffffff;
-  border: none;
-}
+  border: none; }
 
 .user__stat--rating button {
-  background-color: #ababab;
-}
+  background-color: #ababab; }
 
 .user__stat--cart button {
-  background-color: #57c5a0;
-}
+  background-color: #57c5a0; }
 
 .promo {
-  background-image: url("../img/promo-bg.jpg");
-}
+  background-image: url("../img/promo-bg.jpg"); }
 
 .promo__info-title {
   font-family: "Aller-Light", "Arial", sans-serif;
   font-size: 40px;
   line-height: 40px;
-  color: #242424;
-}
+  color: #242424; }
 
 .promo__info-details {
   font-family: "Aller-Light", "Arial", sans-serif;
   font-size: 20px;
   line-height: 25px;
   font-weight: 600;
-  color: #242424;
-}
+  color: #242424; }
 
 .tag-price {
   font-family: "Aller-Bold", "Arial", sans-serif;
   font-size: 13px;
   line-height: 25px;
   color: #ffffff;
-  background-color: #57c5a0;
-}
+  background-color: #57c5a0; }
 
 .product-panel {
   list-style: none;
-  padding: 0;
-}
+  padding: 0; }
 
 .product-panel-btn {
   display: block;
   background-color: #ffffff;
   padding: 15px;
   margin: 5px;
-  border: none;
-}
+  border: none; }
+
+.slider {
+  background-color: #2e2e2e; }
+
+.slider__list {
+  list-style: none;
+  padding: 0;
+  font-family: "Aller", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 25px; }
+
+.slider__list-item--active {
+  border-top: 5px solid #57c5a0; }
+
+.slider__list-item-title {
+  color: #7b7b7b; }
+
+.slider__list-item-title--active {
+  color: #ffffff; }
+
+.slider__list-item-info {
+  color: #545454;
+  font-size: 12px;
+  line-height: 25px; }
+
+.slider__list-item-info--active {
+  color: #adadad; }
+
+.categories__list {
+  list-style: none;
+  padding: 0;
+  font-family: "Aller-Light", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 60px;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.categories__list-item-title {
+  background-color: rgba(36, 36, 36, 0.8); }
+
+.categories__list-item--sale {
+  background-image: url("../img/on-sale.jpg"); }
+
+.categories__list-item--offers {
+  background-image: url("../img/special-offer.jpg"); }
+
+.categories__list-item--must-have {
+  background-image: url("../img/must-have.jpg"); }

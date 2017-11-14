@@ -1,0 +1,32 @@
+.slider {
+  background-color: $slider-bg-color;
+}
+
+.slider__list {
+  @include clear-li;
+  font-family: $font-normal;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.slider__list-item--active {
+  border-top: 5px solid $accent-color;
+}
+
+.slider__list-item-title {
+  color: $slider-title-font-color;
+}
+
+.slider__list-item-title--active {
+  color: $font-light-color;
+}
+
+.slider__list-item-info {
+  color: $slider-info-font-color;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.slider__list-item-info--active {
+  color: $slider-info-font-color-active;
+}

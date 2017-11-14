@@ -1,0 +1,25 @@
+.categories__list {
+  @include clear-li;
+  font-family: $font-light;
+  font-size: 25px;
+  line-height: 60px;
+  color: $font-light-color;
+  text-transform: uppercase;
+    display: flex;
+}
+
+.categories__list-item-title {
+  background-color: rgba($body-bg-color, 0.8);
+}
+
+.categories__list-item--sale {
+  background-image: url('../img/on-sale.jpg');
+}
+
+.categories__list-item--offers {
+  background-image: url('../img/special-offer.jpg');
+}
+
+.categories__list-item--must-have {
+  background-image: url('../img/must-have.jpg');
+}
