@@ -424,6 +424,16 @@ template {
 a {
   text-decoration: none; }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
 .header__wrapper {
   background-color: #242424; }
 
@@ -618,3 +628,34 @@ a {
   line-height: 15px;
   background-color: #f27e4b;
   color: #ffffff; }
+
+.extra__block-title {
+  font-family: "Aller-Bold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 60px;
+  color: #242424; }
+
+.extra__block-text {
+  font-family: "Aller", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px; }
+
+.extra__testimonials-author {
+  font-family: "Aller-Italic", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px; }
+
+.extra__news-date {
+  font-family: "Aller-Bold", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 12px;
+  color: #ffffff;
+  background-color: #57c5a0; }
+
+.extra__news-title {
+  font-family: "Aller", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px; }
+
+.extra article {
+  background-color: #dfdbd4; }

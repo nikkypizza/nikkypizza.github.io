@@ -1,0 +1,36 @@
+.extra__block-title {
+  font-family: $font-bold;
+  font-size: 14px;
+  line-height: 60px;
+  color: $font-dark-color;
+}
+
+.extra__block-text {
+  font-family: $font-normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.extra__testimonials-author {
+  font-family: $font-italic;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.extra__news-date {
+    font-family: $font-bold;
+    font-size: 13px;
+    line-height: 12px;
+    color: $font-light-color;
+    background-color: $accent-color;
+}
+
+.extra__news-title {
+  font-family: $font-normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.extra article {
+  background-color: $extra-article-bg-color;
+}
