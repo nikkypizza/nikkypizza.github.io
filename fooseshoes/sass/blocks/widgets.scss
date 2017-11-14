@@ -1,0 +1,29 @@
+.widgets {
+  background-color: $body-bg-color;
+}
+
+.widgets__title {
+  font-family: $font-normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $widget-title-color;
+}
+
+.widgets__text {
+  font-family: $font-italic;
+  font-size: 14px;
+  line-height: 16px;
+  color: $widget-text-color;
+}
+
+.widgets__twitter-date {
+  font-family: $font-italic;
+  font-size: 12px;
+  line-height: 18px;
+  color: $date-font-color;
+  font-weight: bold;
+}
+
+.widgets__twitter-id {
+  color: $accent-color;
+}
