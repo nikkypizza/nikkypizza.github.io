@@ -694,7 +694,8 @@ a {
   border: none;
   font-size: 12px;
   line-height: 18px;
-  padding: 10px; }
+  padding: 10px;
+  color: #7d7d7d; }
 
 .feedback__email-btn {
   border: none;
@@ -708,3 +709,25 @@ a {
   background-color: #2e2e2e;
   padding: 10px;
   margin: 10px; }
+
+.footer {
+  background-color: #2e2e2e; }
+
+.footer__copyright {
+  font-family: "Aller", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  color: #acacac; }
+
+.footer__links-list {
+  list-style: none;
+  padding: 0; }
+
+.footer__links-item {
+  color: #acacac; }
+
+.footer__links-a {
+  font-family: "Aller", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 25px;
+  color: #acacac; }

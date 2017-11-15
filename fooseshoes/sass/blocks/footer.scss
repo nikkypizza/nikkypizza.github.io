@@ -1,0 +1,25 @@
+.footer {
+  background-color: $slider-bg-color;
+}
+
+.footer__copyright {
+  font-family: $font-normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: $copyright-text-color;
+}
+
+.footer__links-list {
+  @include clear-li;
+}
+
+.footer__links-item {
+  color: $copyright-text-color;
+}
+
+.footer__links-a {
+  font-family: $font-normal;
+  font-size: 12px;
+  line-height: 25px;
+  color: $copyright-text-color;
+}
