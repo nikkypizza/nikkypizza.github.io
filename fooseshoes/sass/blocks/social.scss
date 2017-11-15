@@ -1,0 +1,9 @@
+.social__list {
+  @include clear-li;
+}
+
+.social__list-item {
+  background-color: $slider-bg-color;
+  padding: 10px;
+  margin: 10px;
+}
