@@ -2,7 +2,7 @@
   "name": "fooseshoes",
   "version": "1.0.0",
   "description": "My first solo project",
-  "main": "index.js",
+  "main": "index.html",
   "dependencies": {
     "browser-sync": "^2.18.13",
     "gulp-plumber": "^1.1.0",

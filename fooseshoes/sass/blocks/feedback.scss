@@ -1,0 +1,17 @@
+.feedback {
+  background-color: $body-bg-color;
+}
+
+.feedback__email-input {
+  font-family: $font-italic;
+  background-color: $slider-bg-color;
+  border: none;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 10px;
+}
+
+.feedback__email-btn {
+  border: none;
+  background-color: $social-icons-color;
+}
