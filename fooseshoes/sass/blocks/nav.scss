@@ -1,10 +1,24 @@
 .nav__list {
-    font-family: $font-normal;
-    font-size: 16px;
-    line-height: 25px;
-    @include clear-li;
+  font-family: $font-normal;
+  font-size: 16px;
+  line-height: 25px;
+  @include clear-li;
+  display: flex;
+  margin: 0;
+  margin-right: auto;
+  min-height: 60px;
+}
+
+.nav__list:last-of-type {
+  border-right: 1px solid #eeeeee;
+}
+
+.nav__item {
+  align-self: center;
 }
 
 .nav__item-link {
-    color: $font-dark-color;
+  padding: 21px 24px 21px 21px;
+  border-left: 1px solid #eeeeee;
+  color: $font-dark-color;
 }

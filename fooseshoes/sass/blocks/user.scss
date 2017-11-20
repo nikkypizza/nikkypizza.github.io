@@ -1,19 +1,54 @@
 .user ul {
-    @include clear-li;
+  @include clear-li;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.user__stat {
+  display: flex;
+  padding: 20px 23px 20px 24px;
+  border-left: 1px solid #cccccc;
+}
+
+.user__stat:last-of-type {
+  border-right: 1px solid #cccccc;
 }
 
 .user__stat button {
-    font-family: $font-bold;
-    font-size: 12px;
-    line-height: 25px;
-    color: $font-light-color;
-    border: none;
+  font-family: $font-bold;
+  font-size: 12px;
+  line-height: 15px;
+  height: 20px;
+  width: 20px;
+  color: $font-light-color;
+  border: none;
+  border-radius: 20%;
 }
 
 .user__stat--rating button {
-    background-color: $user-star-color;
+  background-color: $user-star-color;
+  padding-left: 3px;
+}
+
+.user__stat--rating::before {
+  outline: 1px solid red;
+  margin-right: 4px;
+  align-self: center;
+  content: url("/img/svg/icon-star.svg");
+  height: 16px;
+  width: 16px;
+}
+
+.user__stat--cart::before {
+  outline: 1px solid red;
+  margin-right: 8px;
+  align-self: center;
+  content: url("/img/svg/icon-cart.svg");
+  height: 16px;
+  width: 16px;
 }
 
 .user__stat--cart button {
-    background-color: $accent-color;
+  background-color: $accent-color;
 }
