@@ -1,11 +1,15 @@
 .product-panel {
-    @include clear-li();
+  display: flex;
+  @include clear-li();
+  margin: 15px 0 0 0;
 }
 
 .product-panel-btn {
-    display: block;
-    background-color: $bg-white-color;
-    padding: 15px;
-    margin: 5px;
-    border: none;
+  display: block;
+  background-color: $bg-white-color;
+  width: 38px;
+  height: 38px;
+  margin: 0 5px 0 0;
+  border: none;
+  cursor: pointer;
 }

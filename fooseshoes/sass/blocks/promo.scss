@@ -1,18 +1,29 @@
 .promo {
-    background-image: url('../img/promo-bg.jpg');
+  background-image: url('../img/promo-bg.jpg');
+}
+
+.promo__img {
+  margin-left: -83px;
+}
+
+.promo__info {
+  padding-left: 42px;
 }
 
 .promo__info-title {
-    font-family: $font-light;
-    font-size: 40px;
-    line-height: 40px;
-    color: $font-dark-color;
+  font-family: $font-light;
+  font-size: 40px;
+  line-height: 40px;
+  color: $font-dark-color;
+  margin: 14px 0 0 0;
 }
 
 .promo__info-details {
-    font-family: $font-light;
-    font-size: 20px;
-    line-height: 25px;
-    font-weight: 600;
-    color: $font-dark-color;
+  font-family: $font-light;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  max-width: 390px;
+  color: $font-dark-color;
+  margin: 6px 0 0 0;
 }

@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
   <title>FooseShoes</title>
 </head>
@@ -59,28 +58,38 @@
   </header>
   <main>
     <section class="promo">
-      <img class="promo__img" src="img/promo.jpg" width="550" height="460" alt="Pink high heels">
-      <!-- Изображение контентное и подкреплено заголовком, потому не через background -->
-      <div class="promo__info">
-        <span class="tag-price">$145.99</span>
-        <h1 class="promo__info-title">Pink Shoes
+      <div class="wrapper">
+        <img class="promo__img" src="img/hero.jpg" width="550" height="460" alt="Pink high heels">
+        <!-- Изображение контентное и подкреплено заголовком, потому не через background -->
+        <div class="promo__info">
+          <span class="tag-price tag-price--promo">$145.99</span>
+          <h1 class="promo__info-title">Pink Shoes
                     <br>2013 Collection</h1>
-        <!-- Позже пересмотри изпользование br тут, наверняка можно без него -->
-        <p class="promo__info-details">Nunc non fermentum nunc. Sed ut ante eget leo tampor consequat sit amet eu orci. Donec disgnissim dolor eget...</p>
-        <ul class="product-panel">
-          <li>
-            <button class="product-panel-btn" type="button"></button>
-          </li>
-          <li>
-            <button class="product-panel-btn" type="button"></button>
-          </li>
-          <li>
-            <button class="product-panel-btn" type="button"></button>
-          </li>
-          <li>
-            <button class="product-panel-btn product-panel-btn--active" type="button"></button>
-          </li>
-        </ul>
+          <!-- Позже пересмотри изпользование br тут, наверняка можно без него -->
+          <p class="promo__info-details">Nunc non fermentum nunc. Sed ut ante eget leo tampor consequat sit amet eu orci. Donec disgnissim dolor eget...</p>
+          <ul class="product-panel">
+            <li>
+              <button class="product-panel-btn" type="button">
+                <img src="img/svg/icon-eye.svg" alt="Watch">
+              </button>
+            </li>
+            <li>
+              <button class="product-panel-btn" type="button">
+                <img src="img/svg/icon-star.svg" alt="Add to favourite">
+              </button>
+            </li>
+            <li>
+              <button class="product-panel-btn" type="button">
+                <img src="img/svg/icon-share.svg" alt="Share">
+              </button>
+            </li>
+            <li>
+              <button class="product-panel-btn product-panel-btn--selected" type="button">
+                <img src="img/svg/icon-buy.svg" alt="Add to cart">
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="slider">

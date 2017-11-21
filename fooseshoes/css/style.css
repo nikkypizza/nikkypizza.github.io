@@ -482,6 +482,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
+  z-index: 1;
   margin-right: auto;
   min-height: 60px; }
 
@@ -493,7 +494,7 @@ a {
       align-self: center; }
 
 .nav__item-link {
-  padding: 21px 24px 21px 21px;
+  padding: 21px 24px 20px 21px;
   border-left: 1px solid #eeeeee;
   color: #242424; }
 
@@ -533,59 +534,81 @@ a {
   padding-left: 3px; }
 
 .user__stat--rating::before {
-  outline: 1px solid red;
-  margin-right: 4px;
+  margin-right: 7px;
   -ms-flex-item-align: center;
       align-self: center;
-  content: url("/img/svg/icon-star.svg");
+  content: url("../img/svg/icon-star.svg");
   height: 16px;
   width: 16px; }
 
 .user__stat--cart::before {
-  outline: 1px solid red;
-  margin-right: 8px;
+  margin-right: 7px;
   -ms-flex-item-align: center;
       align-self: center;
-  content: url("/img/svg/icon-cart.svg");
+  content: url("../img/svg/icon-cart.svg");
   height: 16px;
   width: 16px; }
 
 .user__stat--cart button {
-  background-color: #57c5a0; }
+  background-color: #57c5a0;
+  padding-left: 7px; }
 
 .promo {
   background-image: url("../img/promo-bg.jpg"); }
+
+.promo__img {
+  margin-left: -83px; }
+
+.promo__info {
+  padding-left: 42px; }
 
 .promo__info-title {
   font-family: "Aller-Light", "Arial", sans-serif;
   font-size: 40px;
   line-height: 40px;
-  color: #242424; }
+  color: #242424;
+  margin: 14px 0 0 0; }
 
 .promo__info-details {
   font-family: "Aller-Light", "Arial", sans-serif;
   font-size: 20px;
   line-height: 25px;
   font-weight: 600;
-  color: #242424; }
+  max-width: 390px;
+  color: #242424;
+  margin: 6px 0 0 0; }
 
 .tag-price {
+  display: block;
+  text-align: center;
   font-family: "Aller-Bold", "Arial", sans-serif;
   font-size: 13px;
+  padding: 21px 0;
   line-height: 25px;
+  width: 68px;
   color: #ffffff;
   background-color: #57c5a0; }
 
+.tag-price--promo {
+  margin-top: 70px;
+  margin-left: 2px; }
+
 .product-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin: 15px 0 0 0; }
 
 .product-panel-btn {
   display: block;
   background-color: #ffffff;
-  padding: 15px;
-  margin: 5px;
-  border: none; }
+  width: 38px;
+  height: 38px;
+  margin: 0 5px 0 0;
+  border: none;
+  cursor: pointer; }
 
 .slider {
   background-color: #2e2e2e; }

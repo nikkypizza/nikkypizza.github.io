@@ -5,6 +5,7 @@
   @include clear-li;
   display: flex;
   margin: 0;
+  z-index: 1;
   margin-right: auto;
   min-height: 60px;
 }
@@ -18,7 +19,7 @@
 }
 
 .nav__item-link {
-  padding: 21px 24px 21px 21px;
+  padding: 21px 24px 20px 21px;
   border-left: 1px solid #eeeeee;
   color: $font-dark-color;
 }

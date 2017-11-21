@@ -1,7 +1,16 @@
 .tag-price {
-    font-family: $font-bold;
-    font-size: 13px;
-    line-height: 25px;
-    color: $font-light-color;
-    background-color: $accent-color;
+  display: block;
+  text-align: center;
+  font-family: $font-bold;
+  font-size: 13px;
+  padding: 21px 0;
+  line-height: 25px;
+  width: 68px;
+  color: $font-light-color;
+  background-color: $accent-color;
+}
+
+.tag-price--promo {
+  margin-top: 70px;
+  margin-left: 2px;
 }

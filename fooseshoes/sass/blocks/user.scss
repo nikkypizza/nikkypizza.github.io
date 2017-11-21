@@ -32,23 +32,22 @@
 }
 
 .user__stat--rating::before {
-  outline: 1px solid red;
-  margin-right: 4px;
+  margin-right: 7px;
   align-self: center;
-  content: url("/img/svg/icon-star.svg");
+  content: url("../img/svg/icon-star.svg");
   height: 16px;
   width: 16px;
 }
 
 .user__stat--cart::before {
-  outline: 1px solid red;
-  margin-right: 8px;
+  margin-right: 7px;
   align-self: center;
-  content: url("/img/svg/icon-cart.svg");
+  content: url("../img/svg/icon-cart.svg");
   height: 16px;
   width: 16px;
 }
 
 .user__stat--cart button {
   background-color: $accent-color;
+  padding-left: 7px;
 }
