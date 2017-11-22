@@ -60,13 +60,12 @@
     <section class="promo">
       <div class="wrapper">
         <img class="promo__img" src="img/hero.jpg" width="550" height="460" alt="Pink high heels">
-        <!-- Изображение контентное и подкреплено заголовком, потому не через background -->
+        <!-- Изображение контентное и подкреплено заголовком, потому не через background.  Заметна грань между фоном и картинкой\\\-->
         <div class="promo__info">
           <span class="tag-price tag-price--promo">$145.99</span>
           <h1 class="promo__info-title">Pink Shoes
                     <br>2013 Collection</h1>
-          <!-- Позже пересмотри изпользование br тут, наверняка можно без него -->
-          <p class="promo__info-details">Nunc non fermentum nunc. Sed ut ante eget leo tampor consequat sit amet eu orci. Donec disgnissim dolor eget...</p>
+          <p class="promo__info-details">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...</p>
           <ul class="product-panel">
             <li>
               <button class="product-panel-btn" type="button">
@@ -93,28 +92,47 @@
       </div>
     </section>
     <section class="slider">
-      <ul class="slider__list">
-        <li class="slider__list-item slider__list-item--active">
-          <h3 class="slider__list-item-title slider__list-item-title--active">Pink Shoes</h3>
-          <span class="slider__list-item-info slider__list-item-info--active">Now at $145.99</span>
-        </li>
-        <li class="slider__list-item">
-          <h3 class="slider__list-item-title">Anna Field</h3>
-          <span class="slider__list-item-info">Limited Edition</span>
-        </li>
-        <li class="slider__list-item">
-          <h3 class="slider__list-item-title">Prada</h3>
-          <span class="slider__list-item-info">Summer is coming</span>
-        </li>
-        <li class="slider__list-item">
-          <h3 class="slider__list-item-title">Casadei</h3>
-          <span class="slider__list-item-info">All Colors available</span>
-        </li>
-        <li class="slider__list-item">
-          <h3 class="slider__list-item-title">Mellow Yellow</h3>
-          <span class="slider__list-item-info">Free delivery</span>
-        </li>
-      </ul>
+      <div class="wrapper wrapper--slider">
+        <ul class="slider-panel">
+          <li class="slider-panel__section">
+            <div class="slider-panel__section-fill slider-panel__section-fill--active"></div>
+          </li>
+          <li class="slider-panel__section">
+            <div class="slider-panel__section-fill"></div>
+          </li>
+          <li class="slider-panel__section">
+            <div class="slider-panel__section-fill"></div>
+          </li>
+          <li class="slider-panel__section">
+            <div class="slider-panel__section-fill"></div>
+          </li>
+          <li class="slider-panel__section">
+            <div class="slider-panel__section-fill"></div>
+          </li>
+        </ul>
+        <ul class="slider__list">
+          <li class="slider__list-item">
+            <h3 class="slider__list-item-title slider__list-item-title--active">Pink Shoes</h3>
+            <span class="slider__list-item-info slider__list-item-info--active">Now at $145.99</span>
+          </li>
+          <li class="slider__list-item">
+            <h3 class="slider__list-item-title">Anna Field</h3>
+            <span class="slider__list-item-info">Limited Edition</span>
+          </li>
+          <li class="slider__list-item">
+            <h3 class="slider__list-item-title">Prada</h3>
+            <span class="slider__list-item-info">Summer is coming</span>
+          </li>
+          <li class="slider__list-item">
+            <h3 class="slider__list-item-title">Casadei</h3>
+            <span class="slider__list-item-info">All Colors available</span>
+          </li>
+          <li class="slider__list-item">
+            <h3 class="slider__list-item-title">Mellow Yellow</h3>
+            <span class="slider__list-item-info">Free delivery</span>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="categories">
       <ul class="categories__list">

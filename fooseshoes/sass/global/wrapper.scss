@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.wrapper--slider {
+  width: 960px;
+  flex-direction: column;
+}
