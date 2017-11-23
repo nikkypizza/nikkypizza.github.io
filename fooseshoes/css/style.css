@@ -565,11 +565,11 @@ a {
   background-color: #efebe8; }
 
 .promo__img {
-  margin-left: -83px; }
+  margin-left: -83px;
+  background-color: #efebe8; }
 
 .promo__info {
-  padding-left: 42px;
-  background-color: #efebe8; }
+  padding-left: 42px; }
 
 .promo__info-title {
   font-family: "Aller-Light", "Arial", sans-serif;
@@ -700,17 +700,38 @@ a {
 .categories__list {
   list-style: none;
   padding: 0;
-  font-family: "Aller-Light", "Arial", sans-serif;
-  font-size: 25px;
+  text-transform: uppercase;
   line-height: 60px;
   color: #ffffff;
-  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 26px 0; }
+
+.categories__list-item {
+  min-height: 180px;
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .categories__list-item-title {
-  background-color: rgba(36, 36, 36, 0.8); }
+  background-color: rgba(36, 36, 36, 0.8);
+  font-family: "Aller-Light", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+  min-width: 180px;
+  margin: 0 auto; }
+
+.categories__list-item:nth-of-type(2) .categories__list-item-title {
+  padding: 0 23px; }
 
 .categories__list-item--sale {
   background-image: url("../img/on-sale.jpg"); }
