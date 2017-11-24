@@ -448,7 +448,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.wrapper--arrivals {
+.wrapper--item-group {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -826,26 +826,21 @@ a {
   background-color: transparent; }
 
 .bsellers {
-  background-color: #ebe7df; }
-
-.bsellers__header-title {
-  font-family: "Aller-Light", "Arial", sans-serif;
-  font-size: 25px;
-  line-height: 60px;
-  color: #242424; }
+  background-color: #ebe7df;
+  margin-top: -10px; }
 
 .bsellers__list {
   list-style: none;
-  padding: 0; }
-
-.bsellers__list-item {
-  background-color: #ffffff; }
-
-.bsellers__list-item-title {
-  font-family: "Aller", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 25px;
-  background-color: #ffffff; }
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 12px;
+  margin-bottom: 44px;
+  background-color: inherit; }
 
 .tag-stock {
   font-family: "Aller-Bold", "Arial", sans-serif;
@@ -853,7 +848,10 @@ a {
   line-height: 15px;
   background-color: #f27e4b;
   color: #ffffff;
-  position: absolute; }
+  position: absolute;
+  text-align: center;
+  right: 11px;
+  padding: 18px 12px; }
 
 .extra__block-title {
   font-family: "Aller-Bold", "Arial", sans-serif;

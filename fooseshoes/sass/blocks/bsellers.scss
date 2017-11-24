@@ -1,25 +1,13 @@
 .bsellers {
   background-color: $catalog-bg-color;
-}
-
-.bsellers__header-title {
-  font-family: $font-light;
-  font-size: 25px;
-  line-height: 60px;
-  color: $font-dark-color;
+  margin-top: -10px;
 }
 
 .bsellers__list {
   @include clear-li;
-}
-
-.bsellers__list-item {
-    background-color: $bg-white-color;
-}
-
-.bsellers__list-item-title {
-  font-family: $font-normal;
-  font-size: 18px;
-  line-height: 25px;
-  background-color: $bg-white-color;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  margin-bottom: 44px;
+  background-color: inherit;
 }
