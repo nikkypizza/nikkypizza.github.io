@@ -448,6 +448,12 @@ a {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.wrapper--arrivals {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 .header__wrapper {
   background-color: #242424; }
 
@@ -596,7 +602,9 @@ a {
   line-height: 25px;
   width: 68px;
   color: #ffffff;
-  background-color: #57c5a0; }
+  background-color: #57c5a0;
+  margin-top: -17px;
+  margin-left: 13px; }
 
 .tag-price--promo {
   margin-top: 70px;
@@ -745,35 +753,74 @@ a {
 .arrivals {
   background-color: #ebe7df; }
 
-.arrivals_header-title {
+.item-group-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.item-group-header--title {
   font-family: "Aller-Light", "Arial", sans-serif;
   font-size: 25px;
   line-height: 60px;
-  color: #242424; }
+  color: #242424;
+  margin: 14px auto 0 -3px; }
 
 .arrivals__list {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 12px;
+  background-color: inherit; }
 
-.arrivals__list-item {
-  background-color: #ffffff; }
+.item-card {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative; }
 
-.arrivals__list-item-title {
+.item-card__info {
   font-family: "Aller", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 25px; }
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: middle;
+      -ms-flex-align: middle;
+          align-items: middle;
+  border-top: 1px solid #cccccc; }
+
+.item-card__title {
+  padding: 9px 0 9px 12px; }
 
 .tag-sale {
   font-family: "Aller-Bold", "Arial", sans-serif;
   font-size: 13px;
   line-height: 25px;
   background-color: #242424;
-  color: #ffffff; }
+  color: #ffffff;
+  position: absolute;
+  right: 11px;
+  padding: 21px 7px; }
 
 .show-all-btn {
   font-family: "Aller-Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 25px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 11px;
+  padding: 2px 21px;
   color: #bcb5a7;
   border: 1px solid #bcb5a7;
   background-color: transparent; }
@@ -805,7 +852,8 @@ a {
   font-size: 13px;
   line-height: 15px;
   background-color: #f27e4b;
-  color: #ffffff; }
+  color: #ffffff;
+  position: absolute; }
 
 .extra__block-title {
   font-family: "Aller-Bold", "Arial", sans-serif;

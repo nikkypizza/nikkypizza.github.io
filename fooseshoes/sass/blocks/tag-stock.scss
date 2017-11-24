@@ -1,6 +1,8 @@
 .tag-stock {
   font-family: $font-bold;
-  font-size: 13px;line-height: 15px;
+  font-size: 13px;
+  line-height: 15px;
   background-color: $out-of-stock-color;
   color: $font-light-color;
+  position: absolute;
 }
