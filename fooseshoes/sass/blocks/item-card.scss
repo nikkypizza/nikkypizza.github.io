@@ -1,0 +1,20 @@
+.item-card {
+  background-color: $bg-white-color;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.item-card__info {
+  font-family: $font-normal;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: middle;
+  border-top: 1px solid #cccccc;
+}
+
+.item-card__title {
+  padding: 9px 0 9px 12px;
+}

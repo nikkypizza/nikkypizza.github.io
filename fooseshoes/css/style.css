@@ -497,7 +497,8 @@ a {
   margin: 0;
   z-index: 1;
   margin-right: auto;
-  min-height: 60px; }
+  min-height: 60px;
+  overflow: hidden; }
 
 .nav__list:last-of-type {
   border-right: 1px solid #eeeeee; }
@@ -750,9 +751,6 @@ a {
 .categories__list-item--must-have {
   background-image: url("../img/must-have.jpg"); }
 
-.arrivals {
-  background-color: #ebe7df; }
-
 .item-group-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -765,18 +763,6 @@ a {
   color: #242424;
   margin: 14px auto 0 -3px; }
 
-.arrivals__list {
-  list-style: none;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 12px;
-  background-color: inherit; }
-
 .item-card {
   background-color: #ffffff;
   display: -webkit-box;
@@ -786,7 +772,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative; }
+  position: relative;
+  margin-bottom: 20px; }
 
 .item-card__info {
   font-family: "Aller", "Arial", sans-serif;
@@ -802,6 +789,23 @@ a {
 
 .item-card__title {
   padding: 9px 0 9px 12px; }
+
+.arrivals {
+  background-color: #ebe7df; }
+
+.arrivals__list {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 12px;
+  background-color: inherit;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .tag-sale {
   font-family: "Aller-Bold", "Arial", sans-serif;
@@ -827,7 +831,7 @@ a {
 
 .bsellers {
   background-color: #ebe7df;
-  margin-top: -10px; }
+  margin-top: -30px; }
 
 .bsellers__list {
   list-style: none;
@@ -840,7 +844,9 @@ a {
           justify-content: space-between;
   margin-top: 12px;
   margin-bottom: 44px;
-  background-color: inherit; }
+  background-color: inherit;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .tag-stock {
   font-family: "Aller-Bold", "Arial", sans-serif;

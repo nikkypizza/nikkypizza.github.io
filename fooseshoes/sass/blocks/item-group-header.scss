@@ -1,0 +1,11 @@
+.item-group-header {
+  display: flex;
+}
+
+.item-group-header--title {
+  font-family: $font-light;
+  font-size: 25px;
+  line-height: 60px;
+  color: $font-dark-color;
+  margin: 14px auto 0 -3px;
+}
