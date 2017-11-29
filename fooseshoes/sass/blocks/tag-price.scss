@@ -3,13 +3,15 @@
   text-align: center;
   font-family: $font-bold;
   font-size: 13px;
-  padding: 21px 0;
   line-height: 25px;
   width: 68px;
+  align-self: center;
   color: $font-light-color;
   background-color: $accent-color;
+  padding: 21px 0;
   margin-top: -17px;
   margin-left: 13px;
+  z-index: 1;
 }
 
 .tag-price--promo {

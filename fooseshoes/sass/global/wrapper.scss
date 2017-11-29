@@ -11,4 +11,9 @@
 
 .wrapper--item-group {
   flex-direction: column;
+  border-bottom: 1px solid #bcb5a7;
+}
+
+.wrapper--extra {
+  justify-content: space-between;
 }
