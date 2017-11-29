@@ -1,17 +1,14 @@
 .extra {
   background-color: $catalog-bg-color;
-  padding: 26px 0;
+  padding: 26px 0 23px 0;
 }
 
-.extra a {
-  color: $font-dark-color;
+.extra article {
+  background-color: $extra-article-bg-color;
+  min-height: 185px;
 }
 
 .extra__shipping {
-  width: 220px;
-}
-
-.extra__testimonials {
   width: 220px;
 }
 
@@ -24,6 +21,10 @@
   padding: 18px 16px 0 16px;
 }
 
+.extra a {
+  color: $font-dark-color;
+}
+
 .extra__block-text {
   font-family: $font-normal;
   font-size: 12px;
@@ -32,12 +33,8 @@
   padding: 0 16px;
 }
 
-.extra__block-text--news {
-  padding: 0;
-  width: 390px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.extra__testimonials {
+  width: 220px;
 }
 
 .extra__testimonials-author {
@@ -52,25 +49,17 @@
   width: 460px;
 }
 
-.extra__news-text {
-  padding: 1px 8px 0 8px;
+.extra__block-text--news {
+  padding: 0;
+  width: 390px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .extra__news-item {
   display: flex;
   margin: 8px 0 14px 18px;
-}
-
-.extra__news-date {
-  font-family: $font-bold;
-  font-size: 13px;
-  line-height: 12px;
-  padding: 6px 0;
-  width: 36px;
-  text-align: center;
-  align-self: center;
-  color: $font-light-color;
-  background-color: $accent-color;
 }
 
 .extra__news-title {
@@ -84,7 +73,18 @@
   text-overflow: ellipsis;
 }
 
-.extra article {
-  background-color: $extra-article-bg-color;
-  min-height: 185px;
+.extra__news-text {
+  padding: 1px 8px 0 8px;
+}
+
+.extra__news-date {
+  font-family: $font-bold;
+  font-size: 13px;
+  line-height: 12px;
+  padding: 6px 0;
+  width: 36px;
+  text-align: center;
+  align-self: center;
+  color: $font-light-color;
+  background-color: $accent-color;
 }

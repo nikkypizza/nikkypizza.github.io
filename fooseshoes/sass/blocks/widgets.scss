@@ -1,5 +1,11 @@
 .widgets {
   background-color: $body-bg-color;
+  box-sizing: border-box;
+}
+
+.widgets section {
+  width: 260px;
+  margin-top: 30px;
 }
 
 .widgets__title {
@@ -11,9 +17,16 @@
 
 .widgets__text {
   font-family: $font-italic;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 18px;
+  padding-right: 6px;
+  margin-bottom: 5px;
+  text-align: justify;
   color: $widget-text-color;
+}
+
+.widgets__twitter {
+  padding-left: 10px;
 }
 
 .widgets__twitter-date {
@@ -26,4 +39,19 @@
 
 .widgets__twitter-id {
   color: $accent-color;
+}
+
+.widgets__flickr-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 18px;
+  justify-content: space-between;
+}
+
+.widgets__flickr-item {
+  margin-bottom: 10px;
+}
+
+.widgets__title--flickr {
+  padding-left: 15px;
 }
