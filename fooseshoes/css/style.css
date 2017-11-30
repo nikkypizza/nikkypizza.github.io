@@ -1005,8 +1005,8 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.widgets__flickr-item {
-  margin-bottom: 10px; }
+.widgets__flickr-link {
+  margin-bottom: 6px; }
 
 .widgets__title--flickr {
   padding-left: 15px; }
