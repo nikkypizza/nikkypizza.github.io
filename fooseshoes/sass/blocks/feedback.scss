@@ -1,5 +1,12 @@
 .feedback {
   background-color: $body-bg-color;
+  border-top: 1px solid  #1c1c1c;
+  padding: 22px 0 29px 0;
+}
+
+.feedback__email {
+  display: flex;
+  height: 36px;
 }
 
 .feedback__email-input {
@@ -8,11 +15,14 @@
   border: none;
   font-size: 12px;
   line-height: 18px;
-  padding: 10px;
+  padding: 9px 0 9px 14px;
+  width: 200px;
   color: $widget-title-color;
 }
 
 .feedback__email-btn {
   border: none;
   background-color: $social-icons-color;
+  height: 36px;
+  width: 36px;
 }
