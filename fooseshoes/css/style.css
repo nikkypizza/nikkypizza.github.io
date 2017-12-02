@@ -479,6 +479,9 @@ a {
       -ms-flex-align: center;
           align-items: center; }
 
+.wrapper--footer {
+  padding: 24px 0 17px 0; }
+
 .header__wrapper {
   background-color: #242424; }
 
@@ -1102,17 +1105,26 @@ a {
   font-family: "Aller", "Arial", sans-serif;
   font-size: 12px;
   line-height: 18px;
+  margin-right: auto;
   color: #acacac; }
 
 .footer__links-list {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 7px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .footer__links-item {
   color: #acacac; }
 
 .footer__links-a {
   font-family: "Aller", "Arial", sans-serif;
+  padding: 7px 0px 7px 6px;
   font-size: 12px;
   line-height: 25px;
   color: #acacac; }

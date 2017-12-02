@@ -6,11 +6,15 @@
   font-family: $font-normal;
   font-size: 12px;
   line-height: 18px;
+  margin-right: auto;
   color: $copyright-text-color;
 }
 
 .footer__links-list {
   @include clear-li;
+  display: flex;
+  margin-top: 7px;
+  justify-content: space-between;
 }
 
 .footer__links-item {
@@ -19,6 +23,7 @@
 
 .footer__links-a {
   font-family: $font-normal;
+  padding: 7px 0px 7px 6px;
   font-size: 12px;
   line-height: 25px;
   color: $copyright-text-color;
