@@ -438,6 +438,9 @@ a {
   padding: 0;
   border: 0; }
 
+button {
+  cursor: pointer; }
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,13 +515,19 @@ a {
   border-right: 1px solid #383838;
   background-color: transparent;
   padding: 10px 23px; }
+  .header__login-register:hover {
+    color: #57c5a0; }
+  .header__login-register:active {
+    -webkit-transition: none;
+    transition: none;
+    color: #2f8769; }
 
 .nav__list {
+  list-style: none;
+  padding: 0;
   font-family: "Aller", "Arial", sans-serif;
   font-size: 16px;
   line-height: 25px;
-  list-style: none;
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,6 +548,12 @@ a {
   padding: 21px 24px 20px 21px;
   border-left: 1px solid #eeeeee;
   color: #242424; }
+  .nav__item-link:hover {
+    color: #57c5a0; }
+  .nav__item-link:active {
+    -webkit-transition: none;
+    transition: none;
+    color: #2f8769; }
 
 .user ul {
   list-style: none;
@@ -861,6 +876,12 @@ a {
   color: #bcb5a7;
   border: 1px solid #bcb5a7;
   background-color: transparent; }
+  .show-all-btn:hover, .show-all-btn:focus {
+    background-color: #e1dbcf; }
+  .show-all-btn:active {
+    border-color: #9b907c;
+    color: #9b907c;
+    outline: none; }
 
 .bsellers {
   background-color: #ebe7df;
@@ -960,6 +981,10 @@ a {
 
 .extra__news-text {
   padding: 1px 8px 0 8px; }
+  .extra__news-text:hover {
+    outline: 2px solid #57c5a0; }
+  .extra__news-text:active {
+    outline: none; }
 
 .extra__news-date {
   font-family: "Aller-Bold", "Arial", sans-serif;
@@ -975,8 +1000,6 @@ a {
 
 .widgets {
   background-color: #242424;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 30px 0 31px 0; }
 
 .widgets section {
@@ -1009,6 +1032,10 @@ a {
 
 .widgets__twitter-id {
   color: #57c5a0; }
+  .widgets__twitter-id:hover {
+    color: #3cad87; }
+  .widgets__twitter-id:active {
+    color: #2f8769; }
 
 .widgets__flickr-wrapper {
   display: -webkit-box;
@@ -1023,6 +1050,10 @@ a {
 
 .widgets__flickr-link {
   margin-bottom: 6px; }
+  .widgets__flickr-link:hover {
+    outline: 2px solid #57c5a0; }
+  .widgets__flickr-link:active {
+    outline: none; }
 
 .widgets__title--flickr {
   padding-left: 15px; }
@@ -1120,7 +1151,8 @@ a {
           justify-content: space-between; }
 
 .footer__links-item {
-  color: #acacac; }
+  color: #acacac;
+  cursor: default; }
 
 .footer__links-a {
   font-family: "Aller", "Arial", sans-serif;
@@ -1128,3 +1160,9 @@ a {
   font-size: 12px;
   line-height: 25px;
   color: #acacac; }
+  .footer__links-a:hover {
+    color: #57c5a0; }
+  .footer__links-a:active {
+    -webkit-transition: none;
+    transition: none;
+    color: #2f8769; }

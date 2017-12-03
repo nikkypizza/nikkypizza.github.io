@@ -75,6 +75,13 @@
 
 .extra__news-text {
   padding: 1px 8px 0 8px;
+
+  &:hover {
+    outline: 2px solid $accent-color;
+  }
+  &:active {
+    outline: none;
+  }
 }
 
 .extra__news-date {

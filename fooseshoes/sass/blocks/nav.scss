@@ -1,8 +1,9 @@
 .nav__list {
+  @include clear-li;
+
   font-family: $font-normal;
   font-size: 16px;
   line-height: 25px;
-  @include clear-li;
   display: flex;
   margin: 0;
   z-index: 1;
@@ -23,4 +24,6 @@
   padding: 21px 24px 20px 21px;
   border-left: 1px solid #eeeeee;
   color: $font-dark-color;
+
+  @include text-event-regular();
 }

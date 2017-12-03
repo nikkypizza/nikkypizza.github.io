@@ -30,4 +30,6 @@
   border-right: 1px solid #383838;
   background-color: transparent;
   padding: 10px 23px;
+
+  @include text-event-regular();
 }

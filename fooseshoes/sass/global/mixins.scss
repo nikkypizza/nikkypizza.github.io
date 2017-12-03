@@ -1,4 +1,14 @@
-@mixin clear-li() {
+  @mixin clear-li() {
     list-style: none;
     padding: 0;
-}
+  }
+
+  @mixin text-event-regular() {
+    &:hover {
+      color: $accent-color;
+    }
+    &:active {
+      transition: none;
+      color: darken($accent-color, 20%);
+    }
+  }

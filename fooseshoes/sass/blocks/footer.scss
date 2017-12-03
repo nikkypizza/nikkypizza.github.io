@@ -12,6 +12,7 @@
 
 .footer__links-list {
   @include clear-li;
+
   display: flex;
   margin-top: 7px;
   justify-content: space-between;
@@ -19,6 +20,7 @@
 
 .footer__links-item {
   color: $copyright-text-color;
+  cursor: default;
 }
 
 .footer__links-a {
@@ -27,4 +29,6 @@
   font-size: 12px;
   line-height: 25px;
   color: $copyright-text-color;
+
+  @include text-event-regular();
 }

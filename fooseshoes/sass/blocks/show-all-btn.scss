@@ -8,4 +8,15 @@
   color: $show-all-btn-color;
   border: 1px solid $show-all-btn-color;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: darken($catalog-bg-color, 5%);
+  }
+
+  &:active {
+    border-color: darken($show-all-btn-color, 15%);
+    color: darken($show-all-btn-color, 15%);
+    outline: none;
+  }
 }
