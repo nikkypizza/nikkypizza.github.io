@@ -4,25 +4,36 @@ var browserSync = require('browser-sync');
 var plumber = require('gulp-plumber');
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var imagemin = require("gulp-imagemin");
 
 gulp.task('sass', function() {
-    gulp.src('sass/style.scss')
-        .pipe(plumber())
-        .pipe(sass({ includePaths: ['sass'] }))
-        .pipe(postcss([
-            autoprefixer()
-        ]))
-        .pipe(gulp.dest('css'));
+  gulp.src('sass/style.scss')
+    .pipe(plumber())
+    .pipe(sass({ includePaths: ['sass'] }))
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest('css'));
 });
 
 gulp.task('browser-sync', function() {
-    browserSync.init(["css/*.css", "js/*.js"], {
-        server: {
-            baseDir: "./"
-        }
-    });
+  browserSync.init(["css/*.css", "js/*.js", "*.html"], {
+    server: {
+      baseDir: "./"
+    }
+  });
 });
 
 gulp.task('default', ['sass', 'browser-sync'], function() {
-    gulp.watch("sass/**/*.scss", ['sass']);
+  gulp.watch("sass/**/*.scss", ['sass']);
+});
+
+gulp.task("images", function() {
+  return gulp.src("img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({ optimizationLevel: 5}),
+      imagemin.jpegtran({ progressive: true }),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("public/img"));
 });
