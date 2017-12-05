@@ -1,6 +1,8 @@
 .promo {
   background-image: url('../img/promo-bg.jpg');
   background-color: #efebe8;
+  display: flex;
+  justify-content: space-between;
 }
 
 .promo__img {

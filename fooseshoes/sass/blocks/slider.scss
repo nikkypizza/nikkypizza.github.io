@@ -14,7 +14,17 @@
 .slider__list-item {
   width: 100%;
   display: flex;
+  position: relative;
   flex-direction: column;
+}
+
+.slider__list-item-highlight {
+  position: absolute;
+  top: -19px;
+  left: 10px;
+  width: 170px;
+  height: 6px;
+  transition: 0.4s ease-out;
 }
 
 .slider__list-item-title {
@@ -23,10 +33,11 @@
   font-size: 18px;
   line-height: 25px;
   margin: 0;
+  transition: 0.4s ease-out;
 }
 
-.slider__list-item-title--active {
-  color: $font-light-color;
+.slider__list-item-title label {
+  cursor: pointer;
 }
 
 .slider__list-item-info {
@@ -35,40 +46,33 @@
   font-size: 12px;
   line-height: 25px;
   margin: -4px 0 0 0;
+  transition: 0.4s ease-out;
 }
 
-.slider__list-item-info--active {
-  color: $slider-info-font-color-active;
-}
-
-.slider-panel {
-  @include clear-li;
-  display: flex;
-  background-color: #000000;
-  margin-top: 6px;
-  margin-bottom: -5px;
-  padding: 0 9px;
-  height: 10px;
-}
-
-.slider-panel__section {
-  align-self: center;
-  width: 180px;
-  height: 6px;
-  padding-right: 7px;
-  border-right: 2px solid $slider-bg-color;
-}
-
-.slider-panel__section:last-of-type {
-  border-right: none;
-}
-
-.slider-panel__section-fill {
-  width: 180px;
-  height: 6px;
-  background-color: #000000;
-}
-
-.slider-panel__section-fill--active {
+// Не использовал "input[type="radio"]:checked..." для большей специфичности на гипотетический кейс, в котором появятся дополнительные радио инпуты
+#radio-1:checked+.slider__list-item-highlight,
+#radio-2:checked+.slider__list-item-highlight,
+#radio-3:checked+.slider__list-item-highlight,
+#radio-4:checked+.slider__list-item-highlight,
+#radio-5:checked+.slider__list-item-highlight {
   background-color: $accent-color;
+  transition: 0.3s ease-out;
+}
+
+#radio-1:checked+.slider__list-item-highlight+h3,
+#radio-2:checked+.slider__list-item-highlight+h3,
+#radio-3:checked+.slider__list-item-highlight+h3,
+#radio-4:checked+.slider__list-item-highlight+h3,
+#radio-5:checked+.slider__list-item-highlight+h3 {
+  color: $font-light-color;
+  transition: 0.3s ease-out;
+}
+
+#radio-1:checked+.slider__list-item-highlight+h3+span,
+#radio-2:checked+.slider__list-item-highlight+h3+span,
+#radio-3:checked+.slider__list-item-highlight+h3+span,
+#radio-4:checked+.slider__list-item-highlight+h3+span,
+#radio-5:checked+.slider__list-item-highlight+h3+span {
+  color: $slider-info-font-color-active;
+  transition: 0.3s ease-out;
 }

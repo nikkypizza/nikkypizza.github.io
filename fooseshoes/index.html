@@ -108,42 +108,64 @@
     <section class="slider">
       <div class="wrapper wrapper--slider">
         <ul class="slider-panel">
-          <li class="slider-panel__section">
-            <div class="slider-panel__section-fill slider-panel__section-fill--active"></div>
-          </li>
-          <li class="slider-panel__section">
-            <div class="slider-panel__section-fill"></div>
-          </li>
-          <li class="slider-panel__section">
-            <div class="slider-panel__section-fill"></div>
-          </li>
-          <li class="slider-panel__section">
-            <div class="slider-panel__section-fill"></div>
-          </li>
-          <li class="slider-panel__section">
-            <div class="slider-panel__section-fill"></div>
-          </li>
+          <li class="slider-panel__section"></li>
+          <li class="slider-panel__section"></li>
+          <li class="slider-panel__section"></li>
+          <li class="slider-panel__section"></li>
+          <li class="slider-panel__section"></li>
         </ul>
         <ul class="slider__list">
           <li class="slider__list-item">
-            <h3 class="slider__list-item-title slider__list-item-title--active">Pink Shoes</h3>
-            <span class="slider__list-item-info slider__list-item-info--active">Now at $145.99</span>
+            <input class="visually-hidden" type="radio" id="radio-1" name="main-slider" checked>
+            <!-- Не в восторге от решения с абсолютным позиционированием подсветки панели, но не нашел иного способа взаимодействовать с классами через radio=checked -->
+            <div class="slider__list-item-highlight"></div>
+            <h3 class="slider__list-item-title">
+                <label for="radio-1">Pink Shoes</label>
+            </h3>
+            <span class="slider__list-item-info">
+              <!-- Задвоил ярлык для увеличения площади клика -->
+              <label for="radio-1">Now at $145.99</label>
+            </span>
           </li>
           <li class="slider__list-item">
-            <h3 class="slider__list-item-title">Anna Field</h3>
-            <span class="slider__list-item-info">Limited Edition</span>
+            <input class="visually-hidden" type="radio" id="radio-2" name="main-slider">
+            <div class="slider__list-item-highlight"></div>
+            <h3 class="slider__list-item-title">
+                <label for="radio-2">Anna Field</label>
+            </h3>
+            <span class="slider__list-item-info">
+              <label for="radio-2">Limited Edition</label>
+            </span>
           </li>
           <li class="slider__list-item">
-            <h3 class="slider__list-item-title">Prada</h3>
-            <span class="slider__list-item-info">Summer is coming</span>
+            <input class="visually-hidden" type="radio" id="radio-3" name="main-slider">
+            <div class="slider__list-item-highlight"></div>
+            <h3 class="slider__list-item-title">
+                <label for="radio-3">Prada</label>
+            </h3>
+            <span class="slider__list-item-info">
+              <label for="radio-3">Summer is coming</label>
+            </span>
           </li>
           <li class="slider__list-item">
-            <h3 class="slider__list-item-title">Casadei</h3>
-            <span class="slider__list-item-info">All Colors available</span>
+            <input class="visually-hidden" type="radio" id="radio-4" name="main-slider">
+            <div class="slider__list-item-highlight"></div>
+            <h3 class="slider__list-item-title">
+                <label for="radio-4">Casadei</label>
+            </h3>
+            <span class="slider__list-item-info">
+              <label for="radio-4">All Colors available</label>
+            </span>
           </li>
           <li class="slider__list-item">
-            <h3 class="slider__list-item-title">Mellow Yellow</h3>
-            <span class="slider__list-item-info">Free delivery</span>
+            <input class="visually-hidden" type="radio" id="radio-5" name="main-slider">
+            <div class="slider__list-item-highlight"></div>
+            <h3 class="slider__list-item-title">
+                <label for="radio-5">Mellow Yellow</label>
+            </h3>
+            <span class="slider__list-item-info">
+              <label for="radio-5">Free delivery</label>
+            </span>
           </li>
         </ul>
       </div>
@@ -320,9 +342,9 @@
           <form action="https://echo.htmlacademy.ru" method="get">
             <input class="feedback__email-input" type="email" name="e-mail" placeholder="Enter email for newsletter" required>
             <button class="feedback__email-btn" type="submit">
+              <img src="img/svg/icon-arrow.svg" height="12" width="12" alt="#">
+            </button>
           </form>
-          <img src="img/svg/icon-arrow.svg" height="12" width="12" alt="#">
-          </button>
         </div>
         <div class="social">
           <ul class="social__list">
