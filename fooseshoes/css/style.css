@@ -1123,7 +1123,8 @@ button {
   width: 36px; }
 
 .social {
-  min-width: 213px; }
+  min-width: 213px;
+  margin-left: auto; }
 
 .social__list {
   display: -webkit-box;
