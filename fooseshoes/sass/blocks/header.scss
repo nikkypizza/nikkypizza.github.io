@@ -1,35 +1,49 @@
-.header__wrapper {
-  background-color: $body-bg-color;
-}
+  .header__wrapper {
+    background-color: $body-bg-color;
+  }
 
-.header__logo {
-  margin-right: auto;
-  padding: 0;
-  padding-top: 12px;
-  padding-bottom: 13px;
-}
+  .header__logo {
+    margin-right: auto;
+    padding: 0;
+    padding-top: 12px;
+    padding-bottom: 9px;
+  }
 
-.header__login {
-  display: flex;
-}
+  .header__login {
+    display: flex;
+  }
 
-.header__login-search {
-  background-color: transparent;
-  border: none;
-  padding: 0 21px;
-}
+  .header__login-search {
+    background-color: transparent;
+    border: none;
+    padding: 0 21px;
 
-.header__login-register {
-  font-family: $font-normal;
-  font-size: 11px;
-  line-height: 25px;
-  color: $header-font-color;
-  border-top: none;
-  border-bottom: none;
-  border-left: 1px solid #383838;
-  border-right: 1px solid #383838;
-  background-color: transparent;
-  padding: 10px 23px;
+    &:hover svg {
+      @include svg-hover-regular;
+    }
 
-  @include text-event-regular();
-}
+    &:active svg {
+      @include svg-active-regular;
+    }
+  }
+
+  .header__login-register {
+    font-family: $font-normal;
+    font-size: 11px;
+    line-height: 25px;
+    color: $header-font-color;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #383838;
+    border-right: 1px solid #383838;
+    background-color: transparent;
+    padding: 9px 23px;
+  }
+
+  .header__login-register:hover {
+    color: $accent-color;
+  }
+
+  .header__login-register:active {
+    color: darken($accent-color, 20%);
+  }

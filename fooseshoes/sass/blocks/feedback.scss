@@ -1,10 +1,10 @@
 .feedback {
   background-color: $body-bg-color;
-  border-top: 1px solid  #1c1c1c;
+  border-top: 1px solid #1c1c1c;
   padding: 22px 0 29px 0;
 }
 
-.feedback__email form{
+.feedback__email form {
   display: flex;
   height: 36px;
 }
@@ -25,4 +25,16 @@
   background-color: $social-icons-color;
   height: 36px;
   width: 36px;
+
+  &:hover {
+    background-color: darken($social-icons-color, 15%);
+  }
+
+  &:active {
+    background-color: darken($social-icons-color, 20%);
+  }
+}
+
+.feedback__email-btn svg{
+  fill: $slider-bg-color;
 }

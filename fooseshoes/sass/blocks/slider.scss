@@ -1,6 +1,5 @@
 .slider {
   background-color: $slider-bg-color;
-  margin-top: 1px;
 }
 
 .slider__list {
@@ -16,6 +15,13 @@
   display: flex;
   position: relative;
   flex-direction: column;
+
+  &:hover h3 {
+    color: lighten($slider-title-font-color, 30%);
+  }
+  &:hover span {
+    color: lighten($slider-info-font-color, 30%);
+  }
 }
 
 .slider__list-item-highlight {

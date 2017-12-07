@@ -12,3 +12,11 @@
       color: darken($accent-color, 20%);
     }
   }
+
+  @mixin svg-hover-regular() {
+    fill: $accent-color;
+  }
+
+  @mixin svg-active-regular() {
+    fill: darken($accent-color, 20%);
+  }

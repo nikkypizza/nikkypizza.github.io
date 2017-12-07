@@ -1,13 +1,13 @@
 .bsellers {
   background-color: $catalog-bg-color;
-  margin-top: -30px;
+  margin-top: -34px;
 }
 
 .bsellers__list {
   @include clear-li;
   display: flex;
   justify-content: space-between;
-  margin-top: 12px;
+  margin-top: 10px;
   margin-bottom: 24px;
   background-color: inherit;
   flex-wrap: wrap;

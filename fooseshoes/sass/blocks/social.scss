@@ -21,28 +21,82 @@
   width: 35px;
 }
 
-.social__link img {
+.social__link svg {
   padding-top: 10px;
 }
 
-.social__link--fb img {
-  padding-top: 8px;
-  padding-left: 3px;
+.social__link--fb {
+  &:hover {
+    background-color: #3B5998;
+  }
+  & svg {
+    padding-top: 8px;
+    padding-left: 3px;
+  }
+
+  &:hover svg {
+    fill: white;
+  }
+  transition: 0.3s linear;
 }
 
-.social__link--tw img {
-  padding-top: 9px;
-  padding-left: 4px;
+.social__link--tw {
+  &:hover {
+    background-color: #55ACEE;
+  }
+
+  & svg {
+    padding-top: 9px;
+    padding-left: 4px;
+  }
+
+  &:hover svg {
+    fill: white;
+  }
+  transition: 0.3s linear;
 }
 
-.social__link--gp img {
-  padding-left: 4px;
+.social__link--gp {
+  &:hover {
+    background-color: #D93E2D;
+  }
+
+  & svg {
+    padding-left: 4px;
+  }
+
+  &:hover svg {
+    fill: white;
+  }
+  transition: 0.3s linear;
 }
 
-.social__link--in img {
-  padding-top: 8px;
+.social__link--in {
+  &:hover {
+    background-color: #005397;
+  }
+
+  & svg {
+    padding-top: 8px;
+  }
+
+  &:hover svg {
+    fill: white;
+  }
+  transition: 0.3s linear;
 }
 
-.social__link--flickr img {
-  padding-top: 13px;
+.social__link--flickr {
+  &:hover {
+    background-color: #FF0084;
+  }
+
+  & svg {
+    padding-top: 13px;
+  }
+
+  &:hover svg {
+    fill: white;
+  }
+  transition: 0.3s linear;
 }

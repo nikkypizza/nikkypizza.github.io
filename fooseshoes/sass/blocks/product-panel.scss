@@ -12,4 +12,12 @@
   margin: 0 5px 0 0;
   border: none;
   cursor: pointer;
+
+  &:hover svg {
+    @include svg-hover-regular;
+  }
+
+  &:active svg {
+    @include svg-active-regular;
+  }
 }
