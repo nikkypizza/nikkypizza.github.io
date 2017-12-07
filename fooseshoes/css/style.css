@@ -625,7 +625,8 @@ button {
   background-color: #efebe8; }
 
 .promo__info {
-  padding-left: 42px; }
+  padding-left: 42px;
+  width: 450px; }
 
 .promo__info-title {
   font-family: "Aller-Light", "Arial", sans-serif;
