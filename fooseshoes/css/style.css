@@ -631,8 +631,7 @@ svg {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: -4px; }
+          justify-content: space-between; }
 
 .promo__img {
   margin-left: -83px;
