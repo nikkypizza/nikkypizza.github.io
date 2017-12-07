@@ -7,6 +7,7 @@ var autoprefixer = require("autoprefixer");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
 var rename = require("gulp-rename");
+var webp = require("gulp-webp");
 
 gulp.task('sass', function() {
   gulp.src('sass/style.scss')
@@ -47,4 +48,10 @@ gulp.task("sprite", function () {
   }))
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("public/img/svg"));
+});
+
+gulp.task ("webp", function () {
+  return gulp.src ("source/**/*.{png,jpg}")
+  .pipe(webp({quality: 85}))
+  .pipe(gulp.dest("img/webp"));
 });

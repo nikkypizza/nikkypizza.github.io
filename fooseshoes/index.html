@@ -19,13 +19,18 @@
   -->
   <!-- Возможно это костыль, но я этого еще не понимаю -->
   <div class="display-none">
-    <img src="img/promo-bg.jpg" width="1400" height="460" alt="#">
-    <img class="promo__img" src="img/hero.jpg" width="550" height="460" alt="Pink high heels">
+    <picture>
+      <source type="image/webp" srcset="img/webp/hero.webp x1">
+      <img class="promo__img" src="img/hero.jpg" width="550" height="460" alt="Pink high heels">
+    </picture>
   </div>
   <header class="header">
     <div class="header__wrapper">
       <div class="wrapper">
-        <img class="header__logo" src="img/logo.png" width="156" height="20" alt="FooseShoes">
+        <picture>
+          <source type="image/webp" srcset="img/webp/logo.webp">
+          <img class="header__logo" src="img/logo.png" width="156" height="20" alt="FooseShoes">
+        </picture>
         <!-- Посмотри потом способ замены на SVG -->
         <div class="header__login">
           <button class="header__login-search" type="button">
@@ -73,7 +78,10 @@
   <main>
     <section class="promo">
       <div class="wrapper">
-        <img class="promo__img" src="img/hero.jpg" width="550" height="460" alt="Pink high heels">
+        <picture>
+          <source type="image/webp" srcset="img/webp/hero.webp">
+          <img class="promo__img" src="img/hero.jpg" width="550" height="460" alt="Pink high heels">
+        </picture>
         <!-- Изображение контентное и подкреплено заголовком, потому не через background-->
         <div class="promo__info">
           <span class="tag-price tag-price--promo">$145.99</span>
@@ -193,14 +201,20 @@
         </header>
         <ul class="arrivals__list">
           <li class="item-card">
-            <img src="img/arrivals-1.jpg" width="300" height="220" alt="Ochre High Heels">
+            <picture>
+              <source type="image/webp" srcset="img/webp/arrivals-1.webp">
+              <img src="img/arrivals-1.jpg" width="300" height="220" alt="Ochre High Heels">
+            </picture>
             <div class="item-card__info">
               <span class="tag-price">$145.99</span>
               <span class="item-card__title">Even&#38;Odd</span>
             </div>
           </li>
           <li class="item-card">
-            <img src="img/arrivals-2.jpg" width="300" height="220" alt="Black-Lime High Heels">
+            <picture>
+              <source type="image/webp" srcset="img/webp/arrivals-2.webp">
+              <img src="img/arrivals-2.jpg" width="300" height="220" alt="Black-Lime High Heels">
+            </picture>
             <span class="tag-sale">ON SALE!</span>
             <div class="item-card__info">
               <span class="tag-price">$145.99</span>
@@ -208,7 +222,10 @@
             </div>
           </li>
           <li class="item-card">
-            <img src="img/arrivals-3.jpg" width="300" height="220" alt="Redwood High Heels">
+            <picture>
+              <source type="image/webp" srcset="img/webp/arrivals-3.webp">
+              <img src="img/arrivals-3.jpg" width="300" height="220" alt="Redwood High Heels">
+            </picture>
             <div class="item-card__info">
               <span class="tag-price">$144.99</span>
               <span class="item-card__title">Buffalo Decollet&#232;</span>
@@ -225,21 +242,30 @@
         </header>
         <ul class="bsellers__list">
           <li class="item-card">
-            <img src="img/bsellers-1.jpg" width="300" height="220" alt="Sharp Ankle Boots">
+            <picture>
+              <source type="image/webp" srcset="img/webp/bsellers-1.webp">
+              <img src="img/bsellers-1.jpg" width="300" height="220" alt="Sharp Ankle Boots">
+            </picture>
             <div class="item-card__info">
               <span class="tag-price">$145.99</span>
               <span class="item-card__title">Even&#38;Odd</span>
             </div>
           </li>
           <li class="item-card">
-            <img src="img/bsellers-2.jpg" width="300" height="220" alt="Sharp High Heels">
+            <picture>
+              <source type="image/webp" srcset="img/webp/bsellers-2.webp">
+              <img src="img/bsellers-2.jpg" width="300" height="220" alt="Sharp High Heels">
+            </picture>
             <div class="item-card__info">
               <span class="tag-price">$145.99</span>
               <span class="item-card__title">Even&#38;Odd</span>
             </div>
           </li>
           <li class="item-card">
-            <img src="img/bsellers-3.jpg" width="300" height="220" alt="Slim Medium Heels">
+            <picture>
+              <source type="image/webp" srcset="img/webp/bsellers-3.webp">
+              <img src="img/bsellers-3.jpg" width="300" height="220" alt="Slim Medium Heels">
+            </picture>
             <span class="tag-stock">OUT OF<br>STOCK</span>
             <div class="item-card__info">
               <span class="tag-price">$145.99</span>
@@ -314,22 +340,40 @@
           <h4 class="widgets__title widgets__title--flickr">FLICKR WIDGET</h4>
           <div class="widgets__flickr-wrapper">
             <a class="widgets__flickr-link" href="#">
-              <img src="img/flickr-1.jpg" width="76" height="56" alt="Flickr post #1">
+              <picture>
+                <source type="image/webp" srcset="img/webp/flickr-1.webp">
+                <img src="img/flickr-1.jpg" width="76" height="56" alt="Flickr post #1">
+              </picture>
             </a>
             <a class="widgets__flickr-link" href="#">
-              <img src="img/flickr-2.jpg" width="76" height="56" alt="Flickr post #2">
+              <picture>
+                <source type="image/webp" srcset="img/webp/flickr-2.webp">
+                <img src="img/flickr-2.jpg" width="76" height="56" alt="Flickr post #2">
+              </picture>
             </a>
             <a class="widgets__flickr-link" href="#">
-              <img src="img/flickr-3.jpg" width="76" height="56" alt="Flickr post #3">
+              <picture>
+                <source type="image/webp" srcset="img/webp/flickr-3.webp">
+                <img src="img/flickr-3.jpg" width="76" height="56" alt="Flickr post #3">
+              </picture>
             </a>
             <a class="widgets__flickr-link" href="#">
-              <img src="img/flickr-4.jpg" width="76" height="56" alt="Flickr post #4">
+              <picture>
+                <source type="image/webp" srcset="img/webp/flickr-4.webp">
+                <img src="img/flickr-4.jpg" width="76" height="56" alt="Flickr post #4">
+              </picture>
             </a>
             <a class="widgets__flickr-link" href="#">
-              <img src="img/flickr-5.jpg" width="76" height="56" alt="Flickr post #5">
+              <picture>
+                <source type="image/webp" srcset="img/webp/flickr-5.webp">
+                <img src="img/flickr-5.jpg" width="76" height="56" alt="Flickr post #5">
+              </picture>
             </a>
             <a class="widgets__flickr-link" href="#">
-              <img src="img/flickr-6.jpg" width="76" height="56" alt="Flickr post #6">
+              <picture>
+                <source type="image/webp" srcset="img/webp/flickr-6.webp">
+                <img src="img/flickr-6.jpg" width="76" height="56" alt="Flickr post #6">
+              </picture>
             </a>
           </div>
         </section>
