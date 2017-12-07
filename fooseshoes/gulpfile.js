@@ -5,6 +5,8 @@ var plumber = require('gulp-plumber');
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var imagemin = require("gulp-imagemin");
+var svgstore = require("gulp-svgstore");
+var rename = require("gulp-rename");
 
 gulp.task('sass', function() {
   gulp.src('sass/style.scss')
@@ -31,9 +33,18 @@ gulp.task('default', ['sass', 'browser-sync'], function() {
 gulp.task("images", function() {
   return gulp.src("img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.optipng({ optimizationLevel: 5}),
+      imagemin.optipng({ optimizationLevel: 8}),
       imagemin.jpegtran({ progressive: true }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("public/img"));
+});
+
+gulp.task("sprite", function () {
+  return gulp.src("img/svg/icon-*.svg")
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("public/img/svg"));
 });
