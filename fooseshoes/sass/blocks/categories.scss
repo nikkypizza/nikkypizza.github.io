@@ -28,6 +28,21 @@
   text-align: center;
   min-width: 180px;
   margin: 0 auto;
+
+  & a {
+    color: $font-light-color;
+    transition: 0.1s linear;
+
+    &:hover {
+      color: darken($font-light-color, 35%);
+      transition: 0.1s linear;
+    }
+
+    &:active {
+      color: darken($font-light-color, 55%);
+      transition: none;
+    }
+  }
 }
 
 .categories__list-item:nth-of-type(2) .categories__list-item-title {

@@ -850,6 +850,18 @@ svg {
   text-align: center;
   min-width: 180px;
   margin: 0 auto; }
+  .categories__list-item-title a {
+    color: #ffffff;
+    -webkit-transition: 0.1s linear;
+    transition: 0.1s linear; }
+    .categories__list-item-title a:hover {
+      color: #a6a6a6;
+      -webkit-transition: 0.1s linear;
+      transition: 0.1s linear; }
+    .categories__list-item-title a:active {
+      color: #737373;
+      -webkit-transition: none;
+      transition: none; }
 
 .categories__list-item:nth-of-type(2) .categories__list-item-title {
   padding: 0 23px; }
