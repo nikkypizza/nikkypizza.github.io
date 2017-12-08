@@ -685,6 +685,14 @@ svg {
   padding: 0;
   margin: 15px 0 0 0; }
 
+.product-panel--item {
+  display: none;
+  position: absolute;
+  bottom: 5px;
+  padding: 0 14px;
+  right: 12px;
+  background-color: white; }
+
 .product-panel-btn {
   display: block;
   background-color: #ffffff;
@@ -877,7 +885,29 @@ svg {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear; }
+  .item-card:hover {
+    -webkit-box-shadow: 0 5px 15px 0px grey;
+            box-shadow: 0 5px 15px 0px grey; }
+  .item-card:hover .product-panel--item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .item-card:active {
+    -webkit-box-shadow: 0 2px 5px 0 grey;
+            box-shadow: 0 2px 5px 0 grey;
+    -webkit-transition: 0.1 linear;
+    transition: 0.1 linear; }
+
+.item-card a {
+  outline: none; }
+  .item-card a:focus {
+    -webkit-box-shadow: 0 5px 15px 0px grey;
+            box-shadow: 0 5px 15px 0px grey;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear; }
 
 .item-card__info {
   font-family: "Aller", "Arial", sans-serif;
@@ -893,7 +923,10 @@ svg {
 
 .item-card__title {
   padding: 9px 12px;
-  max-width: 200px; }
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .arrivals {
   background-color: #ebe7df; }

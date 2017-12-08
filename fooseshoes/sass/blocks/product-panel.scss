@@ -4,6 +4,15 @@
   margin: 15px 0 0 0;
 }
 
+.product-panel--item {
+  display: none;
+  position: absolute;
+  bottom: 5px;
+  padding: 0 14px;
+  right: 12px;
+  background-color: white;
+}
+
 .product-panel-btn {
   display: block;
   background-color: $bg-white-color;

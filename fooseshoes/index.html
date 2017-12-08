@@ -16,8 +16,7 @@
   <!--Открыл страницу с мобильного в метро и озадачился скоростью отображения hero изображений. Решение для предзагрузки без js. Разница в отображении верха страницы заметна на более низких скоростях соединения.-->
   <div class="display-none">
     <img src="img/webp/hero.webp" alt="Pink high heels">
-    <img class="promo__img" src="img/hero.jpg" width="550" height="460" alt="Pink high heels">
-    </picture>
+    <img src="img/hero.jpg" width="550" height="460" alt="Pink high heels">
   </div>
   <header class="header">
     <div class="header__wrapper">
@@ -211,35 +210,136 @@
         </header>
         <ul class="arrivals__list">
           <li class="item-card">
-            <picture>
-              <source type="image/webp" srcset="img/webp/arrivals-1.webp">
-              <img src="img/arrivals-1.jpg" width="300" height="220" alt="Ochre High Heels">
-            </picture>
-            <div class="item-card__info">
-              <span class="tag-price">$145.99</span>
-              <span class="item-card__title">Even&#38;Odd</span>
-            </div>
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/webp/arrivals-1.webp">
+                <img src="img/arrivals-1.jpg" width="300" height="220" alt="Ochre High Heels">
+              </picture>
+              <div class="item-card__info">
+                <span class="tag-price">$145.99</span>
+                <span class="item-card__title">Even&#38;Odd</span>
+              </div>
+            </a>
+            <!--
+Пробовал оставлять элементы панели видимыми при фокусе с клавиатуры
+      .item-card a:focus~.product-panel-item {display: flex}
+но в таком случае по ним нельзя ходить табом, ибо панель пропадает из потока. Решил пока убрать отображение контейнера при a:focus.
+-->
+            <ul class="product-panel product-panel--item">
+              <li>
+                <button class="product-panel-btn" type="button" title="Preview">
+                  <svg width="16" height="10">
+                    <use xlink:href="#icon-eye"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn" type="button" title="Add to favourites">
+                  <svg width="16" height="16">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn" type="button" title="Share">
+                  <svg width="16" height="13">
+                    <use xlink:href="#icon-share"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn product-panel-btn--selected" type="button" title="Add to cart">
+                  <svg width="16" height="15">
+                    <use xlink:href="#icon-buy"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
           </li>
           <li class="item-card">
-            <picture>
-              <source type="image/webp" srcset="img/webp/arrivals-2.webp">
-              <img src="img/arrivals-2.jpg" width="300" height="220" alt="Black-Lime High Heels">
-            </picture>
-            <span class="tag-sale">ON SALE!</span>
-            <div class="item-card__info">
-              <span class="tag-price">$145.99</span>
-              <span class="item-card__title">Even&#38;Odd</span>
-            </div>
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/webp/arrivals-2.webp">
+                <img src="img/arrivals-2.jpg" width="300" height="220" alt="Black-Lime High Heels">
+              </picture>
+              <span class="tag-sale">ON SALE!</span>
+              <div class="item-card__info">
+                <span class="tag-price">$145.99</span>
+                <span class="item-card__title">Even&#38;Odd</span>
+              </div>
+            </a>
+            <ul class="product-panel product-panel--item">
+              <li>
+                <button class="product-panel-btn" type="button" title="Preview">
+                  <svg width="16" height="10">
+                    <use xlink:href="#icon-eye"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn" type="button" title="Add to favourites">
+                  <svg width="16" height="16">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn" type="button" title="Share">
+                  <svg width="16" height="13">
+                    <use xlink:href="#icon-share"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn product-panel-btn--selected" type="button" title="Add to cart">
+                  <svg width="16" height="15">
+                    <use xlink:href="#icon-buy"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
           </li>
           <li class="item-card">
-            <picture>
-              <source type="image/webp" srcset="img/webp/arrivals-3.webp">
-              <img src="img/arrivals-3.jpg" width="300" height="220" alt="Redwood High Heels">
-            </picture>
-            <div class="item-card__info">
-              <span class="tag-price">$144.99</span>
-              <span class="item-card__title">Buffalo Decollet&#232;</span>
-            </div>
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/webp/arrivals-3.webp">
+                <img src="img/arrivals-3.jpg" width="300" height="220" alt="Redwood High Heels">
+              </picture>
+              <div class="item-card__info">
+                <span class="tag-price">$144.99</span>
+                <span class="item-card__title">Buffalo Decollet&#232;</span>
+              </div>
+            </a>
+            <ul class="product-panel product-panel--item">
+              <li>
+                <button class="product-panel-btn" type="button" title="Preview">
+                  <svg width="16" height="10">
+                    <use xlink:href="#icon-eye"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn" type="button" title="Add to favourites">
+                  <svg width="16" height="16">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn" type="button" title="Share">
+                  <svg width="16" height="13">
+                    <use xlink:href="#icon-share"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn product-panel-btn--selected" type="button" title="Add to cart">
+                  <svg width="16" height="15">
+                    <use xlink:href="#icon-buy"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -252,35 +352,131 @@
         </header>
         <ul class="bsellers__list">
           <li class="item-card">
-            <picture>
-              <source type="image/webp" srcset="img/webp/bsellers-1.webp">
-              <img src="img/bsellers-1.jpg" width="300" height="220" alt="Sharp Ankle Boots">
-            </picture>
-            <div class="item-card__info">
-              <span class="tag-price">$145.99</span>
-              <span class="item-card__title">Even&#38;Odd</span>
-            </div>
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/webp/bsellers-1.webp">
+                <img src="img/bsellers-1.jpg" width="300" height="220" alt="Sharp Ankle Boots">
+              </picture>
+              <div class="item-card__info">
+                <span class="tag-price">$145.99</span>
+                <span class="item-card__title">Even&#38;Odd</span>
+              </div>
+            </a>
+            <ul class="product-panel product-panel--item">
+              <li>
+                <button class="product-panel-btn" type="button" title="Preview">
+                  <svg width="16" height="10">
+                    <use xlink:href="#icon-eye"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn" type="button" title="Add to favourites">
+                  <svg width="16" height="16">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn" type="button" title="Share">
+                  <svg width="16" height="13">
+                    <use xlink:href="#icon-share"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn product-panel-btn--selected" type="button" title="Add to cart">
+                  <svg width="16" height="15">
+                    <use xlink:href="#icon-buy"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
           </li>
           <li class="item-card">
-            <picture>
-              <source type="image/webp" srcset="img/webp/bsellers-2.webp">
-              <img src="img/bsellers-2.jpg" width="300" height="220" alt="Sharp High Heels">
-            </picture>
-            <div class="item-card__info">
-              <span class="tag-price">$145.99</span>
-              <span class="item-card__title">Even&#38;Odd</span>
-            </div>
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/webp/bsellers-2.webp">
+                <img src="img/bsellers-2.jpg" width="300" height="220" alt="Sharp High Heels">
+              </picture>
+              <div class="item-card__info">
+                <span class="tag-price">$145.99</span>
+                <span class="item-card__title">Even&#38;Odd</span>
+              </div>
+            </a>
+            <ul class="product-panel product-panel--item">
+              <li>
+                <button class="product-panel-btn" type="button" title="Preview">
+                  <svg width="16" height="10">
+                    <use xlink:href="#icon-eye"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn" type="button" title="Add to favourites">
+                  <svg width="16" height="16">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn" type="button" title="Share">
+                  <svg width="16" height="13">
+                    <use xlink:href="#icon-share"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn product-panel-btn--selected" type="button" title="Add to cart">
+                  <svg width="16" height="15">
+                    <use xlink:href="#icon-buy"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
           </li>
           <li class="item-card">
-            <picture>
-              <source type="image/webp" srcset="img/webp/bsellers-3.webp">
-              <img src="img/bsellers-3.jpg" width="300" height="220" alt="Slim Medium Heels">
-            </picture>
-            <span class="tag-stock">OUT OF<br>STOCK</span>
-            <div class="item-card__info">
-              <span class="tag-price">$145.99</span>
-              <span class="item-card__title">Buffalo Decollet&#232;</span>
-            </div>
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/webp/bsellers-3.webp">
+                <img src="img/bsellers-3.jpg" width="300" height="220" alt="Slim Medium Heels">
+              </picture>
+              <span class="tag-stock">OUT OF<br>STOCK</span>
+              <div class="item-card__info">
+                <span class="tag-price">$145.99</span>
+                <span class="item-card__title">Buffalo Decollet&#232;</span>
+              </div>
+            </a>
+            <ul class="product-panel product-panel--item">
+              <li>
+                <button class="product-panel-btn" type="button" title="Preview">
+                  <svg width="16" height="10">
+                    <use xlink:href="#icon-eye"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn" type="button" title="Add to favourites">
+                  <svg width="16" height="16">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn" type="button" title="Share">
+                  <svg width="16" height="13">
+                    <use xlink:href="#icon-share"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="product-panel-btn product-panel-btn--selected" type="button" title="Add to cart">
+                  <svg width="16" height="15">
+                    <use xlink:href="#icon-buy"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>

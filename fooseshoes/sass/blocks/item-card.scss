@@ -4,6 +4,29 @@
   flex-direction: column;
   position: relative;
   margin-bottom: 20px;
+  transition: 0.1s linear;
+
+  &:hover {
+    @include hover-shadow();
+  }
+
+  &:hover .product-panel--item {
+    display: flex;
+  }
+
+  &:active {
+    @include active-shadow();
+    transition: 0.1 linear;
+  }
+}
+
+.item-card a {
+  outline: none;
+
+  &:focus {
+    @include hover-shadow();
+    transition: 0.2s linear;
+  }
 }
 
 .item-card__info {
@@ -18,4 +41,7 @@
 .item-card__title {
   padding: 9px 12px;
   max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
