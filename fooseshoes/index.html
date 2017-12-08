@@ -19,9 +19,8 @@
   -->
   <!-- Возможно это костыль, но я этого еще не понимаю -->
   <div class="display-none">
-    <picture>
-      <source type="image/webp" srcset="img/webp/hero.webp">
-      <img class="promo__img" src="img/hero.jpg" width="550" height="460" alt="Pink high heels">
+    <img src="img/webp/hero.webp" alt="Pink high heels">
+    <img class="promo__img" src="img/hero.jpg" width="550" height="460" alt="Pink high heels">
     </picture>
   </div>
   <header class="header">
@@ -33,7 +32,7 @@
         </picture>
         <!-- Посмотри потом способ замены на SVG -->
         <div class="header__login">
-          <button class="header__login-search" type="button">
+          <button class="header__login-search" type="button" title="Search">
             <svg width="14" height="14">
               <use xlink:href="#icon-search"></use>
             </svg>
@@ -67,13 +66,13 @@
         <div class="user">
           <ul>
             <li class="user__stat user__stat--rating">
-              <button type="button"> 30 </button>
+              <button type="button" title="Favourites">30</button>
               <svg width="16" height="16">
                 <use xlink:href="#icon-star"></use>
               </svg>
             </li>
             <li class="user__stat user__stat--cart">
-              <button type="button">0</button>
+              <button type="button" title="My Cart">0</button>
               <svg width="16" height="16">
                 <use xlink:href="#icon-cart"></use>
               </svg>
@@ -98,28 +97,28 @@
           <p class="promo__info-details">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget...</p>
           <ul class="product-panel">
             <li>
-              <button class="product-panel-btn" type="button">
+              <button class="product-panel-btn" type="button" title="Preview">
                 <svg width="16" height="10">
                   <use xlink:href="#icon-eye"></use>
                 </svg>
               </button>
             </li>
             <li>
-              <button class="product-panel-btn" type="button">
+              <button class="product-panel-btn" type="button" title="Add to favourites">
                 <svg width="16" height="16">
                   <use xlink:href="#icon-star"></use>
                 </svg>
               </button>
             </li>
             <li>
-              <button class="product-panel-btn" type="button">
+              <button class="product-panel-btn" type="button" title="Share">
                 <svg width="16" height="13">
                   <use xlink:href="#icon-share"></use>
                 </svg>
               </button>
             </li>
             <li>
-              <button class="product-panel-btn product-panel-btn--selected" type="button">
+              <button class="product-panel-btn product-panel-btn--selected" type="button" title="Add to cart">
                 <svg width="16" height="15">
                   <use xlink:href="#icon-buy"></use>
                 </svg>
@@ -401,7 +400,7 @@
         <div class="feedback__email">
           <form action="https://echo.htmlacademy.ru" method="get">
             <input class="feedback__email-input" type="email" name="e-mail" placeholder="Enter email for newsletter" required>
-            <button class="feedback__email-btn" type="submit">
+            <button class="feedback__email-btn" type="submit" title="Sign up">
               <svg width="12" height="12">
                 <use xlink:href="#icon-arrow"></use>
               </svg>
@@ -411,35 +410,35 @@
         <div class="social">
           <ul class="social__list">
             <li class="social__list-item">
-              <a href="#" class="social__link social__link--fb">
+              <a href="#" class="social__link social__link--fb" title="Facebook">
                 <svg width="19" height="19">
                   <use xlink:href="#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__list-item">
-              <a href="#" class="social__link social__link--tw">
+              <a href="#" class="social__link social__link--tw" title="Twitter">
                 <svg width="19" height="16">
                   <use xlink:href="#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__list-item">
-              <a href="#" class="social__link social__link--gp">
+              <a href="#" class="social__link social__link--gp" title="Google +">
                 <svg width="19" height="16">
                   <use xlink:href="#icon-google-plus"></use>
                 </svg>
               </a>
             </li>
             <li class="social__list-item">
-              <a href="#" class="social__link social__link--in">
+              <a href="#" class="social__link social__link--in" title="Linkedin">
                 <svg width="18" height="19">
                   <use xlink:href="#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
             <li class="social__list-item">
-              <a href="#" class="social__link social__link--flickr">
+              <a href="#" class="social__link social__link--flickr" title="Flickr">
                 <svg width="19" height="8">
                   <use xlink:href="#icon-fl"></use>
                 </svg>
