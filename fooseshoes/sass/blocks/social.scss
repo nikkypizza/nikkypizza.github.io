@@ -26,7 +26,8 @@
 }
 
 .social__link--fb {
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #3B5998;
   }
   & svg {
@@ -34,14 +35,16 @@
     padding-left: 3px;
   }
 
-  &:hover svg {
+  &:hover svg ,
+  &:focus svg {
     fill: white;
   }
   transition: 0.3s linear;
 }
 
 .social__link--tw {
-  &:hover {
+  &:hover ,
+  &:focus {
     background-color: #55ACEE;
   }
 
@@ -50,14 +53,16 @@
     padding-left: 4px;
   }
 
-  &:hover svg {
+  &:hover svg,
+  &:focus svg {
     fill: white;
   }
   transition: 0.3s linear;
 }
 
 .social__link--gp {
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #D93E2D;
   }
 
@@ -65,14 +70,16 @@
     padding-left: 4px;
   }
 
-  &:hover svg {
+  &:hover svg,
+  &:focus svg {
     fill: white;
   }
   transition: 0.3s linear;
 }
 
 .social__link--in {
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #005397;
   }
 
@@ -80,14 +87,16 @@
     padding-top: 8px;
   }
 
-  &:hover svg {
+  &:hover svg ,
+  &:focus svg{
     fill: white;
   }
   transition: 0.3s linear;
 }
 
 .social__link--flickr {
-  &:hover {
+  &:hover ,
+  &:focus{
     background-color: #FF0084;
   }
 
@@ -95,7 +104,8 @@
     padding-top: 13px;
   }
 
-  &:hover svg {
+  &:hover svg ,
+  &:focus svg{
     fill: white;
   }
   transition: 0.3s linear;

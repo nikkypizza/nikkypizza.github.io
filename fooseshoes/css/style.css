@@ -902,6 +902,7 @@ svg {
     transition: 0.1 linear; }
 
 .item-card a {
+  color: #242424;
   outline: none; }
   .item-card a:focus {
     -webkit-box-shadow: 0 5px 15px 0px grey;
@@ -1214,53 +1215,58 @@ svg {
 .social__link--fb {
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear; }
-  .social__link--fb:hover {
+  .social__link--fb:hover, .social__link--fb:focus {
     background-color: #3B5998; }
   .social__link--fb svg {
     padding-top: 8px;
     padding-left: 3px; }
-  .social__link--fb:hover svg {
+  .social__link--fb:hover svg,
+  .social__link--fb:focus svg {
     fill: white; }
 
 .social__link--tw {
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear; }
-  .social__link--tw:hover {
+  .social__link--tw:hover, .social__link--tw:focus {
     background-color: #55ACEE; }
   .social__link--tw svg {
     padding-top: 9px;
     padding-left: 4px; }
-  .social__link--tw:hover svg {
+  .social__link--tw:hover svg,
+  .social__link--tw:focus svg {
     fill: white; }
 
 .social__link--gp {
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear; }
-  .social__link--gp:hover {
+  .social__link--gp:hover, .social__link--gp:focus {
     background-color: #D93E2D; }
   .social__link--gp svg {
     padding-left: 4px; }
-  .social__link--gp:hover svg {
+  .social__link--gp:hover svg,
+  .social__link--gp:focus svg {
     fill: white; }
 
 .social__link--in {
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear; }
-  .social__link--in:hover {
+  .social__link--in:hover, .social__link--in:focus {
     background-color: #005397; }
   .social__link--in svg {
     padding-top: 8px; }
-  .social__link--in:hover svg {
+  .social__link--in:hover svg,
+  .social__link--in:focus svg {
     fill: white; }
 
 .social__link--flickr {
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear; }
-  .social__link--flickr:hover {
+  .social__link--flickr:hover, .social__link--flickr:focus {
     background-color: #FF0084; }
   .social__link--flickr svg {
     padding-top: 13px; }
-  .social__link--flickr:hover svg {
+  .social__link--flickr:hover svg,
+  .social__link--flickr:focus svg {
     fill: white; }
 
 .footer {
