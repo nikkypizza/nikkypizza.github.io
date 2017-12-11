@@ -8,7 +8,9 @@ var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
 var rename = require("gulp-rename");
 var webp = require("gulp-webp");
-var cssmin = require("gulp-csso")
+var cssmin = require("gulp-csso");
+var del = require("del");
+var run = require("run-sequence")
 
 gulp.task('sass', function() {
   gulp.src('sass/style.scss')
@@ -54,7 +56,7 @@ gulp.task("sprite", function() {
 gulp.task("webp", function() {
   return gulp.src("source/**/*.{png,jpg}")
     .pipe(webp({ quality: 85 }))
-    .pipe(gulp.dest("img/webp"));
+    .pipe(gulp.dest("public/img/webp"));
 });
 
 
@@ -63,4 +65,23 @@ gulp.task("cssmin", function() {
     .pipe(cssmin())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("public/css"));
+});
+
+gulp.task("clean", function () {
+  return del("public");
+});
+
+gulp.task("copy", function () {
+  return gulp.src([
+      "fonts/**/*.{woff,woff2}",
+      "*.html",
+      "css/style.min.css"
+  ], {
+      base: "."
+  })
+  .pipe(gulp.dest("public"));
+});
+
+gulp.task("build", function (done) {
+  run("clean", "sass", "copy", "images", "webp", "sprite", done);
 });
