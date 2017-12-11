@@ -425,6 +425,9 @@ template {
 .display-none {
   display: none; }
 
+body {
+  min-width: 1100px; }
+
 a {
   text-decoration: none; }
 
