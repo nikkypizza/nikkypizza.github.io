@@ -204,6 +204,14 @@ a {
     margin: 0;
 }
 
+picture {
+    line-height: 0;
+}
+
+.header-current {
+    pointer-events: none;
+}
+
 .services li {
     align-self: baseline;
     padding-top: 56px;
