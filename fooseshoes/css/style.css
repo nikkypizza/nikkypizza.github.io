@@ -1156,7 +1156,8 @@ svg {
           justify-content: space-between; }
 
 .widgets__flickr-link {
-  margin-bottom: 6px; }
+  margin-bottom: 6px;
+  line-height: 0; }
   .widgets__flickr-link:hover {
     outline: 2px solid #57c5a0; }
   .widgets__flickr-link:active {
