@@ -15,16 +15,16 @@
       <picture>
         <source media="(min-width: 1050px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="36" alt="Мишка">
+        <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
       </picture>
     </a>
-    <button type="button" class="page-header__toggler">
+    <button type="button" class="page-header__toggler" title="Закрыть">
       <svg width="21" height="21">
         <use xlink:href="#icon-menu-close"></use>
       </svg>
     </button>
     <!--Класс-замена для .page-header__toggler
-    <button type="button" class="page-header__toggler-open">
+    <button type="button" class="page-header__toggler-open" title="Открыть">
       <svg width="20" height="14">
         <use xlink:href="#icon-menu-open"></use>
       </svg>
@@ -167,7 +167,7 @@
           <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
           <img class="video-about__img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Как мы вяжем">
         </picture>
-        <button type="button" class="video-about__play-btn"></button>
+        <button type="button" class="video-about__play-btn" title="Воспроизвести видео"></button>
       </div>
       <h3 class="video-about__title">Процесс производства</h3>
       <p class="video-about__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -244,7 +244,6 @@
     document.createElement("picture");
   </script>
   <script src="js/picturefill.js" async></script>
-  <script src="js/polyfill.js"></script>
   <script src="js/svg4everybody.legacy.min.js"></script>
   <script src="js/svg4everybody.min.js"></script>
   <script src="js/modal.js"></script>

@@ -15,16 +15,16 @@
       <picture>
         <source media="(min-width: 1050px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="36" alt="Мишка">
+        <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
       </picture>
     </a>
-    <button type="button" class="page-header__toggler">
+    <button type="button" class="page-header__toggler" title="Закрыть">
       <svg width="21" height="21">
         <use xlink:href="#icon-menu-close"></use>
       </svg>
     </button>
 <!--Класс-замена для .page-header__toggler
-    <button type="button" class="page-header__toggler-open">
+    <button type="button" class="page-header__toggler-open"  title="Открыть">
       <svg width="20" height="14">
         <use xlink:href="#icon-menu-open"></use>
       </svg>
@@ -73,7 +73,7 @@
         <div class="fieldset-info">
           <div class="form__title form__title--type">ТИП</div>
           <div class="type__info">
-            <input class="type__radio" type="radio" name="product-type" value="interior-accessory" id="interior-accessory" checked="">
+            <input class="type__radio" type="radio" name="product-type" value="interior-accessory" id="interior-accessory" checked>
             <label class="type__label" for="interior-accessory">Аксессуар для интерьера</label><br>
             <input class="type__radio" type="radio" name="product-type" value="kids-toy" id="kids-toy">
             <label class="type__label" for="kids-toy">Детская игрушка</label>
@@ -86,11 +86,11 @@
             <div class="form__title form__title--grey form__title--color">Цвет</div>
             <ul class="color__list">
               <li class="color__item">
-                <input class="color__input" type="checkbox" name="color-white" id="white" checked="">
+                <input class="color__input" type="checkbox" name="color-white" id="white" checked>
                 <label class="color__label" for="white">Белый</label>
               </li>
               <li class="color__item">
-                <input class="color__input" type="checkbox" name="color-gray" id="gray" checked="">
+                <input class="color__input" type="checkbox" name="color-gray" id="gray" checked>
                 <label class="color__label" for="gray">Серый</label>
               </li>
               <li class="color__item">
@@ -119,11 +119,11 @@
           <ul class="name__list">
             <li class="name__item">
               <label class="name__label" for="first-name">Имя:</label><br>
-              <input class="name__input" name="first-name" id="first-name" type="text" placeholder="Введите ваше имя*" required="">
+              <input class="name__input" name="first-name" id="first-name" type="text" placeholder="Введите ваше имя*" required>
             </li>
             <li class="name__item">
               <label class="name__label" for="last-name">Фамилия:</label><br>
-              <input class="name__input" id="last-name" name="last-name" type="text" placeholder="Укажите фамилию*" required="">
+              <input class="name__input" id="last-name" name="last-name" type="text" placeholder="Укажите фамилию*" required>
             </li>
             <li class="name__item">
               <label class="name__label" for="patronymic">Отчество:</label><br>
@@ -136,9 +136,9 @@
       <div class="form__grey-wrapper">
         <fieldset class="phone">
           <div class="fieldset-info">
-            <div class="form__title form__title--grey">ТЕЛ</div>
+            <label class="form__title form__title--grey" for="phone">ТЕЛ</label>
             <div class="phone__input-wrapper">
-              <input class="phone__input" type="tel" name="phone-number" placeholder="+7 XXX XX XX*" required="">
+              <input class="phone__input" type="tel" name="phone-number" placeholder="+7 XXX XX XX*" id="phone" required>
               <svg class="phone__icon" width="25" height="24">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -150,9 +150,9 @@
       <div class="form__grey-wrapper">
         <fieldset class="email">
           <div class="fieldset-info">
-            <div class="form__title form__title--grey">E-MAIL</div>
+            <label class="form__title form__title--grey" for="email">E-MAIL</label>
             <div class="email__input-wrapper">
-              <input class="email__input" type="email" name="e-mail" placeholder="Ваш Email*" required="">
+              <input class="email__input" type="email" name="e-mail" placeholder="Ваш Email*" id="email" required>
               <svg class="email__icon" width="32" height="32">
                 <use xlink:href="#icon-mail"></use>
               </svg>
@@ -163,8 +163,8 @@
 
       <fieldset class="extra">
         <div class="fieldset-info">
-          <div class="form__title">ДОП</div>
-          <textarea class="extra__input" name="additional-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <label class="form__title" for="additional-info">ДОП</label>
+          <textarea class="extra__input" name="additional-info" placeholder="Опишите все ваши пожелания к заказу" id="additional-info"></textarea>
         </div>
         <div class="extra__send">
           <span class="extra__text">*Поля обязательны для заполнения</span>
