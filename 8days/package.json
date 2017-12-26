@@ -1,0 +1,14 @@
+{
+  "name": "8days",
+  "version": "1.0.0",
+  "description": "No more games, lets get serious",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-imagemin": "latest",
+    "imagemin-guetzli": "latest"
+  },
+  "author": "nikkypizza",
+  "license": "ISC"
+}
