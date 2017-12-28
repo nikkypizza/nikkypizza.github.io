@@ -8,7 +8,12 @@
     "gulp": "latest",
     "gulp-imagemin": "latest",
     "imagemin-guetzli": "latest",
-    "gulp-webp": "latest"
+    "gulp-webp": "latest",
+    "gulp-rename": "latest",
+    "gulp-svgstore": "latest"
+  },
+  "scripts": {
+    "devimages": "gulp imagemin && gulp webp && gulp svgo && gulp sprite"
   },
   "author": "nikkypizza",
   "license": "ISC"
