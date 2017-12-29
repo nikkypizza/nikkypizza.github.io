@@ -1,12 +1,14 @@
 var gulp = require('gulp');
-
-// DEV images START
+//
+// DEVELOPMENT images START
+//
 var imagemin = require('gulp-imagemin');
 var imageminGuetzli = require('imagemin-guetzli');
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var rename = require("gulp-rename");
 
+// Minify png + jpg and make them progressive
 gulp.task('imagemin', () =>
   gulp.src('source/img-build/**/*.{png,jpg}')
   .pipe(imagemin([
@@ -16,12 +18,14 @@ gulp.task('imagemin', () =>
   .pipe(gulp.dest('img'))
 );
 
+// Generate webp from jpeg\png
 gulp.task("webp", function() {
   gulp.src("source/img-build/**/*.{png,jpg}")
     .pipe(webp({ quality: 60 }))
     .pipe(gulp.dest("img/webp"));
 });
 
+// Minify SVG
 gulp.task("svgo", function() {
   gulp.src("source/svg/*.svg")
     .pipe(imagemin([
@@ -30,6 +34,7 @@ gulp.task("svgo", function() {
     .pipe(gulp.dest("img/svg"));
 });
 
+// Genetare SVG sprite from icons starting with "icon-"
 gulp.task("sprite", function() {
   gulp.src("img/svg/icon-*.svg")
     .pipe(svgstore())
@@ -37,4 +42,43 @@ gulp.task("sprite", function() {
     .pipe(gulp.dest("img/svg"));
 });
 
-// DEV images END
+//
+// DEVELOPMENT images END
+//
+
+var browserSync = require('browser-sync');
+var pug = require('gulp-pug');
+var plumber = require('gulp-plumber');
+var sass = require('gulp-sass');
+var postcss = require("gulp-postcss");
+var autoprefixer = require("autoprefixer");
+
+gulp.task('default', ['sass', 'pug', 'browser-sync'], function() {
+  gulp.watch("sass/**/*.scss", ['sass'])
+  gulp.watch("pug/**/*.pug", ['pug']);
+});
+
+gulp.task('browser-sync', function() {
+  browserSync.init(["css/*.css", "js/*.js", "*.html", "pug/*.pug"], {
+    server: {
+      baseDir: "./"
+    }
+  });
+});
+
+gulp.task('sass', function() {
+  gulp.src('sass/style.scss')
+    .pipe(plumber())
+    .pipe(sass({ includePaths: ['sass'] }))
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest('css'));
+});
+
+gulp.task('pug', function buildHTML() {
+  gulp.src('pug/*.pug')
+    .pipe(plumber())
+    .pipe(pug({ pretty: true }))
+    .pipe(gulp.dest("."));
+});

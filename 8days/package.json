@@ -6,11 +6,21 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "latest",
+    "gulp-sass": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-pug": "latest",
     "gulp-imagemin": "latest",
     "imagemin-guetzli": "latest",
     "gulp-webp": "latest",
     "gulp-rename": "latest",
-    "gulp-svgstore": "latest"
+    "gulp-svgstore": "latest",
+    "gulp-postcss": "latest",
+    "gulp-posthtml": "latest",
+    "posthtml": "latest",
+    "browser-sync": "latest",
+    "gulp-plumber": "latest",
+    "gulp-bower-normalize": "latest",
+    "gulp-csso": "latest"
   },
   "scripts": {
     "devimages": "gulp imagemin && gulp webp && gulp svgo && gulp sprite"
