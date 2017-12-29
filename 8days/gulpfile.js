@@ -1,7 +1,8 @@
 var gulp = require('gulp');
-//
-// DEVELOPMENT images START
-//
+
+// ######################## //
+//    DEVELOPMENT images START   //
+// ####################### //
 var imagemin = require('gulp-imagemin');
 var imageminGuetzli = require('imagemin-guetzli');
 var webp = require("gulp-webp");
@@ -42,9 +43,17 @@ gulp.task("sprite", function() {
     .pipe(gulp.dest("img/svg"));
 });
 
-//
-// DEVELOPMENT images END
-//
+// ######################  //
+//    DEVELOPMENT images END   //
+// ###################### //
+
+
+// --------------------------------------------//
+
+
+// ######################  //
+//     BrowserSync all files START   //
+// ###################### //
 
 var browserSync = require('browser-sync');
 var pug = require('gulp-pug');
@@ -53,19 +62,25 @@ var sass = require('gulp-sass');
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 
-gulp.task('default', ['sass', 'pug', 'browser-sync'], function() {
-  gulp.watch("sass/**/*.scss", ['sass'])
-  gulp.watch("pug/**/*.pug", ['pug']);
-});
-
 gulp.task('browser-sync', function() {
-  browserSync.init(["css/*.css", "js/*.js", "*.html", "pug/*.pug"], {
+  browserSync.init(["css/*.css", "js/*.js", "*.html", "sass/*.scss"], {
     server: {
       baseDir: "./"
     }
   });
 });
 
+// Monitor sass and pug files + sync with local server
+gulp.task('default', ['sass', 'pug'], function() {
+  browserSync.init({
+    server: "./"
+  });
+  gulp.watch("sass/**/*.scss", ['sass']);
+  gulp.watch("pug/**/*.pug", ['pug']);
+  gulp.watch("*.html").on('change', browserSync.reload);
+});
+
+// Convert SCSS to CSS
 gulp.task('sass', function() {
   gulp.src('sass/style.scss')
     .pipe(plumber())
@@ -73,12 +88,19 @@ gulp.task('sass', function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('css'))
+    .pipe(browserSync.stream())
 });
 
+// Convert .pug to HTML
 gulp.task('pug', function buildHTML() {
   gulp.src('pug/*.pug')
     .pipe(plumber())
     .pipe(pug({ pretty: true }))
-    .pipe(gulp.dest("."));
+    .pipe(gulp.dest("./"))
+    .pipe(browserSync.stream())
 });
+
+// #####################  //
+//     BrowserSync all files END   //
+// #################### //
