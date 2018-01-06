@@ -7,5 +7,13 @@ html
     link(rel="icon" href="favicon.ico" type="image/x-icon")
   body
     include blocks/header.pug
+    section.headline
+      h1.headline__title.visually-hidden.
+        Свадебное агенство 8DAYS
+      img.headline__logo(width="237" height="90" src="/img/svg/logo-headline.svg" alt="8Days")
+      p.headline__text.
+        Организация свадеб<br>с уникальным сценарием.<br>Дарим бесконечное счастье!
+      a.headline__link(href="#").
+        Услуги
     .display-none
       include ../img/svg/sprite.svg
