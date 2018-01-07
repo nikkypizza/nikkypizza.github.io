@@ -1,3 +1,7 @@
+////////////////////////
+//- INDEX.HTML -//
+//////////////////////
+
 mixin index__couples-card(title, subtitle, text)
   li.couples__card
     .couples__wrapper
@@ -15,3 +19,9 @@ mixin workflow__item(number, src, alt, text)
   li(class="workflow__item-"+number)
     img(class="workflow__item-img-"+number, width="140", height="140" src="img/svg/"+src alt=alt )
     p(class="workflow__item-text-"+number)=text
+
+mixin workers__item(name, width, height, alt, title, subtitle)
+  li(class="workers__item workers__item--"+name)
+    img(class="workers__item-img workers__item-img--"+name, width=width, height=height src="img/index/index-workers-sprite.png" alt=alt )
+    h3(class="workers__item-title")=title
+    span(class="workers__item-subtitle")=subtitle
