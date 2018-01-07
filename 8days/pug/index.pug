@@ -1,27 +1,32 @@
-include mixins.pug
+include global/mixins.pug
 doctype html
 html
   head
     meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
     title 8DAYS
     link(rel="stylesheet" href="css/style.css")
     link(rel="icon" href="favicon.ico" type="image/x-icon")
   body
     include blocks/header.pug
     section.headline
-      h1.headline__title.visually-hidden.
-        Свадебное агенство 8DAYS
-      img.headline__logo(width="237" height="90" src="/img/svg/logo-headline.svg" alt="8Days")
-      p.headline__text.
-        Организация свадеб<br>с уникальным сценарием.<br>Дарим бесконечное счастье!
-      a.headline__link(href="#").
-        Услуги
+      h1.headline__title.visually-hidden Свадебное агенство 8DAYS
+      img.headline__logo(width="237" height="90" src="img/svg/logo-headline.svg" alt="8Days")
+      p.headline__text Организация свадеб<br>с уникальным сценарием.<br>Дарим бесконечное счастье!
+      a.headline__link(href="#") Услуги
     section.couples
-      h2.couples__title.
-        Счастливые пары
+      h2.couples__title Счастливые пары
       ul
         +index__couples-card('Дима и Настя', '«Следуй за белым кроликом»', 'Большой стол, яркие краски, Чеширский кот среди гостей')
         +index__couples-card('Дима и Настя', '«Следуй за белым кроликом»', 'Большой стол, яркие краски, Чеширский кот среди гостей')
         +index__couples-card('Дима и Настя', '«Следуй за белым кроликом»', 'Большой стол, яркие краски, Чеширский кот среди гостей')
+      a.couples__link(href="#") Портфолио
+    section.workflow
+      h2.workflow__title Как мы работаем
+      ul.workflow__list
+        +workflow__item('1', 'cup.svg', 'Планируем Вашу свадьбу', 'Ваша заявка и встреча за чашечкой кофе')
+        +workflow__item('2', 'contract.svg', 'Приходим к соглашению', 'Подписание договора')
+        +workflow__item('3', 'calendar.svg', 'Планируем Ваш праздник', 'Подготовка к свадьбе')
+        +workflow__item('4', 'rings.svg', 'Реализуем Ваш праздник', 'Лучшая свадьба для Вас Ваших гостей')
     .display-none
       include ../img/svg/sprite.svg

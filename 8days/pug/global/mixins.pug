@@ -1,5 +1,17 @@
 mixin index__couples-card(title, subtitle, text)
   li.couples__card
-    h3.couples__card-title= title
-    h4.couples__card-subtitle=subtitle
-    p.couples__card-text= text
+    .couples__wrapper
+      h3.couples__card-title=title
+      h4.couples__card-subtitle=subtitle
+      p.couples__card-text=text
+      a.couples__card-link(href="#") Подробнее
+      ul.couples__color-palette
+        li.couples__color-1
+        li.couples__color-2
+        li.couples__color-3
+        li.couples__color-4
+
+mixin workflow__item(number, src, alt, text)
+  li(class="workflow__item-"+number)
+    img(class="workflow__item-img-"+number, width="140", height="140" src="img/svg/"+src alt=alt )
+    p(class="workflow__item-text-"+number)=text
