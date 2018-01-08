@@ -1,0 +1,23 @@
+include global/mixins.pug
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Портфолио - 8DAYS
+    link(rel="stylesheet" href="css/style.css")
+    link(rel="icon" href="favicon.ico" type="image/x-icon")
+  body
+    include blocks/header.pug
+    section.services
+      h1.visually-hidden Наши услуги
+      ul.services__list
+        +services__item('1','Свадьба под ключ', 'Наслаждайтесь самыми приятными хлопотами. Остальные заботы мы берем на себя.')
+        +services__item('2','Предложение', 'Этот день станет самым ярким событием в жизни вашей любимой!')
+        +services__item('3','Мальчишник и девичник', 'Проведите последний день холостой жизни ярко и незабываемо.')
+        +services__item('4','Свадебное путешествие', 'Путешествие, которое останется в памяти навсегда. Поэтому очень важно, чтобы оно прошло идеально.')
+        +services__item('5','Годовщина свадьбы', 'Испытайте вновь те же эмоции, тот же трепет и волнение.')
+        +services__item('6','Отдельные услуги', 'Под ваши задачи, бюджет и концепцию мероприятия мы порекомендуем все, что необходимо.')
+    include blocks/footer.pug
+    .display-none
+      include ../img/svg/sprite.svg
