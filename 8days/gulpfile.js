@@ -8,16 +8,26 @@ var imageminGuetzli = require('imagemin-guetzli');
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var rename = require("gulp-rename");
+var imageminPngquant = require('imagemin-pngquant');
 
-// Minify png + jpg and make them progressive
-gulp.task('imagemin', () =>
-  gulp.src('source/img-build/**/*.{png,jpg}')
+// Minify jpg and make them progressive
+gulp.task('jpegmin', () =>
+  gulp.src('source/img-build/**/*.jpg')
   .pipe(imagemin([
     imageminGuetzli({ quality: 85 }),
     imagemin.jpegtran({ progressive: true })
   ]))
   .pipe(gulp.dest('img'))
 );
+
+// Minify png
+gulp.task('pngmin', () =>
+  gulp.src('source/img-build/**/*.png')
+  .pipe(imagemin([
+    imageminPngquant({ quality: 45 })
+  ]))
+  .pipe(gulp.dest('img'))
+)
 
 // Generate webp from jpeg\png
 gulp.task("webp", function() {

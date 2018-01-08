@@ -20,10 +20,11 @@
     "browser-sync": "latest",
     "gulp-plumber": "latest",
     "gulp-bower-normalize": "latest",
-    "gulp-csso": "latest"
+    "gulp-csso": "latest",
+    "imagemin-pngquant": "latest"
   },
   "scripts": {
-    "devimages": "gulp imagemin && gulp webp && gulp svgo && gulp sprite"
+    "devimages": "gulp jpegemin && gulp pngmin && gulp webp && gulp svgo && gulp sprite"
   },
   "author": "nikkypizza",
   "license": "ISC"
