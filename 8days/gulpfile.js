@@ -32,7 +32,7 @@ gulp.task('pngmin', () =>
 // Generate webp from jpeg\png
 gulp.task("webp", function() {
   gulp.src("source/img-build/**/*.{png,jpg}")
-    .pipe(webp({ quality: 60 }))
+    .pipe(webp({ quality: 70 }))
     .pipe(gulp.dest("img/webp"));
 });
 
