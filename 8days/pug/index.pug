@@ -9,17 +9,17 @@ html(lang="ru")
     link(rel="icon" href="favicon.ico" type="image/x-icon")
   body
     include blocks/header.pug
-    section.headline
-      h1.headline__title.visually-hidden Свадебное агенство 8DAYS
-      img.headline__logo(width="237" height="90" src="img/svg/logo-headline.svg" alt="8Days")
-      p.headline__text Организация свадеб<br>с уникальным сценарием.<br>Дарим бесконечное счастье!
-      a.headline__link(href="#") Услуги
+    section.index-headline
+      h1.index-headline__title.visually-hidden Свадебное агенство 8DAYS
+      img.index-headline__logo(width="237" height="90" src="img/svg/logo-headline.svg" alt="8Days")
+      p.index-headline__text Организация свадеб<br>с уникальным сценарием.<br>Дарим бесконечное счастье!
+      a.index-headline__link(href="#") Услуги
     section.couples
       h2.couples__title Счастливые пары
       ul
-        +index__couples-card('Дима и Настя', '«Следуй за белым кроликом»', 'Большой стол, яркие краски, Чеширский кот среди гостей')
-        +index__couples-card('Дима и Настя', '«Следуй за белым кроликом»', 'Большой стол, яркие краски, Чеширский кот среди гостей')
-        +index__couples-card('Дима и Настя', '«Следуй за белым кроликом»', 'Большой стол, яркие краски, Чеширский кот среди гостей')
+        +couples-card('Дима и Настя', '«Следуй за белым кроликом»', 'Большой стол, яркие краски, Чеширский кот среди гостей')
+        +couples-card('Дима и Настя', '«Следуй за белым кроликом»', 'Большой стол, яркие краски, Чеширский кот среди гостей')
+        +couples-card('Дима и Настя', '«Следуй за белым кроликом»', 'Большой стол, яркие краски, Чеширский кот среди гостей')
       a.couples__link(href="#") Портфолио
     section.workflow
       h2.workflow__title Как мы работаем
