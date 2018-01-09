@@ -49,13 +49,45 @@ html(lang="ru")
           h3.features__title Развлечения
           p.features__text Гости собирали гигантскую Дженгу, фотографировались в специальной зоне на винтажном диване в компании Чеширского кота, с гигантскими карманными часами кролика и бутылочкой «Выпей меня». Помимо этого, в Welcome-зоне гостей ждали бутылочки, баночки и капкейки с различными цитатами из сказки.
         .features__fun-img
-      .slider
-        button.slider__btn.slider__btn--left
-        .slider__items
-          div.slider__slide.slider__slide--1
-          div.slider__slide.slider__slide--2
-          div.slider__slide.slider__slide--3
-        button.slider__btn.slider__btn--right
+    .slider
+      button.slider__btn.slider__btn--left
+      .slider__items
+        div.slider__slide.slider__slide--1
+        div.slider__slide.slider__slide--2
+        div.slider__slide.slider__slide--3
+      button.slider__btn.slider__btn--right
+    section.budget
+      h2.budget__title Бюджет
+      .budget__info
+        table
+          tr
+            th Свадебные наряды и аксессуары
+            th 100 000
+          tr
+            th Банкет
+            th 140 000
+          tr
+            th Автомобиль
+            th 50 000
+          tr
+            th Алкоголь
+            th 60 000
+          tr
+            th Музыка
+            th 35 000
+          tr
+            th Ведущий
+            th 30 000
+          tr
+            th Цветы, декор
+            th 40 000
+          tr
+            th Комиссия агенства
+            th 45 000
+        .budget__img
+          img(height="339" width="376" src="img/svg/graph.svg" alt="График расходов")
+          span.budget__img-amount 20%
+          span.budget__img-subtitle % от общего бюджета свадьбы
     include blocks/footer.pug
     .display-none
       include ../img/svg/sprite.svg
