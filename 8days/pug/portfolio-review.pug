@@ -88,6 +88,18 @@ html(lang="ru")
           img(height="339" width="376" src="img/svg/graph.svg" alt="График расходов")
           span.budget__img-amount 20%
           span.budget__img-subtitle % от общего бюджета свадьбы
+    section.comment
+      picture
+        source(type="image/webp" srcset="img/webp/portfolio-review/review-comment.webp")
+        img(class="comment__img", width="232", height="237" src="img/portfolio-review/review-comment.png" alt="Отзыв")
+      .comment__info
+        h2.comment__title Отзыв
+        p.comment__text
+          span.grand-quotation &#8221;
+          |Выражаем вам огромную благодарность за создание нашей сказочной свадьбы! Поволноваться получилось только за два дня до праздника, так как чувствовалось приближение торжества, все остальное время наш организатор Оксана подбирала, советовала, предлагала и огранизовывала встречи, наша задача была приехать и выбрать! Лучше и не придумаешь!! Место, фотограф, ведущий, оператор все то, о чем мы мечтали!
+          span.grand-quotation &#8221;
+        button.comment__button
+          span.comment__button-text Смотреть видео отзыв
     include blocks/footer.pug
     .display-none
       include ../img/svg/sprite.svg
