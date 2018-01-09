@@ -1,6 +1,6 @@
-////////////////////////
+//-/////////////////////
 //- INDEX.HTML -//
-//////////////////////
+//-///////////////////
 
 mixin couples-card(title, subtitle, text)
   li.couples__card
@@ -27,6 +27,7 @@ mixin workers__item(name, png, webp, width, height, alt, title, subtitle)
       img(class="workers__item-img workers__item-img--"+name, width=width, height=height src="img/index/index-workers-"+png alt=alt )
     h3(class="workers__item-title")=title
     span(class="workers__item-subtitle")=subtitle
+
 mixin services__item(number,title, text)
   li(class="services__item services__item--"+number)
     h2.services__item-title=title
