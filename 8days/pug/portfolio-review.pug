@@ -100,6 +100,16 @@ html(lang="ru")
           span.grand-quotation &#8221;
         button.comment__button
           span.comment__button-text Смотреть видео отзыв
+    section.feedback-portfolio
+      h2.feedback-portfolio__title Хотите такую свадьбу? <br> С радостью обсудим детали!
+      span.feedback-portfolio__subtitle Оставьте заявку, и мы Вам перезвоним.
+      form.feedback-portfolio__form(action="https://echo.htmlacademy.ru" method="get")
+        input.feedback-portfolio__input(type="text" name="name" placeholder="Ваше имя" required)
+        input.feedback-portfolio__input(type="tel" name="telephone-number" placeholder="Ваш телефон" required)
+        button.feedback-portfolio__submit(type="submit") Оставить заявку
+      .feedback-portfolio__links
+        a.feedback-portfolio__link(href="#") «Лето. Счастье. Любовь» <br> Свадьба Тани и Саши
+        a.feedback-portfolio__link(href="#") «Летнее очарование» <br> Свадьба Наташи и Антона
     include blocks/footer.pug
     .display-none
       include ../img/svg/sprite.svg
