@@ -1,0 +1,18 @@
+include global/mixins.pug
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Свадьба под ключ | 8DAYS
+    link(rel="stylesheet" href="css/style.css")
+    link(rel="icon" href="favicon.ico" type="image/x-icon")
+  body
+    include blocks/header.pug
+    div
+      a(href="#") Предложение
+      h1.wedding__title Свадьба под ключ
+      a(href="#") Мальчишник и девичник
+    include blocks/footer.pug
+    .display-none
+      include ../img/svg/sprite.svg
