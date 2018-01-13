@@ -9,10 +9,86 @@ html(lang="ru")
     link(rel="icon" href="favicon.ico" type="image/x-icon")
   body
     include blocks/header.pug
-    div
-      a(href="#") Предложение
-      h1.wedding__title Свадьба под ключ
-      a(href="#") Мальчишник и девичник
+    section.wedding-headline
+      a(href="#").wedding-headline__link Предложение
+      h1.wedding-headline__title Свадьба под ключ
+      a(href="#").wedding-headline__link Мальчишник и девичник
+    section.wedding-features
+      h2.wedding-features__title Услуги, которые вы получаете
+      ul.wedding-features__list
+        li.wedding-features__item
+          .wedding-features__img.wedding-features__img--1
+          .wedding-features__info
+            h3.wedding-features__subtitle Уникальный сценарий
+            span.wedding-features__text Разработка оригинальной концепции свадьбы под Ваш бюджет
+        li.wedding-features__item
+          .wedding-features__img.wedding-features__img--2
+          .wedding-features__info
+            h3.wedding-features__subtitle Развлечения
+            span.wedding-features__text Организация яркой и интересной программы
+        li.wedding-features__item.wedding-features__item--active
+          .wedding-features__img.wedding-features__img--3
+          .wedding-features__info
+            h3.wedding-features__subtitle Разработка меню
+            details
+              summary.wedding-features__item-list-title Что в себя включает?
+              ul.wedding-features__item-list
+                li.wedding-features__item-list-text Составление меню с учетом продолжительности банкета, количества гостей и их предпочтений
+                li.wedding-features__item-list-text Согласование времени подачи блюд
+                li.wedding-features__item-list-text Заказ и доставка спиртного
+                li.wedding-features__item-list-text Расчет стоимости банкета
+        li.wedding-features__item.wedding-features__item--active
+          .wedding-features__img.wedding-features__img--4
+          .wedding-features__info
+            h3.wedding-features__subtitle Место проведения
+            span.wedding-features__text Подбор и оформления места проведения торжества
+            details
+              summary.wedding-features__item-list-title Где можно провести свадьбу?
+              ul.wedding-features__item-list
+                li.wedding-features__item-list-text Выездные регистрации (на природе)
+                li.wedding-features__item-list-text Рестораны
+                li.wedding-features__item-list-text Усадьбы и особняки
+                li.wedding-features__item-list-text Теплоходы
+                li.wedding-features__item-list-text Шатры и веранды
+                li.wedding-features__item-list-text Лофты
+        li.wedding-features__item
+          .wedding-features__img.wedding-features__img--5
+          .wedding-features__info
+            h3.wedding-features__subtitle Свадебные стилисты
+            span.wedding-features__text Не оставят без внимания ни одну деталь свадебного образа
+            details
+              summary.wedding-features__item-list-title Над чем работают стилисты?
+        li.wedding-features__item
+          .wedding-features__img.wedding-features__img--6
+          .wedding-features__info
+            h3.wedding-features__subtitle Транспорт
+            span.wedding-features__text Организация свадебного кортежа
+        li.wedding-features__item
+          .wedding-features__img.wedding-features__img--7
+          .wedding-features__info
+            h3.wedding-features__subtitle Пригласительные
+            span.wedding-features__text Разработка дизайна и изготовление аксессуаров
+        li.wedding-features__item
+          .wedding-features__img.wedding-features__img--8
+          .wedding-features__info
+            h3.wedding-features__subtitle Love story
+            span.wedding-features__text Создание предсвадебной фотосессии
+        li.wedding-features__item
+          .wedding-features__img.wedding-features__img--9
+          .wedding-features__info
+            h3.wedding-features__subtitle Фотограф и видеооператор
+        li.wedding-features__item
+          .wedding-features__img.wedding-features__img--10
+          .wedding-features__info
+            h3.wedding-features__subtitle Подбор ведущего
+        li.wedding-features__item
+          .wedding-features__img.wedding-features__img--11
+          .wedding-features__info
+            h3.wedding-features__subtitle Постановка танца
+        li.wedding-features__item
+          .wedding-features__img.wedding-features__img--12
+          .wedding-features__info
+            h3.wedding-features__subtitle Свадебный торт
     include blocks/footer.pug
     .display-none
       include ../img/svg/sprite.svg
