@@ -1,5 +1,5 @@
-h1 {
-font-size: 23px;
-font-family: "Open Sans";
-text-transform: uppercase;
-}
+@import "global/normalize.scss";
+@import "global/font-face.scss";
+// @import "global/variables.scss";
+// @import "global/mixins.scss";
+@import "global/global.scss";
