@@ -1,0 +1,52 @@
+html {
+  background-image: url('img/circles-light.png')
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  transform: skewY(5deg);
+  transition: 0.1s linear;
+}
+
+h1:hover {
+  transform: skewY(0deg);
+  transition: 0.15s linear;
+}
+
+a {
+  margin: 10px auto;
+  padding: 30px 0;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.days {
+  background-image: url(8days/img/svg/icon-logo.svg);
+}
+
+.foo {
+  background-image: url(fooseshoes/img/svg/logo.svg);
+}
+
+.mishka {
+  background-image: url(mishka/img/logo-mobile.svg);
+}
+
+.sedona {
+  background-image: url(img/sedona-logo.svg);
+}
