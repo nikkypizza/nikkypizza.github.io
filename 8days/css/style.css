@@ -591,3 +591,19 @@ ul {
   font-family: "Open Sans - Light", "Arial", sans-serif;
   font-size: 14px;
   color: #ffffff; }
+
+.services__item-title {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 28px;
+  color: #ffffff; }
+
+.services__item-text {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff; }
+
+.services__item-link {
+  font-family: "Open Sans - Light", "Arial", sans-serif;
+  font-size: 14px;
+  color: #ffffff; }
