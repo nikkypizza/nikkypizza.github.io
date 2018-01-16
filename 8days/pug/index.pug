@@ -10,7 +10,7 @@ html(lang="ru")
   body
     include blocks/header.pug
     section.index-headline
-      h1.index-headline__title.visually-hidden Свадебное агенство 8DAYS
+      h1.visually-hidden Свадебное агенство 8DAYS
       img.index-headline__logo(width="237" height="90" src="img/svg/logo-headline.svg" alt="8Days")
       p.index-headline__text Организация свадеб<br>с уникальным сценарием.<br>Дарим бесконечное счастье!
       a.index-headline__link(href="#") Услуги
@@ -24,10 +24,10 @@ html(lang="ru")
     section.workflow
       h2.workflow__title Как мы работаем
       ul.workflow__list
-        +workflow__item('1', 'cup.svg', 'Планируем Вашу свадьбу', 'Ваша заявка и встреча за чашечкой кофе')
-        +workflow__item('2', 'contract.svg', 'Приходим к соглашению', 'Подписание договора')
-        +workflow__item('3', 'calendar.svg', 'Планируем Ваш праздник', 'Подготовка к свадьбе')
-        +workflow__item('4', 'rings.svg', 'Реализуем Ваш праздник', 'Лучшая свадьба для Вас и Ваших гостей')
+        +workflow__item('cup.svg', 'Планируем Вашу свадьбу', 'Ваша заявка и встреча за чашечкой кофе')
+        +workflow__item('contract.svg', 'Приходим к соглашению', 'Подписание договора')
+        +workflow__item('calendar.svg', 'Планируем Ваш праздник', 'Подготовка к свадьбе')
+        +workflow__item('rings.svg', 'Реализуем Ваш праздник', 'Лучшая свадьба для Вас и Ваших гостей')
     section.workers
       h2.workers__title На свадьбах для вас работают
       .workers__slider
@@ -35,11 +35,11 @@ html(lang="ru")
           svg(width="26" height="25")
             use(xlink:href="#icon-arrow-tip")
         ul.workers__list
-          +workers__item('urgant','urgant.png','urgant.webp','150', '155', 'Ургант', 'Иван Ургант', 'ведущий')
-          +workers__item('lazarev','lazarev.png','lazarev.webp','150', '155', 'Лазарев', 'Сергей Лазарев', 'певец')
-          +workers__item('rogov','rogov.png','rogov.webp','150', '165', 'Рогов', 'Александр Рогов', 'стилист')
-          +workers__item('druzhinin','druzhinin.png','druzhinin.webp','150', '160', 'Дружинин', 'Егор Дружинин', 'хореограф')
-          +workers__item('richardson','richardson.png','richardson.webp','150', '160', 'Ричардсон', 'Терри Ричардсон', 'фотограф')
+          +workers__item('urgant.png','urgant.webp','150', '155', 'Ургант', 'Иван Ургант', 'ведущий')
+          +workers__item('lazarev.png','lazarev.webp','150', '155', 'Лазарев', 'Сергей Лазарев', 'певец')
+          +workers__item('rogov.png','rogov.webp','150', '165', 'Рогов', 'Александр Рогов', 'стилист')
+          +workers__item('druzhinin.png','druzhinin.webp','150', '160', 'Дружинин', 'Егор Дружинин', 'хореограф')
+          +workers__item('richardson.png','richardson.webp','150', '160', 'Ричардсон', 'Терри Ричардсон', 'фотограф')
         button.workers__button.workers__button--right(title="Следующий")
           svg(width="26" height="25")
             use(xlink:href="#icon-arrow-tip")

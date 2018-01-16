@@ -395,24 +395,19 @@ template {
   display: none; }
 
 @font-face {
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   src: url("../fonts/OpenSans-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
   font-display: block; }
 
 @font-face {
-  font-family: "OpenSans-Light";
+  font-family: "Open Sans - Light";
   src: url("../fonts/OpenSans-Light.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
   font-display: block; }
 
 @font-face {
-  font-family: "OpenSans-Semibold";
+  font-family: "Open Sans - Semibold";
   src: url("../fonts/OpenSans-Semibold.woff") format("woff");
   font-weight: bold;
-  font-style: normal;
   font-display: block; }
 
 .display-none {
@@ -438,4 +433,137 @@ button {
   cursor: pointer; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
+
+.nav__link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 46px;
+  color: #937f7a; }
+
+.nav__phonenumer {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 46px;
+  color: #937f7a; }
+
+.nav__phonenumber--uppercase {
+  font-size: 25px; }
+
+.index-headline__text {
+  font-family: "Open Sans - Light", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.index-headline__link {
+  font-family: "Open Sans - Light", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: auto;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.couples__title {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #765474; }
+
+.couples__card-title {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 18px;
+  color: #ffffff; }
+
+.couples__card-subtitle {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 18px;
+  color: #ffffff; }
+
+.couples__card-text {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 14px;
+  color: #ffffff; }
+
+.couples__card-link {
+  font-family: "Open Sans - Light", "Arial", sans-serif;
+  font-size: 14px;
+  color: #ffd1d0; }
+
+.couples__link {
+  font-family: "Open Sans - Light", "Arial", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.workflow__title {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 72px;
+  color: #765474;
+  text-transform: uppercase; }
+
+.workflow__item-text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #765474; }
+
+.workers__title {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 72px;
+  color: #765474;
+  text-transform: uppercase; }
+
+.workers__item-title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #646464; }
+
+.workers__item-subtitle {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 20px;
+  color: #646464; }
+
+.feedback__title {
+  font-family: "Open Sans - Light", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.feedback__subtitle {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  color: #ffffff; }
+
+.feedback__input {
+  font-family: "Open Sans - Light", "Arial", sans-serif;
+  font-size: 14px; }
+
+.feedback__submit {
+  font-family: "Open Sans - Light", "Arial", sans-serif;
+  font-size: 14px;
+  color: #ffffff; }
+
+.footer__links-item a {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  color: #ffffff; }
+
+.footer__phonenumer {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 46px;
+  color: #937f7a; }
+
+.footer__phonenumber--uppercase {
+  font-size: 25px; }
