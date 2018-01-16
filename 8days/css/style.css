@@ -490,7 +490,7 @@ ul {
 .couples__card-link {
   font-family: "Open Sans - Light", "Arial", sans-serif;
   font-size: 14px;
-  color: #ffd1d0; }
+  color: #ffffff; }
 
 .couples__link {
   font-family: "Open Sans - Light", "Arial", sans-serif;
@@ -567,3 +567,27 @@ ul {
 
 .footer__phonenumber--uppercase {
   font-size: 25px; }
+
+.portfolio-headline__info-title {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.portfolio-headline__info-subtitle {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 46px;
+  color: #ffd1d0; }
+
+.portfolio-headline__info-text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff; }
+
+.portfolio-headline__info-link {
+  font-family: "Open Sans - Light", "Arial", sans-serif;
+  font-size: 14px;
+  color: #ffffff; }
