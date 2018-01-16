@@ -607,3 +607,47 @@ ul {
   font-family: "Open Sans - Light", "Arial", sans-serif;
   font-size: 14px;
   color: #ffffff; }
+
+.wedding-headline__link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 46px;
+  color: #e8715c;
+  opacity: 0.5; }
+
+.wedding-headline__title {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 72px;
+  color: #765474;
+  text-transform: uppercase; }
+
+.wedding-features__title {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 46px;
+  color: #765474; }
+
+.wedding-features__subtitle {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 46px;
+  color: #765474; }
+
+.wedding-features__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #765474; }
+
+.wedding-features__item-list-title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #765474; }
+
+.wedding-features__item-list-text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #765474; }
