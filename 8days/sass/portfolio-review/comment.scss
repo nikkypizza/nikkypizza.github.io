@@ -1,0 +1,22 @@
+.comment__title {
+  font-family: $font-semibold;
+  font-size: 28px;
+  line-height: 72px;
+  color: $font-color-heading;
+  text-transform: uppercase;
+}
+
+.comment__text {
+  font-family: $font-normal;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: italic;
+  color: #646464;
+}
+
+.comment__button-text {
+  font-family: $font-light;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}

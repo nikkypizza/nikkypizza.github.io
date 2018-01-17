@@ -436,6 +436,15 @@ ul {
   list-style: none;
   padding: 0; }
 
+.grand-quotation {
+  font-family: "Arial", sans-serif;
+  color: #ffd1d0;
+  font-size: 150px;
+  font-style: normal; }
+
+.grand-quotation--white {
+  color: #ffffff; }
+
 .nav__link {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -592,6 +601,26 @@ ul {
   font-size: 14px;
   color: #ffffff; }
 
+.portfolio-couples__card-title {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 18px;
+  color: #ffffff; }
+
+.portfolio-couples__card-subtitle {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 18px;
+  color: #ffffff; }
+
+.portfolio-couples__card-text {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 14px;
+  color: #ffffff; }
+
+.portfolio-couples__card-link {
+  font-family: "Open Sans - Light", "Arial", sans-serif;
+  font-size: 14px;
+  color: #ffffff; }
+
 .services__item-title {
   font-family: "Open Sans - Semibold", "Arial", sans-serif;
   font-size: 28px;
@@ -651,3 +680,138 @@ ul {
   font-size: 14px;
   line-height: 22px;
   color: #765474; }
+
+.review-headline__title {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 72px;
+  color: #765474;
+  text-transform: uppercase; }
+
+.review-headline__subtitle {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 46px;
+  color: #e8715c; }
+
+.review-headline__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #765474; }
+
+.review-headline__palette-text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 46px;
+  color: #765474; }
+
+.task__heading {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 72px;
+  color: #765474;
+  text-transform: uppercase; }
+
+.task__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 46px;
+  color: #765474; }
+
+.task__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 24px;
+  color: #646464; }
+
+.features__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 46px;
+  color: #765474; }
+
+.features__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #646464; }
+
+.budget__title {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 72px;
+  color: #765474;
+  text-transform: uppercase; }
+
+table {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #765474; }
+
+.table__value {
+  font-size: 20px; }
+
+.budget__img-amount {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 51px;
+  color: #f54a42; }
+
+.budget__img-subtitle {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: italic;
+  line-height: 46px;
+  font-size: 14px;
+  opacity: 0.5;
+  color: #e8715c; }
+
+.comment__title {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 72px;
+  color: #765474;
+  text-transform: uppercase; }
+
+.comment__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: italic;
+  color: #646464; }
+
+.comment__button-text {
+  font-family: "Open Sans - Light", "Arial", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase; }
+
+.feedback-portfolio__title {
+  font-family: "Open Sans - Semibold", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  color: #ffffff;
+  text-transform: uppercase; }
+
+.feedback-portfolio__subtitle {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  color: #ffffff; }
+
+.feedback-portfolio__input {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px; }
+
+.feedback-portfolio__submit {
+  font-family: "Open Sans - Light", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.feedback-portfolio__link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #fdd8d5; }

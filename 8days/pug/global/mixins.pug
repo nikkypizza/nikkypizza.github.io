@@ -15,6 +15,19 @@ mixin couples-card(title, subtitle, text)
         li.couples__color.couples__color--3
         li.couples__color.couples__color--4
 
+mixin port-couples-card(title, subtitle, text)
+  li.portfolio-couples__card
+    .portfolio-couples__wrapper
+      h3.portfolio-couples__card-title=title
+      h4.portfolio-couples__card-subtitle=subtitle
+      p.portfolio-couples__card-text=text
+      a.portfolio-couples__card-link(href="portfolio-review.html") Подробнее
+      ul.portfolio-couples__color-palette
+        li.portfolio-couples__color.portfolio-couples__color--1
+        li.portfolio-couples__color.portfolio-couples__color--2
+        li.portfolio-couples__color.portfolio-couples__color--3
+        li.portfolio-couples__color.portfolio-couples__color--4
+
 mixin workflow__item(src, alt, text)
   li(class="workflow__item")
     img(class="workflow__item-img", width="140", height="140" src="img/svg/"+src alt=alt )

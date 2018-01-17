@@ -1,0 +1,31 @@
+.feedback-portfolio__title {
+  font-family: $font-semibold;
+  font-size: 28px;
+  line-height: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.feedback-portfolio__subtitle {
+  font-family: $font-normal;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.feedback-portfolio__input {
+  font-family: $font-normal;
+  font-size: 14px;
+}
+
+.feedback-portfolio__submit {
+  font-family: $font-light;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.feedback-portfolio__link {
+  font-family: $font-normal;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #fdd8d5;
+}
