@@ -1,5 +1,23 @@
-h1 {
-font-size: 23px;
-font-family: "Open Sans";
-text-transform: uppercase;
-}
+@import "global/normalize.scss";
+@import "global/font-face.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/global.scss";
+@import "blocks/nav.scss";
+@import "index/index-headline.scss";
+@import "index/couples.scss";
+@import "index/workflow.scss";
+@import "index/workers.scss";
+@import "blocks/feedback.scss";
+@import "blocks/footer.scss";
+@import "portfolio/portfolio-headline.scss";
+@import "portfolio/portfolio-couples.scss";
+@import "services/services.scss";
+@import "services-wedding/wedding-headline.scss";
+@import "services-wedding/wedding-features.scss";
+@import "portfolio-review/review-headline.scss";
+@import "portfolio-review/task.scss";
+@import "portfolio-review/features.scss";
+@import "portfolio-review/budget.scss";
+@import "portfolio-review/comment.scss";
+@import "portfolio-review/feedback-portfolio.scss";

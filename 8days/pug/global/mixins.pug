@@ -10,21 +10,34 @@ mixin couples-card(title, subtitle, text)
       p.couples__card-text=text
       a.couples__card-link(href="portfolio-review.html") Подробнее
       ul.couples__color-palette
-        li.couples__color-1
-        li.couples__color-2
-        li.couples__color-3
-        li.couples__color-4
+        li.couples__color.couples__color--1
+        li.couples__color.couples__color--2
+        li.couples__color.couples__color--3
+        li.couples__color.couples__color--4
 
-mixin workflow__item(number, src, alt, text)
-  li(class="workflow__item-"+number)
-    img(class="workflow__item-img-"+number, width="140", height="140" src="img/svg/"+src alt=alt )
-    p(class="workflow__item-text-"+number)=text
+mixin port-couples-card(title, subtitle, text)
+  li.portfolio-couples__card
+    .portfolio-couples__wrapper
+      h3.portfolio-couples__card-title=title
+      h4.portfolio-couples__card-subtitle=subtitle
+      p.portfolio-couples__card-text=text
+      a.portfolio-couples__card-link(href="portfolio-review.html") Подробнее
+      ul.portfolio-couples__color-palette
+        li.portfolio-couples__color.portfolio-couples__color--1
+        li.portfolio-couples__color.portfolio-couples__color--2
+        li.portfolio-couples__color.portfolio-couples__color--3
+        li.portfolio-couples__color.portfolio-couples__color--4
 
-mixin workers__item(name, png, webp, width, height, alt, title, subtitle)
-  li(class="workers__item workers__item--"+name)
+mixin workflow__item(src, alt, text)
+  li(class="workflow__item")
+    img(class="workflow__item-img", width="140", height="140" src="img/svg/"+src alt=alt )
+    p(class="workflow__item-text")=text
+
+mixin workers__item(png, webp, width, height, alt, title, subtitle)
+  li(class="workers__item")
     picture
       source(type="image/webp" srcset="img/webp/index/index-workers-"+webp)
-      img(class="workers__item-img workers__item-img--"+name, width=width, height=height src="img/index/index-workers-"+png alt=alt )
+      img(class="workers__item-img", width=width, height=height src="img/index/index-workers-"+png alt=alt )
     h3(class="workers__item-title")=title
     span(class="workers__item-subtitle")=subtitle
 

@@ -1,0 +1,29 @@
+.review-headline__title {
+  font-family: $font-semibold;
+  font-size: 28px;
+  line-height: 72px;
+  color: $font-color-heading;
+  text-transform: uppercase;
+}
+
+.review-headline__subtitle {
+  font-family: $font-normal;
+  font-size: 22px;
+  line-height: 46px;
+  color: #e8715c;
+}
+
+.review-headline__text {
+  font-family: $font-normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: $font-color-heading;
+}
+
+.review-headline__palette-text {
+  font-family: $font-normal;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 46px;
+  color: #765474;
+}
