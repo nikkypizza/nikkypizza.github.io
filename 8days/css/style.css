@@ -445,6 +445,9 @@ ul {
 .grand-quotation--white {
   color: #ffffff; }
 
+.header {
+  background-color: #ffffff; }
+
 .nav__link {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -461,6 +464,10 @@ ul {
 .nav__phonenumber--uppercase {
   font-size: 25px; }
 
+.index-headline {
+  background-image: url("../img/index/index-hero.jpg");
+  background-repeat: no-repeat; }
+
 .index-headline__text {
   font-family: "Open Sans - Light", "Arial", sans-serif;
   font-size: 18px;
@@ -473,13 +480,29 @@ ul {
   font-size: 14px;
   line-height: auto;
   text-transform: uppercase;
-  color: #ffffff; }
+  color: #ffffff;
+  padding: 15px 45px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 2px #c25b4c;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e3715d), to(#eb6455));
+  background-image: linear-gradient(to bottom, #e3715d, #eb6455); }
 
 .couples__title {
   font-family: "Open Sans - Semibold", "Arial", sans-serif;
   font-size: 28px;
   text-transform: uppercase;
   color: #765474; }
+
+.couples__card {
+  background-image: url("../img/index/index-couples-sprite.jpg");
+  min-height: 300px;
+  width: 300px; }
+
+.couples__card--2 {
+  background-position: 0 600px; }
+
+.couples__card--3 {
+  background-position: 0 300px; }
 
 .couples__card-title {
   font-family: "Open Sans - Semibold", "Arial", sans-serif;
@@ -499,13 +522,41 @@ ul {
 .couples__card-link {
   font-family: "Open Sans - Light", "Arial", sans-serif;
   font-size: 14px;
-  color: #ffffff; }
+  color: #ffd1d0;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 13px 35px;
+  -o-border-image: linear-gradient(to top, #e97561, #ffcfcd) 1 round;
+     border-image: -webkit-gradient(linear, left bottom, left top, from(#e97561), to(#ffcfcd)) 1 round;
+     border-image: linear-gradient(to top, #e97561, #ffcfcd) 1 round; }
+
+.couples__color {
+  width: 20px;
+  height: 20px; }
+
+.couples__color--1 {
+  background-color: #93dfc4; }
+
+.couples__color--2 {
+  background-color: #df5839; }
+
+.couples__color--3 {
+  background-color: #ffe4de; }
+
+.couples__color--4 {
+  background-color: #58937e; }
 
 .couples__link {
   font-family: "Open Sans - Light", "Arial", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
-  color: #ffffff; }
+  color: #ffffff;
+  padding: 15px 107px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 2px #c25b4c;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e3715d), to(#eb6455));
+  background-image: linear-gradient(to bottom, #e3715d, #eb6455); }
 
 .workflow__title {
   font-family: "Open Sans - Semibold", "Arial", sans-serif;

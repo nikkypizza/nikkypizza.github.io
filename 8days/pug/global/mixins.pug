@@ -2,8 +2,8 @@
 //- INDEX.HTML -//
 //-///////////////////
 
-mixin couples-card(title, subtitle, text)
-  li.couples__card
+mixin couples-card(title, subtitle, text, number)
+  li(class="couples__card couples__card--"+number)
     .couples__wrapper
       h3.couples__card-title=title
       h4.couples__card-subtitle=subtitle
