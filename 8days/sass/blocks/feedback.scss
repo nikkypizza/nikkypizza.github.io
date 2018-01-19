@@ -1,3 +1,10 @@
+.feedback {
+  background-image: url(../img/index/feedback-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 441px;
+}
+
 .feedback__title {
   font-family: $font-light;
   font-size: 28px;
@@ -15,10 +22,20 @@
 .feedback__input {
   font-family: $font-light;
   font-size: 14px;
+  border-radius: 5px;
+  padding: 15px 0 15px 15px;
+  width: 300px;
 }
 
 .feedback__submit {
-  font-family: $font-light;
+  font-family: $font-normal;
   font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
   color: #ffffff;
+  background-image: linear-gradient(to bottom, #e3715d, #eb6455);
+  text-shadow: 1px 1px 2px #c25b4c;
+  width: 320px;
+  height: 40px;
 }

@@ -445,6 +445,9 @@ ul {
 .grand-quotation--white {
   color: #ffffff; }
 
+.current-page {
+  pointer-events: none; }
+
 .header {
   background-color: #ffffff; }
 
@@ -466,7 +469,9 @@ ul {
 
 .index-headline {
   background-image: url("../img/index/index-hero.jpg");
-  background-repeat: no-repeat; }
+  min-height: 513px;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .index-headline__text {
   font-family: "Open Sans - Light", "Arial", sans-serif;
@@ -558,6 +563,11 @@ ul {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e3715d), to(#eb6455));
   background-image: linear-gradient(to bottom, #e3715d, #eb6455); }
 
+.workflow {
+  background-image: url(../img/index/index-workflow-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center; }
+
 .workflow__title {
   font-family: "Open Sans - Semibold", "Arial", sans-serif;
   font-size: 28px;
@@ -592,6 +602,12 @@ ul {
   line-height: 20px;
   color: #646464; }
 
+.feedback {
+  background-image: url(../img/index/feedback-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 441px; }
+
 .feedback__title {
   font-family: "Open Sans - Light", "Arial", sans-serif;
   font-size: 28px;
@@ -606,12 +622,26 @@ ul {
 
 .feedback__input {
   font-family: "Open Sans - Light", "Arial", sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 15px 0 15px 15px;
+  width: 300px; }
 
 .feedback__submit {
-  font-family: "Open Sans - Light", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
-  color: #ffffff; }
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e3715d), to(#eb6455));
+  background-image: linear-gradient(to bottom, #e3715d, #eb6455);
+  text-shadow: 1px 1px 2px #c25b4c;
+  width: 320px;
+  height: 40px; }
+
+.footer {
+  background-color: #312b31; }
 
 .footer__links-item a {
   font-family: "Open Sans", "Arial", sans-serif;
