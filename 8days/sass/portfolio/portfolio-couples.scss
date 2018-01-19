@@ -1,3 +1,9 @@
+.portfolio-couples__card {
+  min-height: 300px;
+  width: 300px;
+  background-image: url("../img/portfolio/portfolio-sprite.jpg");
+}
+
 .portfolio-couples__card-title {
   font-family: $font-semibold;
   font-size: 18px;
@@ -20,4 +26,67 @@
   font-family: $font-light;
   font-size: 14px;
   color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 13px 35px;
+  border-image: linear-gradient(to top, #e97561, #ffcfcd) 1 round;
+}
+
+.portfolio-couples__card--2 {
+  background-position: 300px 0;
+}
+
+.portfolio-couples__card--3 {
+  background-position: 0 -300px;
+}
+
+.portfolio-couples__card--4 {
+  background-position: -300px -300px;
+}
+
+
+.portfolio-couples__card--5 {
+  background-position: 300px -300px;
+}
+
+.portfolio-couples__card--6 {
+  background-position: 0 -600px;
+}
+
+.portfolio-couples__card--7 {
+  background-position: -300px -600px;
+}
+
+.portfolio-couples__card--8 {
+  background-position: 300px -600px;
+}
+
+.portfolio-couples__card--9 {
+  background-position: 0 -900px;
+}
+
+.portfolio-couples__card--10 {
+  background-position: -300px 0;
+}
+
+.portfolio-couples__color {
+  width: 20px;
+  height: 20px;
+}
+
+.portfolio-couples__color--1 {
+  background-color: #93dfc4;
+}
+
+.portfolio-couples__color--2 {
+  background-color: #df5839;
+}
+
+.portfolio-couples__color--3 {
+  background-color: #ffe4de;
+}
+
+.portfolio-couples__color--4 {
+  background-color: #58937e;
 }

@@ -658,6 +658,12 @@ ul {
 .footer__phonenumber--uppercase {
   font-size: 25px; }
 
+.portfolio-headline {
+  background-image: url(../img/portfolio/portfolio-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 328px; }
+
 .portfolio-headline__info-title {
   font-family: "Open Sans - Semibold", "Arial", sans-serif;
   font-size: 28px;
@@ -680,7 +686,35 @@ ul {
 .portfolio-headline__info-link {
   font-family: "Open Sans - Light", "Arial", sans-serif;
   font-size: 14px;
-  color: #ffffff; }
+  color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 13px 35px;
+  -o-border-image: linear-gradient(to top, #e97561, #ffcfcd) 1 round;
+     border-image: -webkit-gradient(linear, left bottom, left top, from(#e97561), to(#ffcfcd)) 1 round;
+     border-image: linear-gradient(to top, #e97561, #ffcfcd) 1 round; }
+
+.portfolio-headline__info-color {
+  width: 20px;
+  height: 20px; }
+
+.portfolio-headline__info-color--1 {
+  background-color: #e7d752; }
+
+.portfolio-headline__info-color--2 {
+  background-color: #66723e; }
+
+.portfolio-headline__info-color--3 {
+  background-color: #ffe4de; }
+
+.portfolio-headline__info-color--4 {
+  background-color: #81b0d5; }
+
+.portfolio-couples__card {
+  min-height: 300px;
+  width: 300px;
+  background-image: url("../img/portfolio/portfolio-sprite.jpg"); }
 
 .portfolio-couples__card-title {
   font-family: "Open Sans - Semibold", "Arial", sans-serif;
@@ -700,7 +734,57 @@ ul {
 .portfolio-couples__card-link {
   font-family: "Open Sans - Light", "Arial", sans-serif;
   font-size: 14px;
-  color: #ffffff; }
+  color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 13px 35px;
+  -o-border-image: linear-gradient(to top, #e97561, #ffcfcd) 1 round;
+     border-image: -webkit-gradient(linear, left bottom, left top, from(#e97561), to(#ffcfcd)) 1 round;
+     border-image: linear-gradient(to top, #e97561, #ffcfcd) 1 round; }
+
+.portfolio-couples__card--2 {
+  background-position: 300px 0; }
+
+.portfolio-couples__card--3 {
+  background-position: 0 -300px; }
+
+.portfolio-couples__card--4 {
+  background-position: -300px -300px; }
+
+.portfolio-couples__card--5 {
+  background-position: 300px -300px; }
+
+.portfolio-couples__card--6 {
+  background-position: 0 -600px; }
+
+.portfolio-couples__card--7 {
+  background-position: -300px -600px; }
+
+.portfolio-couples__card--8 {
+  background-position: 300px -600px; }
+
+.portfolio-couples__card--9 {
+  background-position: 0 -900px; }
+
+.portfolio-couples__card--10 {
+  background-position: -300px 0; }
+
+.portfolio-couples__color {
+  width: 20px;
+  height: 20px; }
+
+.portfolio-couples__color--1 {
+  background-color: #93dfc4; }
+
+.portfolio-couples__color--2 {
+  background-color: #df5839; }
+
+.portfolio-couples__color--3 {
+  background-color: #ffe4de; }
+
+.portfolio-couples__color--4 {
+  background-color: #58937e; }
 
 .services__item-title {
   font-family: "Open Sans - Semibold", "Arial", sans-serif;
