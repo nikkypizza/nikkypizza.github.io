@@ -16,10 +16,10 @@ html(lang="ru")
         p.review-headline__text Как бы выглядела свадьба Алисы из Страны чудес? Большой стол, яркие краски, Чеширский кот среди гостей, маленькие бутылочки и сладости с надписями «выпей меня» и «съешь меня».
         div.review-headline__palette
           ul
-            li.review-headline__palette-color-1
-            li.review-headline__palette-color-2
-            li.review-headline__palette-color-3
-            li.review-headline__palette-color-4
+            li.review-headline__palette-color.review-headline__palette-color--1
+            li.review-headline__palette-color.review-headline__palette-color--2
+            li.review-headline__palette-color.review-headline__palette-color--3
+            li.review-headline__palette-color.review-headline__palette-color--4
           span.review-headline__palette-text цветовое решение свадьбы
     section.task
       h1.task__heading Стилистика свадьбы
@@ -39,9 +39,9 @@ html(lang="ru")
         .features__colors-info
           h3.features__title Цветовая палитра и декор
           p.features__text Цветовая палитра всего праздника была в ярких насыщенных тонах: приглашения — в желто-оранжевом цвете, декор и флористическое наполнение — в бирюзово-фиолетовых оттенках. В качестве декора на лужайке перед рестораном были выставлены на мольбертах в большом формате фотографии love-story, которую мы сделали заранее.
-        .features__colors-img
+        .features__img.features__img--colors
       article.features__location
-        .features__location-img
+        .features__img.features__img--location
         .features__location-info
           h3.features__title Место проведения
           p.features__text Первое, с чем мы определились, был ресторан — его мы выбрали с первой попытки, приехали и сразу влюбились в это тихое и очень живописное место.
@@ -49,16 +49,16 @@ html(lang="ru")
         .features__fun-info
           h3.features__title Развлечения
           p.features__text Гости собирали гигантскую Дженгу, фотографировались в специальной зоне на винтажном диване в компании Чеширского кота, с гигантскими карманными часами кролика и бутылочкой «Выпей меня». Помимо этого, в Welcome-зоне гостей ждали бутылочки, баночки и капкейки с различными цитатами из сказки.
-        .features__fun-img
+        .features__img.features__img--fun
     .slider
-      button.slider__btn.slider__btn--left
+      button(title="Предыдущее фото").slider__btn.slider__btn--left
         svg(width="26" height="25")
           use(xlink:href="#icon-arrow-tip")
       .slider__items
         div.slider__slide.slider__slide--1
         div.slider__slide.slider__slide--2
         div.slider__slide.slider__slide--3
-      button.slider__btn.slider__btn--right
+      button(title="Следующее фото").slider__btn.slider__btn--right
         svg(width="26" height="25")
           use(xlink:href="#icon-arrow-tip")
     section.budget

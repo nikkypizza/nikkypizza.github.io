@@ -1,3 +1,12 @@
+.review-headline {
+  background-image: url(../img/portfolio-review/review-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #CEDAE6;
+  min-height: 434px;
+  max-width: 1200px;
+}
+
 .review-headline__title {
   font-family: $font-semibold;
   font-size: 28px;
@@ -26,4 +35,25 @@
   font-size: 14px;
   line-height: 46px;
   color: #765474;
+}
+
+.review-headline__palette-color {
+  width: 20px;
+  height: 20px;
+}
+
+.review-headline__palette-color--1 {
+  background-color: #93dfc4;
+}
+
+.review-headline__palette-color--2 {
+  background-color: #df5839;
+}
+
+.review-headline__palette-color--3 {
+  background-color: #ffe4de;
+}
+
+.review-headline__palette-color--4 {
+  background-color: #58937e;
 }

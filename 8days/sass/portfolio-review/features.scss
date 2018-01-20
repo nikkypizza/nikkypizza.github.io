@@ -6,8 +6,32 @@
 }
 
 .features__text {
-    font-family: $font-normal;
+  font-family: $font-normal;
   font-size: 16px;
   line-height: 22px;
   color: #646464;
+}
+
+.features__img {
+  width: 467px;
+  height: 276px;
+  background-image: url("../img/portfolio-review/review-features-sprite.jpg");
+}
+
+.features__img--colors {
+  background-color: #7EB4BE;
+}
+
+.features__img--location {
+  background-position: 0 274px;
+  background-color: #BDBEAC;
+}
+
+.features__img--fun {
+  background-position: 0 548px;
+  background-color: #F0CB7D;
+}
+
+.features article:nth-child(2n) {
+  background-color: #fdf8f4;
 }

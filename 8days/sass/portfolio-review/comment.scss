@@ -1,3 +1,8 @@
+.comment {
+  background-image: url(../img/portfolio-review/comment-bg.jpg);
+  background-color: #FAD4D1;
+}
+
 .comment__title {
   font-family: $font-semibold;
   font-size: 28px;
@@ -12,6 +17,14 @@
   line-height: 24px;
   font-style: italic;
   color: #646464;
+}
+
+.comment__button {
+  border-radius: 5px;
+  text-shadow: 1px 1px 2px #c25b4c;
+  background-image: linear-gradient(to bottom, #e3715d, #eb6455);
+  padding: 16px 13px;
+  border: none;
 }
 
 .comment__button-text {

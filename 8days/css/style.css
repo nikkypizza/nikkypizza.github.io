@@ -499,6 +499,11 @@ ul {
   text-transform: uppercase;
   color: #765474; }
 
+.couples__wrapper {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(75, 51, 76, 0.7); }
+
 .couples__card {
   background-image: url("../img/index/index-couples-sprite.jpg");
   min-height: 300px;
@@ -807,6 +812,11 @@ ul {
 .portfolio-couples__color--4 {
   background-color: #58937e; }
 
+.portfolio-couples__wrapper {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(75, 51, 76, 0.7); }
+
 .services__item-title {
   font-family: "Open Sans - Semibold", "Arial", sans-serif;
   font-size: 28px;
@@ -867,6 +877,14 @@ ul {
   line-height: 22px;
   color: #765474; }
 
+.review-headline {
+  background-image: url(../img/portfolio-review/review-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #CEDAE6;
+  min-height: 434px;
+  max-width: 1200px; }
+
 .review-headline__title {
   font-family: "Open Sans - Semibold", "Arial", sans-serif;
   font-size: 28px;
@@ -893,6 +911,22 @@ ul {
   line-height: 46px;
   color: #765474; }
 
+.review-headline__palette-color {
+  width: 20px;
+  height: 20px; }
+
+.review-headline__palette-color--1 {
+  background-color: #93dfc4; }
+
+.review-headline__palette-color--2 {
+  background-color: #df5839; }
+
+.review-headline__palette-color--3 {
+  background-color: #ffe4de; }
+
+.review-headline__palette-color--4 {
+  background-color: #58937e; }
+
 .task__heading {
   font-family: "Open Sans - Semibold", "Arial", sans-serif;
   font-size: 28px;
@@ -913,6 +947,23 @@ ul {
   line-height: 24px;
   color: #646464; }
 
+.slider__slide {
+  width: 301px;
+  height: 218px;
+  margin: 17px;
+  background-image: url(../img/portfolio-review/review-slider-sprite.jpg); }
+
+.slider__slide--1 {
+  background-color: #81958A; }
+
+.slider__slide--2 {
+  background-position: 0 218px;
+  background-color: #BD8B4C; }
+
+.slider__slide--3 {
+  background-position: 0 436px;
+  background-color: #D63F60; }
+
 .features__title {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 22px;
@@ -924,6 +975,25 @@ ul {
   font-size: 16px;
   line-height: 22px;
   color: #646464; }
+
+.features__img {
+  width: 467px;
+  height: 276px;
+  background-image: url("../img/portfolio-review/review-features-sprite.jpg"); }
+
+.features__img--colors {
+  background-color: #7EB4BE; }
+
+.features__img--location {
+  background-position: 0 274px;
+  background-color: #BDBEAC; }
+
+.features__img--fun {
+  background-position: 0 548px;
+  background-color: #F0CB7D; }
+
+.features article:nth-child(2n) {
+  background-color: #fdf8f4; }
 
 .budget__title {
   font-family: "Open Sans - Semibold", "Arial", sans-serif;
@@ -955,6 +1025,10 @@ table {
   opacity: 0.5;
   color: #e8715c; }
 
+.comment {
+  background-image: url(../img/portfolio-review/comment-bg.jpg);
+  background-color: #FAD4D1; }
+
 .comment__title {
   font-family: "Open Sans - Semibold", "Arial", sans-serif;
   font-size: 28px;
@@ -969,11 +1043,26 @@ table {
   font-style: italic;
   color: #646464; }
 
+.comment__button {
+  border-radius: 5px;
+  text-shadow: 1px 1px 2px #c25b4c;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e3715d), to(#eb6455));
+  background-image: linear-gradient(to bottom, #e3715d, #eb6455);
+  padding: 16px 13px;
+  border: none; }
+
 .comment__button-text {
   font-family: "Open Sans - Light", "Arial", sans-serif;
   font-size: 14px;
   color: #ffffff;
   text-transform: uppercase; }
+
+.feedback-portfolio {
+  background-image: url(../img/index/feedback-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #967193;
+  min-height: 441px; }
 
 .feedback-portfolio__title {
   font-family: "Open Sans - Semibold", "Arial", sans-serif;
@@ -988,13 +1077,24 @@ table {
   color: #ffffff; }
 
 .feedback-portfolio__input {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px; }
+  font-family: "Open Sans - Light", "Arial", sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 15px 0 15px 15px;
+  width: 300px; }
 
 .feedback-portfolio__submit {
-  font-family: "Open Sans - Light", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
   text-transform: uppercase;
-  color: #ffffff; }
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e3715d), to(#eb6455));
+  background-image: linear-gradient(to bottom, #e3715d, #eb6455);
+  text-shadow: 1px 1px 2px #c25b4c;
+  width: 320px;
+  height: 40px; }
 
 .feedback-portfolio__link {
   font-family: "Open Sans", "Arial", sans-serif;
