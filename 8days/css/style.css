@@ -471,7 +471,8 @@ ul {
   background-image: url("../img/index/index-hero.jpg");
   min-height: 513px;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-color: #D2C9C4; }
 
 .index-headline__text {
   font-family: "Open Sans - Light", "Arial", sans-serif;
@@ -503,11 +504,16 @@ ul {
   min-height: 300px;
   width: 300px; }
 
+.couples__card--1 {
+  background-color: #968D56; }
+
 .couples__card--2 {
-  background-position: 0 600px; }
+  background-position: 0 600px;
+  background-color: #49792D; }
 
 .couples__card--3 {
-  background-position: 0 300px; }
+  background-position: 0 300px;
+  background-color: #799066; }
 
 .couples__card-title {
   font-family: "Open Sans - Semibold", "Arial", sans-serif;
@@ -566,7 +572,8 @@ ul {
 .workflow {
   background-image: url(../img/index/index-workflow-bg.jpg);
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-color: #E7D9CC; }
 
 .workflow__title {
   font-family: "Open Sans - Semibold", "Arial", sans-serif;
@@ -606,6 +613,7 @@ ul {
   background-image: url(../img/index/feedback-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #967193;
   min-height: 441px; }
 
 .feedback__title {
@@ -662,6 +670,7 @@ ul {
   background-image: url(../img/portfolio/portfolio-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #6d744a;
   min-height: 328px; }
 
 .portfolio-headline__info-title {
@@ -743,32 +752,44 @@ ul {
      border-image: -webkit-gradient(linear, left bottom, left top, from(#e97561), to(#ffcfcd)) 1 round;
      border-image: linear-gradient(to top, #e97561, #ffcfcd) 1 round; }
 
+.portfolio-couples__card--1 {
+  background-color: #7a6b63; }
+
 .portfolio-couples__card--2 {
-  background-position: 300px 0; }
+  background-position: 300px 0;
+  background-color: #8b9271; }
 
 .portfolio-couples__card--3 {
-  background-position: 0 -300px; }
+  background-position: 0 -300px;
+  background-color: #dfbbab; }
 
 .portfolio-couples__card--4 {
-  background-position: -300px -300px; }
+  background-position: -300px -300px;
+  background-color: #af8367; }
 
 .portfolio-couples__card--5 {
-  background-position: 300px -300px; }
+  background-position: 300px -300px;
+  background-color: #726259; }
 
 .portfolio-couples__card--6 {
-  background-position: 0 -600px; }
+  background-position: 0 -600px;
+  background-color: #b2a699; }
 
 .portfolio-couples__card--7 {
-  background-position: -300px -600px; }
+  background-position: -300px -600px;
+  background-color: #d2c7bb; }
 
 .portfolio-couples__card--8 {
-  background-position: 300px -600px; }
+  background-position: 300px -600px;
+  background-color: #4e5535; }
 
 .portfolio-couples__card--9 {
-  background-position: 0 -900px; }
+  background-position: 0 -900px;
+  background-color: #787a62; }
 
 .portfolio-couples__card--10 {
-  background-position: -300px 0; }
+  background-position: -300px 0;
+  background-color: #c7a886; }
 
 .portfolio-couples__color {
   width: 20px;
