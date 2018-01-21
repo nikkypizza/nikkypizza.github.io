@@ -32,11 +32,8 @@
   font-family: $font-light;
   font-size: 14px;
   color: #ffffff;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 10px;
   padding: 13px 35px;
-  border-image: linear-gradient(to top, #e97561, #ffcfcd) 1 round;
+  @include button-style-details;
 }
 
 .portfolio-headline__info-color {

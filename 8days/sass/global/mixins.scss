@@ -1,0 +1,14 @@
+@mixin button-style-main() {
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 5px;
+  text-shadow: 1px 1px 2px #c25b4c;
+  background-image: linear-gradient(to bottom, #e3715d, #eb6455);
+}
+
+@mixin button-style-details() {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  border-image: linear-gradient(to top, #e97561, #ffcfcd) 1 round;
+}

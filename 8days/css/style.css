@@ -485,9 +485,9 @@ ul {
   font-family: "Open Sans - Light", "Arial", sans-serif;
   font-size: 14px;
   line-height: auto;
+  padding: 15px 45px;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 15px 45px;
   border-radius: 5px;
   text-shadow: 1px 1px 2px #c25b4c;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e3715d), to(#eb6455));
@@ -539,10 +539,10 @@ ul {
   font-family: "Open Sans - Light", "Arial", sans-serif;
   font-size: 14px;
   color: #ffd1d0;
+  padding: 13px 35px;
   border-width: 1px;
   border-style: solid;
   border-radius: 10px;
-  padding: 13px 35px;
   -o-border-image: linear-gradient(to top, #e97561, #ffcfcd) 1 round;
      border-image: -webkit-gradient(linear, left bottom, left top, from(#e97561), to(#ffcfcd)) 1 round;
      border-image: linear-gradient(to top, #e97561, #ffcfcd) 1 round; }
@@ -568,11 +568,11 @@ ul {
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 15px 107px;
   border-radius: 5px;
   text-shadow: 1px 1px 2px #c25b4c;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e3715d), to(#eb6455));
-  background-image: linear-gradient(to bottom, #e3715d, #eb6455); }
+  background-image: linear-gradient(to bottom, #e3715d, #eb6455);
+  padding: 15px 107px; }
 
 .workflow {
   background-image: url(../img/index/index-workflow-bg.jpg);
@@ -643,15 +643,15 @@ ul {
 .feedback__submit {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
-  text-transform: uppercase;
-  border-radius: 5px;
   border: none;
-  color: #ffffff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e3715d), to(#eb6455));
-  background-image: linear-gradient(to bottom, #e3715d, #eb6455);
-  text-shadow: 1px 1px 2px #c25b4c;
   width: 320px;
-  height: 40px; }
+  height: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 5px;
+  text-shadow: 1px 1px 2px #c25b4c;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e3715d), to(#eb6455));
+  background-image: linear-gradient(to bottom, #e3715d, #eb6455); }
 
 .footer {
   background-color: #312b31; }
@@ -701,10 +701,10 @@ ul {
   font-family: "Open Sans - Light", "Arial", sans-serif;
   font-size: 14px;
   color: #ffffff;
+  padding: 13px 35px;
   border-width: 1px;
   border-style: solid;
   border-radius: 10px;
-  padding: 13px 35px;
   -o-border-image: linear-gradient(to top, #e97561, #ffcfcd) 1 round;
      border-image: -webkit-gradient(linear, left bottom, left top, from(#e97561), to(#ffcfcd)) 1 round;
      border-image: linear-gradient(to top, #e97561, #ffcfcd) 1 round; }
@@ -749,10 +749,10 @@ ul {
   font-family: "Open Sans - Light", "Arial", sans-serif;
   font-size: 14px;
   color: #ffffff;
+  padding: 13px 35px;
   border-width: 1px;
   border-style: solid;
   border-radius: 10px;
-  padding: 13px 35px;
   -o-border-image: linear-gradient(to top, #e97561, #ffcfcd) 1 round;
      border-image: -webkit-gradient(linear, left bottom, left top, from(#e97561), to(#ffcfcd)) 1 round;
      border-image: linear-gradient(to top, #e97561, #ffcfcd) 1 round; }
@@ -1044,6 +1044,8 @@ table {
   color: #646464; }
 
 .comment__button {
+  text-transform: uppercase;
+  color: #ffffff;
   border-radius: 5px;
   text-shadow: 1px 1px 2px #c25b4c;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e3715d), to(#eb6455));
@@ -1086,15 +1088,15 @@ table {
 .feedback-portfolio__submit {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
-  text-transform: uppercase;
-  border-radius: 5px;
   border: none;
-  color: #ffffff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e3715d), to(#eb6455));
-  background-image: linear-gradient(to bottom, #e3715d, #eb6455);
-  text-shadow: 1px 1px 2px #c25b4c;
   width: 320px;
-  height: 40px; }
+  height: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 5px;
+  text-shadow: 1px 1px 2px #c25b4c;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e3715d), to(#eb6455));
+  background-image: linear-gradient(to bottom, #e3715d, #eb6455); }
 
 .feedback-portfolio__link {
   font-family: "Open Sans", "Arial", sans-serif;
