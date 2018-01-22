@@ -32,3 +32,61 @@
   line-height: 22px;
   color: $font-color-heading;
 }
+
+.wedding-features__item--active {
+  background-color: #fdf8f4;
+}
+
+.wedding-features__img {
+  width: 148px;
+  height: 153px;
+  background-image: url(../img/services-wedding/wedding-sprite.png);
+}
+
+.wedding-features__img--1 {
+  background-position: 0 -459px;
+}
+
+.wedding-features__img--2 {
+  background-position: 0 -153px;
+}
+
+.wedding-features__img--3 {
+  background-position: 0 -306px;
+}
+
+.wedding-features__img--4 {
+  background-position: -296px -306px;
+}
+
+.wedding-features__img--5 {
+  background-position: -148px -459px;
+}
+
+.wedding-features__img--6 {
+  background-position: -296px -459px;
+}
+
+.wedding-features__img--7 {
+  background-position: -148px -153px;
+}
+
+.wedding-features__img--8 {
+  background-position: -296px -153px;
+}
+
+.wedding-features__img--9 {
+  background-position: -148px -306px;
+}
+
+.wedding-features__img--10 {
+  background-position: -296px 0;
+}
+
+.wedding-features__img--11 {
+  background-position: -148px 0;
+}
+
+.wedding-features__img--12 {
+  background-position: 0 0;
+}
