@@ -1,3 +1,4 @@
+
 .services__item-title {
   font-family: $font-semibold;
   font-size: 28px;
@@ -15,4 +16,33 @@
   font-family: $font-light;
   font-size: 14px;
   color: #ffffff;
+  padding: 13px 35px;
+  @include button-style-details;
+}
+
+.services__item {
+  width: 459px;
+  min-height: 300px;
+  background-image: url("../img/services/services-sprite.jpg");
+  background-color: #765E6E;
+}
+
+.services__item--1 {
+  background-position: 0 -300px;
+}
+
+.services__item--2 {
+  background-position: -459px -600px;
+}
+
+.services__item--3 {
+  background-position: 0 -600px;
+}
+
+.services__item--4 {
+  background-position: 459px -300px;
+}
+
+.services__item--6 {
+  background-position: 459px 0;
 }

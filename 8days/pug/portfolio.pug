@@ -8,12 +8,29 @@ html(lang="ru")
     link(rel="stylesheet" href="css/style.css")
     link(rel="icon" href="favicon.ico" type="image/x-icon")
   body
-    include blocks/header.pug
+    header.header
+      nav.nav
+        ul.nav__list
+         li.nav__list-item
+          a.nav__link(href="services.html") Услуги
+         li.nav__list-item
+          a.nav__link.current-page(href="portfolio.html"  tabindex="-1") Портфолио
+         li.nav__list-item
+          a.nav__link(href="#") Отзывы
+         li.nav__list-item
+          a.nav__link(href="#") О Нас
+      a.nav__logo(href="index.html" title="На главную")
+        img(width="132" height="33" src="img/svg/logo.svg" alt="8DAYS")
+      .nav__contacts
+        a.nav__link(href="#") Контакты
+        .nav__contacts-phone
+          a.nav__phonenumer(href="tel:88122162432") 8 (812)
+            span.nav__phonenumber.nav__phonenumber--uppercase  216 24 32
     section.portfolio-headline
       .portfolio-headline__info
         h1.portfolio-headline__info-title Наташа и Антон
         h2.portfolio-headline__info-subtitle «Летнее очарование»
-        p.portfolio-headline__info-text Лето, солнце, лесная свежесть, двое влюблённых, которые решили провести весте всю жизнь.
+        p.portfolio-headline__info-text Лето, солнце, лесная свежесть, двое влюблённых, которые решили провести вместе всю жизнь.
         a.portfolio-headline__info-link(href="portfolio-review.html") Подробнее
         ul.portfolio-headline__info-colors
           li.portfolio-headline__info-color.portfolio-headline__info-color--1
@@ -22,16 +39,16 @@ html(lang="ru")
           li.portfolio-headline__info-color.portfolio-headline__info-color--4
     section.portfolio-couples
       ul.portfolio-couples__list
-        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций')
-        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций')
-        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций')
-        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций')
-        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций')
-        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций')
-        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций')
-        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций')
-        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций')
-        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций')
+        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций', '1')
+        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций', '2')
+        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций', '3')
+        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций', '4')
+        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций', '5')
+        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций', '6')
+        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций', '7')
+        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций', '8')
+        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций', '9')
+        +port-couples-card('Таня и Саша','«Лето. Счастье. Любовь»','Яркая, весенняя, заводная! Летний взрыв положительных эмоций', '10')
     include blocks/footer.pug
     .display-none
       include ../img/svg/sprite.svg

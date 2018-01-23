@@ -2,8 +2,8 @@
 //- INDEX.HTML -//
 //-///////////////////
 
-mixin couples-card(title, subtitle, text)
-  li.couples__card
+mixin couples-card(title, subtitle, text, number)
+  li(class="couples__card couples__card--"+number)
     .couples__wrapper
       h3.couples__card-title=title
       h4.couples__card-subtitle=subtitle
@@ -15,8 +15,8 @@ mixin couples-card(title, subtitle, text)
         li.couples__color.couples__color--3
         li.couples__color.couples__color--4
 
-mixin port-couples-card(title, subtitle, text)
-  li.portfolio-couples__card
+mixin port-couples-card(title, subtitle, text, number)
+  li(class="portfolio-couples__card portfolio-couples__card--"+number)
     .portfolio-couples__wrapper
       h3.portfolio-couples__card-title=title
       h4.portfolio-couples__card-subtitle=subtitle

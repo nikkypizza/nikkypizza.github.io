@@ -3,6 +3,7 @@
 @import "global/variables.scss";
 @import "global/mixins.scss";
 @import "global/global.scss";
+@import "blocks/header.scss";
 @import "blocks/nav.scss";
 @import "index/index-headline.scss";
 @import "index/couples.scss";
@@ -17,6 +18,7 @@
 @import "services-wedding/wedding-features.scss";
 @import "portfolio-review/review-headline.scss";
 @import "portfolio-review/task.scss";
+@import "portfolio-review/slider.scss";
 @import "portfolio-review/features.scss";
 @import "portfolio-review/budget.scss";
 @import "portfolio-review/comment.scss";
