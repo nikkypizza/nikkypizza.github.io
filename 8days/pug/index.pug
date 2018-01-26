@@ -8,7 +8,24 @@ html(lang="ru")
     link(rel="stylesheet" href="css/style.css")
     link(rel="icon" href="favicon.ico" type="image/x-icon")
   body
-    include blocks/header.pug
+    header.header
+      nav.nav
+        ul.nav__list
+         li.nav__list-item
+          a.nav__link(href="services.html") Услуги
+         li.nav__list-item
+          a.nav__link(href="portfolio.html") Портфолио
+         li.nav__list-item
+          a.nav__link(href="#") Отзывы
+         li.nav__list-item
+          a.nav__link(href="#") О Нас
+      a.nav__logo.current-page(href="index.html" title="На главную" tabindex="-1")
+        img(width="132" height="33" src="img/svg/logo.svg" alt="8DAYS")
+      .nav__contacts
+        a.nav__link(href="#") Контакты
+        .nav__contacts-phone
+          a.nav__phonenumer(href="tel:88122162432") 8 (812)
+            span.nav__phonenumber.nav__phonenumber--uppercase  216 24 32
     section.index-headline
       h1.visually-hidden Свадебное агенство 8DAYS
       img.index-headline__logo(width="237" height="90" src="img/svg/logo-headline.svg" alt="8Days")
@@ -17,9 +34,9 @@ html(lang="ru")
     section.couples
       h2.couples__title Счастливые пары
       ul
-        +couples-card('Дима и Настя', '«Следуй за белым кроликом»', 'Большой стол, яркие краски, Чеширский кот среди гостей')
-        +couples-card('Дима и Настя', '«Следуй за белым кроликом»', 'Большой стол, яркие краски, Чеширский кот среди гостей')
-        +couples-card('Дима и Настя', '«Следуй за белым кроликом»', 'Большой стол, яркие краски, Чеширский кот среди гостей')
+        +couples-card('Дима и Настя', '«Следуй за белым кроликом»', 'Большой стол, яркие краски, Чеширский кот среди гостей', '1')
+        +couples-card('Дима и Настя', '«Следуй за белым кроликом»', 'Большой стол, яркие краски, Чеширский кот среди гостей', '2')
+        +couples-card('Дима и Настя', '«Следуй за белым кроликом»', 'Большой стол, яркие краски, Чеширский кот среди гостей', '3')
       a.couples__link(href="#") Портфолио
     section.workflow
       h2.workflow__title Как мы работаем

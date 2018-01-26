@@ -1,3 +1,11 @@
+.portfolio-headline {
+  background-image: url(../img/portfolio/portfolio-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #6d744a;
+  min-height: 328px;
+}
+
 .portfolio-headline__info-title {
   font-family: $font-semibold;
   font-size: 28px;
@@ -24,4 +32,27 @@
   font-family: $font-light;
   font-size: 14px;
   color: #ffffff;
+  padding: 13px 35px;
+  @include button-style-details;
+}
+
+.portfolio-headline__info-color {
+  width: 20px;
+  height: 20px;
+}
+
+.portfolio-headline__info-color--1 {
+  background-color: #e7d752;
+}
+
+.portfolio-headline__info-color--2 {
+  background-color: #66723e;
+}
+
+.portfolio-headline__info-color--3 {
+  background-color: #ffe4de;
+}
+
+.portfolio-headline__info-color--4 {
+  background-color: #81b0d5;
 }

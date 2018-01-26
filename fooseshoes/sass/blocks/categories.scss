@@ -17,6 +17,7 @@
   min-height: 180px;
   width: 300px;
   display: flex;
+  background-image: url('../img/categories-sprite.png');
 }
 
 .categories__list-item-title {
@@ -30,6 +31,7 @@
   margin: 0 auto;
 
   & a {
+    padding: 18px 23px;
     color: $font-light-color;
     transition: 0.1s linear;
 
@@ -45,18 +47,22 @@
   }
 }
 
-.categories__list-item:nth-of-type(2) .categories__list-item-title {
-  padding: 0 23px;
+.categories__list-item:nth-of-type(1) .categories__list-item-title a {
+  padding: 18px 43px;
+}
+
+.categories__list-item:nth-of-type(2) .categories__list-item-title a {
+  padding: 18px 23px;
 }
 
 .categories__list-item--sale {
-  background-image: url('../img/on-sale.jpg');
+  background-position: 0 -180px;
 }
 
 .categories__list-item--offers {
-  background-image: url('../img/special-offer.jpg');
+  background-position: 0 -360px;
 }
 
 .categories__list-item--must-have {
-  background-image: url('../img/must-have.jpg');
+  background-position: 0 0;
 }

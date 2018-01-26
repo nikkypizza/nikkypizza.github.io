@@ -1,3 +1,9 @@
+.portfolio-couples__card {
+  min-height: 300px;
+  width: 300px;
+  background-image: url("../img/portfolio/portfolio-sprite.jpg");
+}
+
 .portfolio-couples__card-title {
   font-family: $font-semibold;
   font-size: 18px;
@@ -20,4 +26,83 @@
   font-family: $font-light;
   font-size: 14px;
   color: #ffffff;
+  padding: 13px 35px;
+  @include button-style-details;
+}
+
+.portfolio-couples__card--1 {
+background-color: #7a6b63;
+}
+
+.portfolio-couples__card--2 {
+  background-position: 300px 0;
+  background-color: #8b9271;
+}
+
+.portfolio-couples__card--3 {
+  background-position: 0 -300px;
+  background-color: #dfbbab;
+}
+
+.portfolio-couples__card--4 {
+  background-position: -300px -300px;
+  background-color: #af8367;
+}
+
+
+.portfolio-couples__card--5 {
+  background-position: 300px -300px;
+  background-color: #726259;
+}
+
+.portfolio-couples__card--6 {
+  background-position: 0 -600px;
+  background-color: #b2a699;
+}
+
+.portfolio-couples__card--7 {
+  background-position: -300px -600px;
+  background-color: #d2c7bb;
+}
+
+.portfolio-couples__card--8 {
+  background-position: 300px -600px;
+  background-color: #4e5535;
+}
+
+.portfolio-couples__card--9 {
+  background-position: 0 -900px;
+  background-color: #787a62;
+}
+
+.portfolio-couples__card--10 {
+  background-position: -300px 0;
+  background-color: #c7a886;
+}
+
+.portfolio-couples__color {
+  width: 20px;
+  height: 20px;
+}
+
+.portfolio-couples__color--1 {
+  background-color: #93dfc4;
+}
+
+.portfolio-couples__color--2 {
+  background-color: #df5839;
+}
+
+.portfolio-couples__color--3 {
+  background-color: #ffe4de;
+}
+
+.portfolio-couples__color--4 {
+  background-color: #58937e;
+}
+
+.portfolio-couples__wrapper {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(75, 51, 76, 0.7);
 }

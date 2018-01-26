@@ -1,0 +1,20 @@
+.slider__slide {
+  width: 301px;
+  height: 218px;
+  margin: 17px;
+  background-image: url(../img/portfolio-review/review-slider-sprite.jpg);
+}
+
+.slider__slide--1 {
+  background-color: #81958A;
+}
+
+.slider__slide--2 {
+  background-position: 0 218px;
+  background-color:#BD8B4C;
+}
+
+.slider__slide--3 {
+  background-position: 0 436px;
+  background-color: #D63F60;
+}
