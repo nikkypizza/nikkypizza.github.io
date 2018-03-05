@@ -22,12 +22,14 @@
 
   function removeDisplayNoneOnWindowResize (width) {
     if (width.matches) {
-      // Возвращает элементам header display:flex. Это необходимо, ибо эти элементы не являются частью nav и сложно перестраиваются на ширинах > 768px
+      // Возвращает элементам header display:flex. Это необходимо, ибо эти элементы не являются частью nav и сложно перестраиваются на ширинах > 768px и класс хедера переписывает 'display: none' на 'display: flex'
       headerSearch.classList.remove ('display-none');
       headerSearch.classList.add ('page-header__search-wrapper');
 
       headerCart.classList.remove ('display-none');
       headerCart.classList.add ('page-header__cart-wrapper');
+
+      nav.classList.remove('display-none');
     } else {
       // Приводит меню в закрытый вид после того, как ширина экрана меняется на минимальную
       headerSearch.classList.add ('display-none');
