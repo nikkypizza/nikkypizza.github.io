@@ -13,7 +13,7 @@
 }
 
 .extra__block-title {
-  font-family: $font-bold;
+  font-weight: 800;
   font-size: 14px;
   line-height: 40px;
   color: $font-dark-color;
@@ -26,7 +26,7 @@
 }
 
 .extra__block-text {
-  font-family: $font-normal;
+  font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   margin: 0;
@@ -38,7 +38,8 @@
 }
 
 .extra__testimonials-author {
-  font-family: $font-italic;
+  font-weight: 500;
+  font-style: italic;
   display: inline-block;
   font-size: 12px;
   line-height: 16px;
@@ -63,7 +64,6 @@
 }
 
 .extra__news-title {
-  font-family: $font-normal;
   font-size: 14px;
   line-height: 16px;
   margin: 0;
@@ -85,7 +85,7 @@
 }
 
 .extra__news-date {
-  font-family: $font-bold;
+  font-weight: 800;
   font-size: 13px;
   line-height: 12px;
   padding: 6px 0;

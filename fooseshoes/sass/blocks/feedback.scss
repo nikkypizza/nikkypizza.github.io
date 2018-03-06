@@ -10,7 +10,8 @@
 }
 
 .feedback__email-input {
-  font-family: $font-italic;
+  font-weight: 500;
+  font-style: italic;
   background-color: $slider-bg-color;
   border: none;
   font-size: 12px;
@@ -35,6 +36,6 @@
   }
 }
 
-.feedback__email-btn svg{
+.feedback__email-btn svg {
   fill: $slider-bg-color;
 }

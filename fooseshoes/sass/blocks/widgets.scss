@@ -8,14 +8,15 @@
 }
 
 .widgets__title {
-  font-family: $font-normal;
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: $widget-title-color;
 }
 
 .widgets__text {
-  font-family: $font-italic;
+  font-weight: 500;
+  font-style: italic;
   font-size: 12px;
   line-height: 18px;
   padding-right: 6px;
@@ -29,11 +30,11 @@
 }
 
 .widgets__twitter-date {
-  font-family: $font-italic;
+  font-weight: 500;
+  font-style: italic;
   font-size: 12px;
   line-height: 18px;
   color: $date-font-color;
-  font-weight: bold;
 }
 
 .widgets__twitter-id {

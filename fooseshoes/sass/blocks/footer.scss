@@ -3,7 +3,6 @@
 }
 
 .footer__copyright {
-  font-family: $font-normal;
   font-size: 12px;
   line-height: 18px;
   margin-right: auto;
@@ -24,7 +23,7 @@
 }
 
 .footer__links-a {
-  font-family: $font-normal;
+  font-weight: 500;
   padding: 7px 0px 7px 6px;
   font-size: 12px;
   line-height: 25px;

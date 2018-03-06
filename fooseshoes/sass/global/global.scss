@@ -4,6 +4,7 @@
 
 body {
   min-width: 1100px;
+  font-family: $font-Aller;
 }
 
 a {
@@ -22,7 +23,12 @@ a {
 }
 
 button {
+  font-family: $font-Aller;
   cursor: pointer;
+}
+
+input {
+  font-family: $font-Aller;
 }
 
 svg {

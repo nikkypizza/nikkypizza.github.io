@@ -395,38 +395,39 @@ template {
   display: none; }
 
 @font-face {
+  font-family: 'Aller';
+  src: url("../fonts/Aller-Light.ttf.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: block; }
+
+@font-face {
   font-family: "Aller";
   src: url("../fonts/Aller.ttf.woff") format("woff");
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
   font-display: block; }
 
 @font-face {
-  font-family: 'Aller-Light';
-  src: url("../fonts/Aller-Light.ttf.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Aller-Bold';
-  src: url("../fonts/Aller-Bold.ttf.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Aller-Italic';
+  font-family: 'Aller';
   src: url("../fonts/Aller-Italic.ttf.woff") format("woff");
-  font-weight: normal;
+  font-weight: 500;
   font-style: italic;
+  font-display: block; }
+
+@font-face {
+  font-family: 'Aller';
+  src: url("../fonts/Aller-Bold.ttf.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
   font-display: block; }
 
 .display-none {
   display: none; }
 
 body {
-  min-width: 1100px; }
+  min-width: 1100px;
+  font-family: "Aller", "Arial", sans-serif; }
 
 a {
   text-decoration: none; }
@@ -442,7 +443,11 @@ a {
   border: 0; }
 
 button {
+  font-family: "Aller", "Arial", sans-serif;
   cursor: pointer; }
+
+input {
+  font-family: "Aller", "Arial", sans-serif; }
 
 svg {
   fill: #7d7d7d; }
@@ -515,7 +520,7 @@ svg {
     fill: #2f8769; }
 
 .header__login-register {
-  font-family: "Aller", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 11px;
   line-height: 25px;
   color: #7e7e7e;
@@ -535,7 +540,7 @@ svg {
 .nav__list {
   list-style: none;
   padding: 0;
-  font-family: "Aller", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 25px;
   display: -webkit-box;
@@ -601,7 +606,7 @@ svg {
   border-right: 1px solid #cccccc; }
 
 .user__stat button {
-  font-family: "Aller-Bold", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 12px;
   line-height: 15px;
   height: 20px;
@@ -645,17 +650,16 @@ svg {
   width: 450px; }
 
 .promo__info-title {
-  font-family: "Aller-Light", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 40px;
   line-height: 40px;
   color: #242424;
   margin: 14px 0 0 0; }
 
 .promo__info-details {
-  font-family: "Aller-Light", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 20px;
   line-height: 25px;
-  font-weight: 600;
   max-width: 390px;
   color: #242424;
   margin: 6px 0 0 0; }
@@ -663,7 +667,7 @@ svg {
 .tag-price {
   display: block;
   text-align: center;
-  font-family: "Aller-Bold", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 13px;
   line-height: 25px;
   width: 68px;
@@ -772,7 +776,7 @@ svg {
 
 .slider__list-item-title {
   color: #7b7b7b;
-  font-family: "Aller", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 18px;
   line-height: 25px;
   margin: 0;
@@ -784,7 +788,7 @@ svg {
 
 .slider__list-item-info {
   color: #545454;
-  font-family: "Aller", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 12px;
   line-height: 25px;
   margin: -4px 0 0 0;
@@ -846,8 +850,7 @@ svg {
 
 .categories__list-item-title {
   background-color: rgba(36, 36, 36, 0.8);
-  font-family: "Aller-Light", "Arial", sans-serif;
-  font-weight: normal;
+  font-weight: 100;
   font-size: 25px;
   -ms-flex-item-align: center;
       align-self: center;
@@ -889,7 +892,7 @@ svg {
   display: flex; }
 
 .item-group-header--title {
-  font-family: "Aller-Light", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 25px;
   line-height: 60px;
   color: #242424;
@@ -931,7 +934,7 @@ svg {
     transition: 0.2s linear; }
 
 .item-card__info {
-  font-family: "Aller", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 18px;
   line-height: 25px;
   display: -webkit-box;
@@ -967,7 +970,7 @@ svg {
       flex-wrap: wrap; }
 
 .tag-sale {
-  font-family: "Aller-Bold", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 13px;
   line-height: 25px;
   background-color: #242424;
@@ -978,7 +981,7 @@ svg {
   padding: 21px 7px; }
 
 .show-all-btn {
-  font-family: "Aller-Bold", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 14px;
   line-height: 25px;
   -ms-flex-item-align: center;
@@ -1015,7 +1018,7 @@ svg {
       flex-wrap: wrap; }
 
 .tag-stock {
-  font-family: "Aller-Bold", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 13px;
   line-height: 15px;
   background-color: #f27e4b;
@@ -1038,7 +1041,7 @@ svg {
   width: 220px; }
 
 .extra__block-title {
-  font-family: "Aller-Bold", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 14px;
   line-height: 40px;
   color: #242424;
@@ -1049,7 +1052,7 @@ svg {
   color: #242424; }
 
 .extra__block-text {
-  font-family: "Aller", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   margin: 0;
@@ -1059,7 +1062,8 @@ svg {
   width: 220px; }
 
 .extra__testimonials-author {
-  font-family: "Aller-Italic", "Arial", sans-serif;
+  font-weight: 500;
+  font-style: italic;
   display: inline-block;
   font-size: 12px;
   line-height: 16px;
@@ -1082,7 +1086,6 @@ svg {
   margin: 8px 0 14px 18px; }
 
 .extra__news-title {
-  font-family: "Aller", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   margin: 0;
@@ -1099,7 +1102,7 @@ svg {
     outline: none; }
 
 .extra__news-date {
-  font-family: "Aller-Bold", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 13px;
   line-height: 12px;
   padding: 6px 0;
@@ -1118,13 +1121,14 @@ svg {
   width: 260px; }
 
 .widgets__title {
-  font-family: "Aller", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #7d7d7d; }
 
 .widgets__text {
-  font-family: "Aller-Italic", "Arial", sans-serif;
+  font-weight: 500;
+  font-style: italic;
   font-size: 12px;
   line-height: 18px;
   padding-right: 6px;
@@ -1136,11 +1140,11 @@ svg {
   padding-left: 10px; }
 
 .widgets__twitter-date {
-  font-family: "Aller-Italic", "Arial", sans-serif;
+  font-weight: 500;
+  font-style: italic;
   font-size: 12px;
   line-height: 18px;
-  color: #c4c5bf;
-  font-weight: bold; }
+  color: #c4c5bf; }
 
 .widgets__twitter-id {
   color: #57c5a0; }
@@ -1183,7 +1187,8 @@ svg {
   height: 36px; }
 
 .feedback__email-input {
-  font-family: "Aller-Italic", "Arial", sans-serif;
+  font-weight: 500;
+  font-style: italic;
   background-color: #2e2e2e;
   border: none;
   font-size: 12px;
@@ -1294,7 +1299,6 @@ svg {
   background-color: #2e2e2e; }
 
 .footer__copyright {
-  font-family: "Aller", "Arial", sans-serif;
   font-size: 12px;
   line-height: 18px;
   margin-right: auto;
@@ -1316,7 +1320,7 @@ svg {
   cursor: default; }
 
 .footer__links-a {
-  font-family: "Aller", "Arial", sans-serif;
+  font-weight: 500;
   padding: 7px 0px 7px 6px;
   font-size: 12px;
   line-height: 25px;

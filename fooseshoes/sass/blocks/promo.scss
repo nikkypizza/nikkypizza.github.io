@@ -16,7 +16,7 @@
 }
 
 .promo__info-title {
-  font-family: $font-light;
+  font-weight: 500;
   font-size: 40px;
   line-height: 40px;
   color: $font-dark-color;
@@ -24,10 +24,9 @@
 }
 
 .promo__info-details {
-  font-family: $font-light;
+  font-weight: 500;
   font-size: 20px;
   line-height: 25px;
-  font-weight: 600;
   max-width: 390px;
   color: $font-dark-color;
   margin: 6px 0 0 0;

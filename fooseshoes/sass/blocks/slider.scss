@@ -35,7 +35,7 @@
 
 .slider__list-item-title {
   color: $slider-title-font-color;
-  font-family: $font-normal;
+  font-weight: 800;
   font-size: 18px;
   line-height: 25px;
   margin: 0;
@@ -48,7 +48,7 @@
 
 .slider__list-item-info {
   color: $slider-info-font-color;
-  font-family: $font-normal;
+  font-weight: 500;
   font-size: 12px;
   line-height: 25px;
   margin: -4px 0 0 0;
