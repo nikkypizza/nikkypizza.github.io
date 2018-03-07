@@ -397,28 +397,28 @@ template {
 @font-face {
   font-family: 'Aller';
   src: url("../fonts/Aller-Light.ttf.woff") format("woff");
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
   font-display: block; }
 
 @font-face {
   font-family: "Aller";
   src: url("../fonts/Aller.ttf.woff") format("woff");
-  font-weight: 500;
+  font-weight: normal;
   font-style: normal;
   font-display: block; }
 
 @font-face {
   font-family: 'Aller';
   src: url("../fonts/Aller-Italic.ttf.woff") format("woff");
-  font-weight: 500;
+  font-weight: normal;
   font-style: italic;
   font-display: block; }
 
 @font-face {
   font-family: 'Aller';
   src: url("../fonts/Aller-Bold.ttf.woff") format("woff");
-  font-weight: 800;
+  font-weight: bold;
   font-style: normal;
   font-display: block; }
 
@@ -520,7 +520,6 @@ svg {
     fill: #2f8769; }
 
 .header__login-register {
-  font-weight: 500;
   font-size: 11px;
   line-height: 25px;
   color: #7e7e7e;
@@ -540,7 +539,6 @@ svg {
 .nav__list {
   list-style: none;
   padding: 0;
-  font-weight: 500;
   font-size: 16px;
   line-height: 25px;
   display: -webkit-box;
@@ -650,14 +648,13 @@ svg {
   width: 450px; }
 
 .promo__info-title {
-  font-weight: 500;
+  font-weight: normal;
   font-size: 40px;
   line-height: 40px;
   color: #242424;
   margin: 14px 0 0 0; }
 
 .promo__info-details {
-  font-weight: 500;
   font-size: 20px;
   line-height: 25px;
   max-width: 390px;
@@ -776,7 +773,7 @@ svg {
 
 .slider__list-item-title {
   color: #7b7b7b;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   line-height: 25px;
   margin: 0;
@@ -788,7 +785,6 @@ svg {
 
 .slider__list-item-info {
   color: #545454;
-  font-weight: 500;
   font-size: 12px;
   line-height: 25px;
   margin: -4px 0 0 0;
@@ -850,7 +846,7 @@ svg {
 
 .categories__list-item-title {
   background-color: rgba(36, 36, 36, 0.8);
-  font-weight: 100;
+  font-weight: 300;
   font-size: 25px;
   -ms-flex-item-align: center;
       align-self: center;
@@ -892,7 +888,7 @@ svg {
   display: flex; }
 
 .item-group-header--title {
-  font-weight: 500;
+  font-weight: normal;
   font-size: 25px;
   line-height: 60px;
   color: #242424;
@@ -934,7 +930,6 @@ svg {
     transition: 0.2s linear; }
 
 .item-card__info {
-  font-weight: 500;
   font-size: 18px;
   line-height: 25px;
   display: -webkit-box;
@@ -1041,7 +1036,7 @@ svg {
   width: 220px; }
 
 .extra__block-title {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 14px;
   line-height: 40px;
   color: #242424;
@@ -1052,7 +1047,6 @@ svg {
   color: #242424; }
 
 .extra__block-text {
-  font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   margin: 0;
@@ -1062,7 +1056,6 @@ svg {
   width: 220px; }
 
 .extra__testimonials-author {
-  font-weight: 500;
   font-style: italic;
   display: inline-block;
   font-size: 12px;
@@ -1102,7 +1095,7 @@ svg {
     outline: none; }
 
 .extra__news-date {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 13px;
   line-height: 12px;
   padding: 6px 0;
@@ -1121,13 +1114,11 @@ svg {
   width: 260px; }
 
 .widgets__title {
-  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #7d7d7d; }
 
 .widgets__text {
-  font-weight: 500;
   font-style: italic;
   font-size: 12px;
   line-height: 18px;
@@ -1140,7 +1131,6 @@ svg {
   padding-left: 10px; }
 
 .widgets__twitter-date {
-  font-weight: 500;
   font-style: italic;
   font-size: 12px;
   line-height: 18px;
@@ -1187,7 +1177,6 @@ svg {
   height: 36px; }
 
 .feedback__email-input {
-  font-weight: 500;
   font-style: italic;
   background-color: #2e2e2e;
   border: none;
@@ -1320,7 +1309,6 @@ svg {
   cursor: default; }
 
 .footer__links-a {
-  font-weight: 500;
   padding: 7px 0px 7px 6px;
   font-size: 12px;
   line-height: 25px;
