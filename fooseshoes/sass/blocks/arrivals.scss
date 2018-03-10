@@ -5,7 +5,7 @@
 .arrivals__list {
   @include clear-li;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin-top: 9px;
   background-color: inherit;
   flex-wrap: wrap;

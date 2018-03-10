@@ -6,7 +6,7 @@
 .bsellers__list {
   @include clear-li;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin-top: 10px;
   margin-bottom: 24px;
   background-color: inherit;

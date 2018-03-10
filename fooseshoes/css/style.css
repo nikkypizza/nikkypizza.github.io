@@ -426,7 +426,7 @@ template {
   display: none; }
 
 body {
-  min-width: 1100px;
+  min-width: 300px;
   font-family: "Aller", "Arial", sans-serif; }
 
 a {
@@ -456,11 +456,13 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 940px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .wrapper--slider {
-  width: 960px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -479,13 +481,15 @@ svg {
           justify-content: space-between; }
 
 .wrapper--widgets {
-  width: 860px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
 .wrapper--feedback {
-  width: 860px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -494,39 +498,46 @@ svg {
           align-items: center; }
 
 .wrapper--footer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   padding: 24px 0 17px 0; }
 
 .header__wrapper {
   background-color: #242424; }
 
 .header__logo {
-  margin-right: auto;
-  padding: 0;
-  padding-top: 12px;
-  padding-bottom: 9px; }
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 12px 0 5px 12px; }
+
+.header__menu-toggler {
+  width: 21px;
+  height: 21px;
+  outline: none;
+  margin: 10px 0 0 10px;
+  vertical-align: top;
+  border: none;
+  background-color: transparent; }
 
 .header__login {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
 
 .header__login-search {
   background-color: transparent;
   border: none;
   padding: 0 21px; }
-  .header__login-search:hover svg {
-    fill: #57c5a0; }
-  .header__login-search:active svg {
-    fill: #2f8769; }
 
 .header__login-register {
-  font-size: 11px;
+  font-size: 13px;
   line-height: 25px;
   color: #7e7e7e;
-  border-top: none;
-  border-bottom: none;
-  border-left: 1px solid #383838;
-  border-right: 1px solid #383838;
+  border: none;
   background-color: transparent;
   padding: 9px 23px; }
 
@@ -539,27 +550,27 @@ svg {
 .nav__list {
   list-style: none;
   padding: 0;
-  font-size: 16px;
+  font-size: 25px;
   line-height: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
   z-index: 1;
-  margin-right: auto;
   min-height: 60px;
   overflow: hidden; }
 
-.nav__list:last-of-type {
-  border-right: 1px solid #eeeeee; }
-
 .nav__item {
+  padding: 13px 0;
   -ms-flex-item-align: center;
       align-self: center; }
 
 .nav__item-link {
   padding: 21px 24px 20px 21px;
-  border-left: 1px solid #eeeeee;
   color: #242424; }
   .nav__item-link:hover {
     color: #57c5a0; }
@@ -567,6 +578,9 @@ svg {
     -webkit-transition: none;
     transition: none;
     color: #2f8769; }
+
+.user {
+  display: none; }
 
 .user ul {
   list-style: none;
@@ -640,12 +654,13 @@ svg {
           justify-content: space-between; }
 
 .promo__img {
+  display: none;
   margin-left: -83px;
   background-color: #efebe8; }
 
 .promo__info {
-  padding-left: 42px;
-  width: 450px; }
+  width: 300px;
+  margin-bottom: 20px; }
 
 .promo__info-title {
   font-weight: normal;
@@ -678,19 +693,16 @@ svg {
   z-index: 1; }
 
 .tag-price--promo {
-  margin-top: 70px;
+  margin-top: 20px;
   margin-left: 2px; }
 
 .product-panel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   list-style: none;
   padding: 0;
   margin: 15px 0 0 0; }
 
 .product-panel--item {
-  display: none;
   position: absolute;
   bottom: 5px;
   padding: 0 14px;
@@ -735,6 +747,7 @@ svg {
   border-right: none; }
 
 .slider {
+  display: none;
   background-color: #2e2e2e; }
 
 .slider__list {
@@ -830,18 +843,22 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   margin: 26px 0; }
 
 .categories__list-item {
   min-height: 180px;
+  margin: 10px 0;
   width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
   background-image: url("../img/categories-sprite.png"); }
 
 .categories__list-item-title {
@@ -885,9 +902,11 @@ svg {
 .item-group-header {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
 
-.item-group-header--title {
+.item-group-header__title {
   font-weight: normal;
   font-size: 25px;
   line-height: 60px;
@@ -906,14 +925,13 @@ svg {
   position: relative;
   margin-bottom: 20px;
   -webkit-transition: 0.1s linear;
-  transition: 0.1s linear; }
+  transition: 0.1s linear;
+  width: 300px;
+  -ms-flex-item-align: center;
+      align-self: center; }
   .item-card:hover {
     -webkit-box-shadow: 0 5px 15px 0px grey;
             box-shadow: 0 5px 15px 0px grey; }
-  .item-card:hover .product-panel--item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
   .item-card:active {
     -webkit-box-shadow: 0 2px 5px 0 grey;
             box-shadow: 0 2px 5px 0 grey;
@@ -956,9 +974,10 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 9px;
   background-color: inherit;
   -ms-flex-wrap: wrap;
@@ -976,6 +995,7 @@ svg {
   padding: 21px 7px; }
 
 .show-all-btn {
+  display: none;
   font-weight: 800;
   font-size: 14px;
   line-height: 25px;
@@ -1003,9 +1023,10 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 10px;
   margin-bottom: 24px;
   background-color: inherit;
@@ -1025,6 +1046,7 @@ svg {
   padding: 18px 12px; }
 
 .extra {
+  display: none;
   background-color: #ebe7df;
   padding: 26px 0 23px 0; }
 
@@ -1107,6 +1129,7 @@ svg {
   background-color: #57c5a0; }
 
 .widgets {
+  display: none;
   background-color: #242424;
   padding: 30px 0 31px 0; }
 
@@ -1180,7 +1203,7 @@ svg {
   font-style: italic;
   background-color: #2e2e2e;
   border: none;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 18px;
   padding: 9px 0 9px 14px;
   width: 200px;
@@ -1200,8 +1223,7 @@ svg {
   fill: #2e2e2e; }
 
 .social {
-  min-width: 213px;
-  margin-left: auto; }
+  min-width: 213px; }
 
 .social__list {
   display: -webkit-box;
@@ -1288,9 +1310,9 @@ svg {
   background-color: #2e2e2e; }
 
 .footer__copyright {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
-  margin-right: auto;
+  margin: 0 auto;
   color: #acacac; }
 
 .footer__links-list {
@@ -1299,10 +1321,13 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 1.4%;
   margin-top: 7px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .footer__links-item {
   color: #acacac;
@@ -1310,7 +1335,7 @@ svg {
 
 .footer__links-a {
   padding: 7px 0px 7px 6px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 25px;
   color: #acacac; }
   .footer__links-a:hover {

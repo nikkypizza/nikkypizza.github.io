@@ -8,15 +8,17 @@
   line-height: 60px;
   color: $font-light-color;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   width: 100%;
   margin: 26px 0;
 }
 
 .categories__list-item {
   min-height: 180px;
+  margin: 10px 0;
   width: 300px;
   display: flex;
+  align-self: center;
   background-image: url('../img/categories-sprite.png');
 }
 

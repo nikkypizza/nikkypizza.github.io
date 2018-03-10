@@ -64,7 +64,7 @@ gulp.task("cssmin", function() {
   gulp.src("css/style.css")
     .pipe(cssmin())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("public/css"));
+    .pipe(gulp.dest("css/"));
 });
 
 gulp.task("clean", function () {

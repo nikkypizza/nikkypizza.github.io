@@ -2,10 +2,13 @@
   background-color: $slider-bg-color;
 }
 
+// .footer__links {
+//   display: flex;
+// }
 .footer__copyright {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
-  margin-right: auto;
+  margin: 0 auto;
   color: $copyright-text-color;
 }
 
@@ -13,8 +16,10 @@
   @include clear-li;
 
   display: flex;
+  flex-wrap: wrap;
+  padding: 0 1.4%;
   margin-top: 7px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer__links-item {
@@ -24,7 +29,7 @@
 
 .footer__links-a {
   padding: 7px 0px 7px 6px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 25px;
   color: $copyright-text-color;
 

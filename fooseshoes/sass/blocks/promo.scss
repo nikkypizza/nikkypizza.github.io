@@ -6,13 +6,15 @@
 }
 
 .promo__img {
+  display: none;
   margin-left: -83px;
   background-color: #efebe8;
 }
 
 .promo__info {
-  padding-left: 42px;
-  width: 450px;
+  // padding-left: 42px;
+  width: 300px; //450
+  margin-bottom: 20px;
 }
 
 .promo__info-title {

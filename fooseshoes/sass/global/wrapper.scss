@@ -1,11 +1,16 @@
 .wrapper {
   display: flex;
-  width: 940px;
+  // width: 960px;
+  // outline: 1px solid red;
   margin: 0 auto;
+  flex-direction: column;
+}
+
+@media (min-width: 1100px) {
 }
 
 .wrapper--slider {
-  width: 960px;
+  // width: 960px;
   flex-direction: column;
 }
 
@@ -19,16 +24,18 @@
 }
 
 .wrapper--widgets {
-  width: 860px;
+  // width: 860px;
   justify-content: space-between;
 }
 
 .wrapper--feedback {
-  width: 860px;
+  // width: 860px;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
 .wrapper--footer {
+  flex-direction: column-reverse;
   padding: 24px 0 17px 0;
 }

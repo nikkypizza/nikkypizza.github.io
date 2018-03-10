@@ -1,11 +1,11 @@
 .product-panel {
-  display: flex;
+  display: none;
+  // display: flex;
   @include clear-li();
   margin: 15px 0 0 0;
 }
 
 .product-panel--item {
-  display: none;
   position: absolute;
   bottom: 5px;
   padding: 0 14px;

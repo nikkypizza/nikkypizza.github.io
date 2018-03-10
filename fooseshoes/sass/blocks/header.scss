@@ -3,14 +3,23 @@
   }
 
   .header__logo {
-    margin-right: auto;
-    padding: 0;
-    padding-top: 12px;
-    padding-bottom: 9px;
+    align-self: center;
+    padding: 12px 0 5px 12px; //12px 0 9px 0;
+  }
+
+  .header__menu-toggler {
+    width: 21px;
+    height: 21px;
+    outline: none;
+    margin: 10px 0 0 10px;
+    vertical-align: top;
+    border: none;
+    background-color: transparent;
   }
 
   .header__login {
     display: flex;
+    align-self: center;
   }
 
   .header__login-search {
@@ -18,23 +27,23 @@
     border: none;
     padding: 0 21px;
 
-    &:hover svg {
-      @include svg-hover-regular;
-    }
+    // &:hover svg {
+    //   @include svg-hover-regular;
+    // }
 
-    &:active svg {
-      @include svg-active-regular;
-    }
+    // &:active svg {
+    //   @include svg-active-regular;
+    // }
   }
 
   .header__login-register {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 25px;
     color: $header-font-color;
-    border-top: none;
-    border-bottom: none;
-    border-left: 1px solid #383838;
-    border-right: 1px solid #383838;
+    border: none; // border-top: none;
+    // border-bottom: none;
+    // border-left: 1px solid #383838;
+    // border-right: 1px solid #383838;
     background-color: transparent;
     padding: 9px 23px;
   }

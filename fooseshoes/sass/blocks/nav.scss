@@ -1,27 +1,28 @@
 .nav__list {
   @include clear-li;
 
-  font-size: 16px;
+  font-size: 25px; //16
   line-height: 25px;
   display: flex;
+  flex-direction: column;
   margin: 0;
   z-index: 1;
-  margin-right: auto;
   min-height: 60px;
   overflow: hidden;
 }
 
 .nav__list:last-of-type {
-  border-right: 1px solid #eeeeee;
+  // border-right: 1px solid #eeeeee;
 }
 
 .nav__item {
+  padding:13px 0;
   align-self: center;
 }
 
 .nav__item-link {
   padding: 21px 24px 20px 21px;
-  border-left: 1px solid #eeeeee;
+  // border-left: 1px solid #eeeeee;
   color: $font-dark-color;
 
   @include text-event-regular();

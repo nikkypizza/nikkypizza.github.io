@@ -5,14 +5,16 @@
   position: relative;
   margin-bottom: 20px;
   transition: 0.1s linear;
+  width: 300px;
+  align-self: center;
 
   &:hover {
     @include hover-shadow();
   }
 
-  &:hover .product-panel--item {
-    display: flex;
-  }
+  // &:hover .product-panel--item {
+  //   display: flex;
+  // }
 
   &:active {
     @include active-shadow();

@@ -1,8 +1,9 @@
 .item-group-header {
   display: flex;
+  align-self: center;
 }
 
-.item-group-header--title {
+.item-group-header__title {
   font-weight: normal;
   font-size: 25px;
   line-height: 60px;
