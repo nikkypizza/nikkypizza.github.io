@@ -24,16 +24,18 @@
   <header class="header">
     <div class="header__wrapper">
       <div class="wrapper">
-        <img class="header__logo" src="img/svg/logo.svg" width="156" height="20" alt="FooseShoes">
+        <img class="header__logo" src="img/svg/logo.svg" width="160" height="24" alt="FooseShoes">
         <div class="header__login">
           <button class="header__login-search" type="button" title="Search">
-            <svg width="14" height="14">
+            <svg width="18" height="18">
               <use xlink:href="#icon-search"></use>
             </svg>
           </button>
           <button class="header__login-register" type="button">LOGIN or REGISTER</button>
-          <button type="button" class="header__menu-toggler" title="Закрыть">
-            <img src="img/svg/icon-menu-close.svg" height="21" width="21" alt="Закрыть меню">
+          <button type="button" class="header__menu-toggler" title="Close">
+            <svg width="20" height="20">
+              <use xlink:href="#icon-menu-close"></use>
+            </svg>
           </button>
         </div>
       </div>
@@ -347,6 +349,7 @@
             </ul>
           </li>
         </ul>
+        <button class="show-all-btn show-all-btn--mobile" type="button">Show All</button>
       </div>
     </section>
     <section class="bsellers">
@@ -484,6 +487,7 @@
             </ul>
           </li>
         </ul>
+        <button class="show-all-btn show-all-btn--mobile" type="button">Show All</button>
       </div>
     </section>
     <section class="extra">
@@ -697,8 +701,14 @@
       <symbol id="icon-linkedin" viewBox="0 0 17.97 18.59">
         <path data-name="Leakedin copy" class="cls-1" d="M.3 5.55h3.46v13.04H.3V5.55zm16.38.75a4.336 4.336 0 0 1 1.28 3.51v8.78h-3.49v-7.93a3.548 3.548 0 0 0-.28-1.58 1.907 1.907 0 0 0-1.9-1 2.36 2.36 0 0 0-2.36 1.47 5.115 5.115 0 0 0-.33 1.98v7.06H6.53V5.39h2.96v2.09a5.941 5.941 0 0 1 1.24-1.45 4.267 4.267 0 0 1 2.66-.79 4.963 4.963 0 0 1 3.29 1.06zM4.21 2.1A2.11 2.11 0 1 1 2.1-.01 2.119 2.119 0 0 1 4.21 2.1z" />
       </symbol>
+      <symbol id="icon-menu-close" viewBox="0 0 20.514 20.512">
+        <path d="M20.513 1.414L19.099 0l-8.843 8.842L1.414 0 0 1.414l8.842 8.842L0 19.098l1.414 1.414 8.842-8.842 8.843 8.842 1.414-1.414-8.842-8.842z" />
+      </symbol>
+      <symbol id="icon-menu-open" viewBox="0 0 19.958 14">
+        <path d="M0 0h19.958v2H0zm0 6h19.958v2H0zm0 6h19.958v2H0z" />
+      </symbol>
       <symbol id="icon-search" viewBox="0 0 13.938 14">
-        <path data-name="Search Icon" fill="#57C49F" class="cls-1" d="M13.645 12.279l-2.776-2.772a6 6 0 1 0-1.419 1.409l2.778 2.777a1 1 0 1 0 1.417-1.414zM6 10.014a4 4 0 1 1 4-4 4 4 0 0 1-4 4z" />
+        <path data-name="Search Icon" class="cls-1" d="M13.645 12.279l-2.776-2.772a6 6 0 1 0-1.419 1.409l2.778 2.777a1 1 0 1 0 1.417-1.414zM6 10.014a4 4 0 1 1 4-4 4 4 0 0 1-4 4z" />
       </symbol>
       <symbol id="icon-share" viewBox="0 0 16 13">
         <path data-name="Share Icon" class="cls-1" d="M3.973 8s1.539-2.436 6.987-2.436V8L16 4.02 10.96 0v2.344c-.129-.001-6.987.289-6.987 5.656zM13 9c-.021 0 0 .447 0 1h-.01v2h-12V2H5c.553 0 1 .021 1 0a1 1 0 0 0-1-1H1.99a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 1.991-1.9c0-.033.019-.062.019-.1v-1a1 1 0 0 0-1-1z" />
@@ -711,6 +721,7 @@
       </symbol>
     </svg>
   </div>
+  <script src="js/page.js"></script>
 </body>
 
 </html>

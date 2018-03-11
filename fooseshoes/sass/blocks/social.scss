@@ -1,11 +1,13 @@
 .social {
   min-width: 213px;
+  padding-bottom: 0;
   // margin-left: auto;
 }
 
 .social__list {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0;
 
   @include clear-li;
 }

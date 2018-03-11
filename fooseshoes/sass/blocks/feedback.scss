@@ -1,7 +1,7 @@
 .feedback {
   background-color: $body-bg-color;
   border-top: 1px solid #1c1c1c;
-  padding: 22px 0 29px 0;
+  padding: 22px 0; // 22 0 29 0
 }
 
 .feedback__email form {

@@ -8,11 +8,9 @@
   }
 
   .header__menu-toggler {
-    width: 21px;
-    height: 21px;
+    box-sizing: content-box;
+    width: 30px;
     outline: none;
-    margin: 10px 0 0 10px;
-    vertical-align: top;
     border: none;
     background-color: transparent;
   }
@@ -37,7 +35,7 @@
   }
 
   .header__login-register {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 25px;
     color: $header-font-color;
     border: none; // border-top: none;

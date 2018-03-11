@@ -513,11 +513,10 @@ svg {
   padding: 12px 0 5px 12px; }
 
 .header__menu-toggler {
-  width: 21px;
-  height: 21px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 30px;
   outline: none;
-  margin: 10px 0 0 10px;
-  vertical-align: top;
   border: none;
   background-color: transparent; }
 
@@ -534,7 +533,7 @@ svg {
   padding: 0 21px; }
 
 .header__login-register {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 25px;
   color: #7e7e7e;
   border: none;
@@ -1013,6 +1012,12 @@ svg {
     color: #9b907c;
     outline: none; }
 
+.show-all-btn--mobile {
+  display: block;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  width: 300px; }
+
 .bsellers {
   background-color: #ebe7df;
   margin-top: -34px; }
@@ -1191,7 +1196,7 @@ svg {
 .feedback {
   background-color: #242424;
   border-top: 1px solid #1c1c1c;
-  padding: 22px 0 29px 0; }
+  padding: 22px 0; }
 
 .feedback__email form {
   display: -webkit-box;
@@ -1223,7 +1228,8 @@ svg {
   fill: #2e2e2e; }
 
 .social {
-  min-width: 213px; }
+  min-width: 213px;
+  padding-bottom: 0; }
 
 .social__list {
   display: -webkit-box;
@@ -1232,6 +1238,7 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 0;
   list-style: none;
   padding: 0; }
 
@@ -1310,7 +1317,7 @@ svg {
   background-color: #2e2e2e; }
 
 .footer__copyright {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
   margin: 0 auto;
   color: #acacac; }
