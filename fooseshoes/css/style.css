@@ -565,6 +565,9 @@ svg {
 
 .nav__item {
   padding: 13px 0;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  text-align: center;
   -ms-flex-item-align: center;
       align-self: center; }
 

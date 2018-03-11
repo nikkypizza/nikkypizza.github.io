@@ -16,14 +16,19 @@
 }
 
 .nav__item {
-  padding:13px 0;
+  padding: 13px 0;
+
+  width: 100%;
+  border-bottom: 1px solid #eee;
+
+  text-align: center;
   align-self: center;
 }
 
 .nav__item-link {
-  padding: 21px 24px 20px 21px;
-  // border-left: 1px solid #eeeeee;
+  padding: 21px 24px 20px 21px; // border-left: 1px solid #eeeeee;
   color: $font-dark-color;
 
   @include text-event-regular();
 }
+
