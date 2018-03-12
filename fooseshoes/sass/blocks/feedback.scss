@@ -38,3 +38,9 @@
 .feedback__email-btn svg {
   fill: $slider-bg-color;
 }
+
+@media ($tablet-width) {
+  .feedback__email-input {
+    font-size: 13px;
+  }
+}

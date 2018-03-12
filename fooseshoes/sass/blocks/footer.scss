@@ -2,9 +2,7 @@
   background-color: $slider-bg-color;
 }
 
-// .footer__links {
-//   display: flex;
-// }
+
 .footer__copyright {
   font-size: 12px;
   line-height: 18px;
@@ -34,4 +32,24 @@
   color: $copyright-text-color;
 
   @include text-event-regular();
+}
+
+@media ($tablet-width) {
+.footer__links-list {
+  flex-wrap: nowrap;
+}
+
+  .footer__links {
+    margin: 0 30px 0 0;
+  }
+
+  .footer__links-a {
+    padding: 7px 0px 7px 6px;
+    font-size: 14px;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+    margin: 0 auto 0 40px;
+  }
 }

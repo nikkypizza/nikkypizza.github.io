@@ -94,3 +94,9 @@
   color: $font-light-color;
   background-color: $accent-color;
 }
+
+@media ($tablet-width) {
+  .extra {
+    // display: flex;
+  }
+}
