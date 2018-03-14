@@ -7,8 +7,18 @@
   @include clear-li;
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 24px;
+  margin: 10px 20px 24px 20px;
   background-color: inherit;
   flex-wrap: wrap;
+}
+
+@media ($tablet-width) {
+
+.bsellers__list {
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+
+  // width: 100%;
+}
 }

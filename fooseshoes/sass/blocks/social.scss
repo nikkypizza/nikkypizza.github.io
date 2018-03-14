@@ -112,3 +112,10 @@
   }
   transition: 0.3s linear;
 }
+
+@media ($tablet-width) {
+.social {
+  margin: 0 40px 0 auto;
+  }
+}
+

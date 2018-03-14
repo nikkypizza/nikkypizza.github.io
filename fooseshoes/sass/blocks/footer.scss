@@ -6,7 +6,7 @@
 .footer__copyright {
   font-size: 12px;
   line-height: 18px;
-  margin: 0 auto;
+  text-align: center;
   color: $copyright-text-color;
 }
 
@@ -36,6 +36,7 @@
 
 @media ($tablet-width) {
 .footer__links-list {
+  min-width: 400px;
   flex-wrap: nowrap;
 }
 
@@ -49,6 +50,7 @@
   }
 
   .footer__copyright {
+    text-align: left;
     font-size: 14px;
     margin: 0 auto 0 40px;
   }

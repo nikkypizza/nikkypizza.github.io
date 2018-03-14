@@ -10,12 +10,9 @@
 
   &:hover {
     @include hover-shadow();
-  }
-
-  // &:hover .product-panel--item {
+  } // &:hover .product-panel--item {
   //   display: flex;
   // }
-
   &:active {
     @include active-shadow();
     transition: 0.1 linear;
@@ -46,4 +43,14 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media ($tablet-width) {
+  .item-card {
+    margin: 20px;
+  }
+  .item-card a img {
+    width: 100%;
+    height: auto;
+  }
 }

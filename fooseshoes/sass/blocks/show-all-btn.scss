@@ -28,3 +28,9 @@
   margin-bottom: 40px;
   width: 300px;
 }
+
+@media ($tablet-width) {
+.show-all-btn--mobile {
+  display: none;
+}
+}
