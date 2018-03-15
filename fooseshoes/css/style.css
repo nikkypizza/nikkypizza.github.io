@@ -928,6 +928,23 @@ svg {
 .categories__list-item--must-have {
   background-position: 0 0; }
 
+@media (min-width: 768px) {
+  .categories__list {
+    max-width: 960px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-item-align: center;
+        align-self: center; }
+  .categories__list-item {
+    height: 180px;
+    margin: 10px 0;
+    width: 300px; } }
+
 .item-group-header {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -68,3 +68,19 @@
 .categories__list-item--must-have {
   background-position: 0 0;
 }
+
+@media($tablet-width) {
+  .categories__list {
+    max-width: 960px;
+justify-content: space-between;
+    flex-direction: row;
+    align-self: center;
+  }
+
+  .categories__list-item {
+    // min-height: 1px;
+    height: 180px;
+    margin: 10px 0;
+    width: 300px;
+  }
+}
