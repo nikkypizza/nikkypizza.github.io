@@ -17,14 +17,15 @@
   font-style: italic;
   font-size: 12px;
   line-height: 18px;
-  padding-right: 6px;
+  // padding-right: 6px;
   margin-bottom: 5px;
   text-align: justify;
   color: $widget-text-color;
 }
 
 .widgets__twitter {
-  padding-left: 10px;
+  // padding-left: 10px;
+  width: 27&;
 }
 
 .widgets__twitter-date {
@@ -48,8 +49,8 @@
 .widgets__flickr-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 0 15px;
-  max-width: 260px;
+  margin: 0 0 0 0px;
+  max-width: 300px;
   justify-content: space-between;
 }
 
@@ -74,11 +75,13 @@
     display: flex;
   }
   .widgets__flickr-wrapper {
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    margin-left: 12px;
+    width: 170px;
   }
 
   .widgets section {
-    width: 25%;
-    margin: 0 34px;
+    width: 27%;
+    // margin: 0 34px 0 0;
   }
 }
