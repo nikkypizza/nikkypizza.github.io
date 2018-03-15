@@ -33,7 +33,7 @@
   font-size: 18px;
   line-height: 25px;
   display: flex;
-  align-items: middle;
+  align-items: center;
   border-top: 1px solid #cccccc;
 }
 
@@ -52,5 +52,13 @@
   .item-card a img {
     width: 100%;
     height: auto;
+  }
+  .item-card__info {
+    font-size: 1.85vw;
+  }
+
+  .item-card a {
+    flex-shrink: 0;
+    /* Оказалось необходимо сбрасывать flex-shrink для внутреннего контейнера флекса, чтобы он корректно менял размеры в IE */
   }
 }

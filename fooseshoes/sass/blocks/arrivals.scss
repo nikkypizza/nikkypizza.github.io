@@ -10,3 +10,10 @@
   background-color: inherit;
   flex-wrap: wrap;
 }
+
+@media ($tablet-width) {
+.arrivals__list {
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+}

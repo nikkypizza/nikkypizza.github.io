@@ -7,18 +7,17 @@
   @include clear-li;
   display: flex;
   flex-direction: column;
-  margin: 10px 20px 24px 20px;
+  margin: 10px 10px 24px 10px;
   background-color: inherit;
   flex-wrap: wrap;
 }
 
 @media ($tablet-width) {
-
-.bsellers__list {
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-
-  // width: 100%;
-}
+  .bsellers__list {
+    flex-direction: row;
+    margin: 10px 0 24px 0;
+    // flex-basis: auto;
+    // justify-content: space-around;
+    flex-wrap: nowrap;
+  }
 }
