@@ -14,7 +14,6 @@
 }
 
 .categories__list-item {
-  // min-height: 1px;
   height: 180px;
   margin: 10px 0;
   width: 300px;
@@ -72,15 +71,17 @@
 @media($tablet-width) {
   .categories__list {
     max-width: 960px;
-justify-content: space-between;
+    margin: 26px 16px;
     flex-direction: row;
     align-self: center;
   }
 
   .categories__list-item {
-    // min-height: 1px;
-    height: 180px;
-    margin: 10px 0;
-    width: 300px;
+    margin: 0px 5px;
+  }
+
+  .categories__list-item-title {
+    font-size: 2.7vw;
+    width: auto;
   }
 }

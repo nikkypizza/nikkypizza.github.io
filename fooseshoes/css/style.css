@@ -505,6 +505,16 @@ svg {
   padding: 24px 0 17px 0; }
 
 @media (min-width: 768px) {
+  .wrapper--header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .wrapper--promo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
   .wrapper--item-group {
     max-width: 940px; }
   .wrapper--widgets {
@@ -571,6 +581,12 @@ svg {
 .header__login-register:active {
   color: #2f8769; }
 
+@media (min-width: 768px) {
+  .header__login {
+    margin: 0 0 0 auto; }
+  .header__logo {
+    padding: 12px 0 9px 12px; } }
+
 .nav__list {
   list-style: none;
   padding: 0;
@@ -605,6 +621,16 @@ svg {
     -webkit-transition: none;
     transition: none;
     color: #2f8769; }
+
+@media (min-width: 768px) {
+  .nav__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 20px; }
+  .nav__item {
+    border-bottom: none; } }
 
 .user {
   display: none; }
@@ -703,6 +729,26 @@ svg {
   max-width: 390px;
   color: #242424;
   margin: 6px 0 0 0; }
+
+@media (min-width: 768px) {
+  .promo__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 65px 20px 0 20px;
+    max-width: 450px;
+    text-align: left; }
+  .promo__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    margin-left: auto;
+    width: 100%; } }
 
 .tag-price {
   display: block;
@@ -931,9 +977,7 @@ svg {
 @media (min-width: 768px) {
   .categories__list {
     max-width: 960px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    margin: 26px 16px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -941,9 +985,10 @@ svg {
     -ms-flex-item-align: center;
         align-self: center; }
   .categories__list-item {
-    height: 180px;
-    margin: 10px 0;
-    width: 300px; } }
+    margin: 0px 5px; }
+  .categories__list-item-title {
+    font-size: 2.7vw;
+    width: auto; } }
 
 .item-group-header {
   display: -webkit-box;

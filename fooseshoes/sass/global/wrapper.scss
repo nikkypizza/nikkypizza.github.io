@@ -37,9 +37,16 @@
 }
 
 @media ($tablet-width) {
-.wrapper--item-group {
+  .wrapper--header {
+    flex-direction: row;
+  }
+
+  .wrapper--promo {
+    flex-direction: row;
+  }
+  .wrapper--item-group {
     max-width: 940px;
-}
+  }
 
   .wrapper--widgets {
     justify-content: space-around;
@@ -48,7 +55,7 @@
   }
   .wrapper--feedback {
     // width: 860px;
-align-items: flex-end;
+    align-items: flex-end;
     flex-direction: row;
   }
 

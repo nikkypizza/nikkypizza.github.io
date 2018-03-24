@@ -16,14 +16,9 @@
 </head>
 
 <body>
-  <!--Открыл страницу с мобильного в метро и озадачился скоростью отображения hero изображений. Решение для предзагрузки без js. Разница в отображении верха страницы заметна на более низких скоростях соединения.-->
-  <div class="display-none">
-    <img src="img/webp/hero.webp" alt="Pink high heels">
-    <img src="img/hero.jpg" width="550" height="460" alt="Pink high heels">
-  </div>
   <header class="header">
     <div class="header__wrapper">
-      <div class="wrapper">
+      <div class="wrapper wrapper--header">
         <img class="header__logo" src="img/svg/logo.svg" width="160" height="24" alt="FooseShoes">
         <div class="header__login">
           <button class="header__login-search" type="button" title="Search">
@@ -83,7 +78,7 @@
   </header>
   <main>
     <section class="promo">
-      <div class="wrapper">
+      <div class="wrapper wrapper--promo">
         <picture>
           <source type="image/webp" srcset="img/webp/hero.webp">
           <img class="promo__img" src="img/hero.jpg" width="550" height="460" alt="Pink high heels">

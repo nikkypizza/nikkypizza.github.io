@@ -32,3 +32,12 @@
   @include text-event-regular();
 }
 
+@media ($tablet-width) {
+  .nav__list {
+    flex-direction: row;
+    font-size: 20px;
+  }
+  .nav__item {
+    border-bottom: none;
+  }
+}

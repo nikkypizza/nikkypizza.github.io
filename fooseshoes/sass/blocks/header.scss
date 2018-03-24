@@ -23,12 +23,9 @@
   .header__login-search {
     background-color: transparent;
     border: none;
-    padding: 0 21px;
-
-    // &:hover svg {
+    padding: 0 21px; // &:hover svg {
     //   @include svg-hover-regular;
     // }
-
     // &:active svg {
     //   @include svg-active-regular;
     // }
@@ -52,4 +49,15 @@
 
   .header__login-register:active {
     color: darken($accent-color, 20%);
+  }
+
+  @media ($tablet-width) {
+
+    .header__login {
+      margin: 0 0 0 auto;
+    }
+
+    .header__logo {
+      padding: 12px 0 9px 12px;
+    }
   }

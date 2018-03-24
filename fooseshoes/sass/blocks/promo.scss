@@ -33,3 +33,19 @@
   color: $font-dark-color;
   margin: 6px 0 0 0;
 }
+
+@media($tablet-width) {
+  .promo__info {
+    display: flex;
+    flex-direction: column;
+    margin: 65px 20px 0 20px; // padding-left: 42px; 
+    max-width: 450px; //450
+    text-align: left;
+  }
+  .promo__img {
+    display: flex;
+    height: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+}
