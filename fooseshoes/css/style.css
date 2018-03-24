@@ -509,7 +509,8 @@ svg {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    padding: 0 3.5%; }
   .wrapper--promo {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -985,7 +986,8 @@ svg {
     -ms-flex-item-align: center;
         align-self: center; }
   .categories__list-item {
-    margin: 0px 5px; }
+    margin: 0px 10px;
+    width: 100%; }
   .categories__list-item-title {
     font-size: 2.7vw;
     width: auto; } }
