@@ -623,6 +623,12 @@ main {
   border-radius: 2px;
 }
 
+.img-filters__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 
 /* Фотки других пользователей .pictures */
 
