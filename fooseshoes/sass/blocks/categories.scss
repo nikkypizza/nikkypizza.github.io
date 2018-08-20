@@ -86,3 +86,9 @@
     width: auto;
   }
 }
+
+@media($desktop-width) {
+  .categories__list-item-title {
+    font-size: 27px;
+  }
+}

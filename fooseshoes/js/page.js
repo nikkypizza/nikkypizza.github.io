@@ -1,25 +1,25 @@
 (function() {
   var menuButton = document.querySelector('.header__menu-toggler');
-  var menuButtonIcon = menuButton.querySelector('svg').querySelector('use');
+  var menuButtonIcon = menuButton.querySelector('svg use');
   var navList = document.querySelector('.nav__list');
 
   // Закрывает меню по умолчанию, меняет img кнопки
   menuButtonIcon.setAttribute('xlink:href', '#icon-menu-open');
-  menuButton.setAttribute('title', 'Open');
-  navList.setAttribute('style', 'display: none');
+  menuButton.title = 'Open';
+  navList.style.display = 'none';
   //-------------------------
 
   var minWidth = window.matchMedia("(min-width: 768px)");
 
   menuButton.addEventListener('click', function() {
-    if (menuButton.getAttribute('title') === 'Open') {
+    if (menuButton.title === 'Open') {
       menuButtonIcon.setAttribute('xlink:href', '#icon-menu-close');
-      menuButton.setAttribute('title', 'Close');
-      navList.removeAttribute('style');
+      menuButton.title = 'Close';
+      navList.style = '';
     } else {
       menuButtonIcon.setAttribute('xlink:href', '#icon-menu-open');
-      menuButton.setAttribute('title', 'Open');
-      navList.setAttribute('style', 'display: none');
+      navList.style.display = 'none';
+      menuButton.title = 'Open';
     };
   });
 
@@ -33,14 +33,14 @@
   function WidthChange(mq) {
     if (mq.matches) {
       // при ширине вьюпорта >= 768px
-      menuButton.setAttribute('style', 'display: none');
-      navList.removeAttribute('style');
+      navList.style = '';
+      menuButton.style.display = 'none';
     } else {
       // при ширине вьюпорта меньше 768px
-      menuButton.removeAttribute('style');
+      menuButton.style = '';
+      menuButton.title = 'Open';
+      navList.style.display = 'none';
       menuButtonIcon.setAttribute('xlink:href', '#icon-menu-open');
-      menuButton.setAttribute('title', 'Open');
-      navList.setAttribute('style', 'display: none');
     }
   }
 })()

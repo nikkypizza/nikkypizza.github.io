@@ -10,9 +10,8 @@
 
   &:hover {
     @include hover-shadow();
-  } // &:hover .product-panel--item {
-  //   display: flex;
-  // }
+  }
+
   &:active {
     @include active-shadow();
     transition: 0.1 linear;
@@ -60,5 +59,16 @@
   .item-card a {
     flex-shrink: 0;
     /* Оказалось необходимо сбрасывать flex-shrink для внутреннего контейнера флекса, чтобы он корректно менял размеры в IE */
+  }
+}
+
+@media ($desktop-width) {
+  .item-card__info {
+    font-size: 19px;
+  }
+
+  .item-card:hover .product-panel--item {
+    display: flex;
+    padding: 0;
   }
 }

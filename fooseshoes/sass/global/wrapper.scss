@@ -1,12 +1,10 @@
 .wrapper {
-  display: flex; // width: 960px;
-  // outline: 1px solid red;
+  display: flex;
   margin: 0 auto;
   flex-direction: column;
 }
 
 .wrapper--slider {
-  // width: 960px;
   flex-direction: column;
 }
 
@@ -55,12 +53,17 @@
     padding-left: 30px;
   }
   .wrapper--feedback {
-    // width: 860px;
     align-items: flex-end;
     flex-direction: row;
   }
 
   .wrapper--footer {
     flex-direction: row;
+  }
+}
+
+@media ($desktop-width) {
+  .wrapper {
+    width: 960px;
   }
 }

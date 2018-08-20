@@ -540,6 +540,10 @@ svg {
         -ms-flex-direction: row;
             flex-direction: row; } }
 
+@media (min-width: 1050px) {
+  .wrapper {
+    width: 960px; } }
+
 .header__wrapper {
   background-color: #242424; }
 
@@ -567,6 +571,10 @@ svg {
   background-color: transparent;
   border: none;
   padding: 0 21px; }
+  .header__login-search:hover svg {
+    fill: #57c5a0; }
+  .header__login-search:active svg {
+    fill: #2f8769; }
 
 .header__login-register {
   font-size: 14px;
@@ -587,6 +595,15 @@ svg {
     margin: 0 0 0 auto; }
   .header__logo {
     padding: 12px 0 9px 12px; } }
+
+@media (min-width: 1050px) {
+  .header__logo {
+    padding: 12px 0 9px 0; }
+  .header__login-register {
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #383838;
+    border-right: 1px solid #383838; } }
 
 .nav__list {
   list-style: none;
@@ -632,6 +649,20 @@ svg {
     font-size: 20px; }
   .nav__item {
     border-bottom: none; } }
+
+@media (min-width: 1050px) {
+  .nav__list {
+    font-size: 16px; }
+  .nav__list:last-of-type {
+    border-right: 1px solid #eeeeee; }
+  .nav__item-link {
+    border-left: 1px solid #eeeeee; }
+    .nav__item-link:hover {
+      color: #57c5a0; }
+    .nav__item-link:active {
+      -webkit-transition: none;
+      transition: none;
+      color: #2f8769; } }
 
 .user {
   display: none; }
@@ -992,6 +1023,10 @@ svg {
     font-size: 2.7vw;
     width: auto; } }
 
+@media (min-width: 1050px) {
+  .categories__list-item-title {
+    font-size: 27px; } }
+
 .item-group-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1076,6 +1111,15 @@ svg {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     /* Оказалось необходимо сбрасывать flex-shrink для внутреннего контейнера флекса, чтобы он корректно менял размеры в IE */ } }
+
+@media (min-width: 1050px) {
+  .item-card__info {
+    font-size: 19px; }
+  .item-card:hover .product-panel--item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0; } }
 
 .arrivals {
   background-color: #ebe7df; }
@@ -1289,7 +1333,7 @@ svg {
   color: #a4a4a4; }
 
 .widgets__twitter {
-  width: 27 .widgets__twitter; }
+  width: 27px; }
 
 .widgets__twitter-date {
   font-style: italic;
@@ -1340,6 +1384,16 @@ svg {
     width: 170px; }
   .widgets section {
     width: 27%; } }
+
+@media (min-width: 1050px) {
+  .widgets section {
+    width: 260px;
+    margin: 0 34px 0 0; }
+  .widgets__twitter {
+    padding-left: 10px;
+    width: 27px; }
+  .widgets__flickr-wrapper {
+    width: 270px; } }
 
 .feedback {
   background-color: #242424;

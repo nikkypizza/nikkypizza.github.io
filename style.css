@@ -1,12 +1,12 @@
 html {
-  background-image: url('img/circles-light.png')
+  background-image: url("img/circles-light.png");
 }
 
 ul {
-  list-style: none;
   display: flex;
   flex-direction: column;
   padding: 0;
+  list-style: none;
 }
 
 li {
@@ -14,46 +14,47 @@ li {
 }
 
 h1 {
-  display: block;
-  text-align: center;
-  font-style: italic;
+  font: italic small-caps 100 25px/30px sans-serif;
+  transition: .1s linear;
   transform: skewY(5deg);
-  transition: 0.1s linear;
+  text-align: center;
 }
 
 h1:hover {
+  transition: .15s linear;
   transform: skewY(0deg);
-  transition: 0.15s linear;
 }
 
 a {
+  display: block;
   margin: 10px auto;
   padding: 30px 0;
-  display: block;
   text-align: center;
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
+  background-size: contain;
 }
 
 .days {
-  background-image: url(8days/img/svg/logo.svg);
   padding: 0;
+  opacity: 0;
+  background-image: url("8days/img/svg/logo.svg");
+
   filter: saturate(0);
 }
 
 .foo {
-  background-image: url(fooseshoes/img/svg/logo.svg);
+  background-image: url("fooseshoes/img/svg/logo.svg");
 }
 
 .mishka {
-  background-image: url(mishka/img/logo-mobile.svg);
+  background-image: url("mishka/img/logo-mobile.svg");
 }
 
 .sedona {
-  background-image: url(img/sedona-logo.svg);
+  background-image: url("img/sedona-logo.svg");
 }
 
 .kekstagram {
-  background-image: url(kekstagram/img/avatar-1.svg);
+  background-image: url("kekstagram/img/avatar-1.svg");
 }
