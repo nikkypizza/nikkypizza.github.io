@@ -58,3 +58,11 @@ a {
 .kekstagram {
   background-image: url("kekstagram/img/avatar-1.svg");
 }
+
+.ya {
+  background-image: url("img/ya-logo-letter.svg")
+}
+
+.ya-home {
+  background-image: url("img/ya-logo.svg")
+}
