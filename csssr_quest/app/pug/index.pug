@@ -1,0 +1,70 @@
+include ./global/data.pug
+include ./global/mixins.pug
+
+doctype html
+html(lang="ru")
+  include ./includes/head.pug
+  body.Page
+    header.Header
+      picture.Header-Logo
+        source(type="image/webp" srcset="img/webp/page-case.webp")
+        img(src="img/page-case.png", alt="Дело" width="221" height="118")
+    main.Main
+      form.Main-Form
+        fieldset.Fieldset
+          ul.AboutList
+            each it in userDataPersonal
+              li.AboutList-Item
+                +inputTypeTextReadonly("AboutList-ItemInput", "AboutList-ItemLabel", ...it)
+        fieldset.Fieldset
+          legend.Fieldset-Title Расскажите о себе чекбоксами
+          p.Fieldset-Subtitle Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+          ul.SkillsList
+            each it in userDataSkills
+              if it == "miopia"
+                li.SkillsList-Item.SkillsList-Item_Miopia
+                  input(type="checkbox" id="miopia" checked).SkillsList-ItemInput
+                  label(for="miopia").SkillsList-ItemLabel
+                    span С 
+                    span.MiopiaSpanEye глазомером 
+                    span.MiopiaSpanAll все 
+                    span.MiopiaSpanOk ок
+              else if it == "csssrBlog"
+                li.SkillsList-Item
+                  input(type="checkbox" id="csssrBlog").SkillsList-ItemInput
+                  label(for="csssrBlog").SkillsList-ItemLabel Читаю блог 
+                    a(href="https://blog.csssr.ru/") blog.csssr.ru
+              else
+                li.SkillsList-Item
+                  +inputTypeCheckbox("SkillsList-ItemInput", "SkillsList-ItemLabel", ...it)
+        fieldset.Fieldset
+          legend.Fieldset-Title Уровень владения JavaScript
+          .ProgSkillScale
+            label(for="progSkillScale").visually-hidden Оцените себя по шкале от 0 до 100
+            input(type="range" value="80" min="0" max="100" step="5" oninput="output.value = progSkillScale.value" id="progSkillScale").ProgSkillScale-Input.visually-hidden
+            .ProgSkillScale-Thumb
+            span.visually-hidden Знаю JS на:
+              output(id="output" for="progSkillScale") 80
+              span  из 100
+          ul.ProgSkillsList
+            each it in [["Не владею", "0 баллов из 100"], ["Использую готовые решения", "20 баллов из 100"], ["Использую готовые решения и умею их переделывать",  "50 баллов из 100"], ["Пишу сложный JS с нуля", "100/100. Да, я весьма хорош"]]
+              li.ProgSkillsList-Item
+                button(type="button" title=it[1]).ProgSkillsList-ItemButton=it[0]
+        fieldset.Fieldset
+          legend.Fieldset-Title 
+            label(for="userStory") Расскажите о себе словами
+          p.Fieldset-Subtitle Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
+          textarea.Fieldset-Textarea(id="userStory") #{userStory}
+        fieldset.Fieldset
+          legend.Fieldset-Title Какие у вас планы на будущее?
+          p.Fieldset-Subtitle Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+          ul.PlansList
+            each it in userDataPlans
+              li.PlansList-Item
+                +inputTypeRadio("PlansList-ItemInput", "PlansList-ItemLabel", ...it)
+        fieldset.Fieldset
+          .Fieldset-Date
+            label(for="date").Fieldset-Title.Fieldset-Title_Date Дата заполнения
+            input(type="date" value="2019-02-06" id="date").Fieldset-DateInput
+    script(src="js/page.js")
+    script(src="js/modernizr-webP.js")

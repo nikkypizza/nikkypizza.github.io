@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#e2c293">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="@nikkypizza - квест CSSSR">
+    <title>Q-CSSSR</title>
+    <link rel="preload" href="fonts/PT-Sans-Bold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/PT-Sans.woff2" as="font" type="font/woff2">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body class="Page">
+    <header class="Header">
+      <picture class="Header-Logo">
+        <source type="image/webp" srcset="img/webp/page-case.webp"><img src="img/page-case.png" alt="Дело" width="221" height="118">
+      </picture>
+    </header>
+    <main class="Main">
+      <form class="Main-Form">
+        <fieldset class="Fieldset">
+          <ul class="AboutList">
+            <li class="AboutList-Item">
+              <label class="AboutList-ItemLabel" for="firstName">Полное ФИО</label>
+              <input class="AboutList-ItemInput" readonly="readonly" type="text" id="firstName" value="Победоносцев Никита Дмитриевич"/>
+            </li>
+            <li class="AboutList-Item">
+              <label class="AboutList-ItemLabel" for="birthYear">Год рождения</label>
+              <input class="AboutList-ItemInput" readonly="readonly" type="text" id="birthYear" value="1993"/>
+            </li>
+            <li class="AboutList-Item">
+              <label class="AboutList-ItemLabel" for="originCity">Место жительства</label>
+              <input class="AboutList-ItemInput" readonly="readonly" type="text" id="originCity" value="Москва"/>
+            </li>
+            <li class="AboutList-Item">
+              <label class="AboutList-ItemLabel" for="skypeUsername">Скайп</label>
+              <input class="AboutList-ItemInput" readonly="readonly" type="text" id="skypeUsername" value="nick-p66"/>
+            </li>
+            <li class="AboutList-Item">
+              <label class="AboutList-ItemLabel" for="emailAddress">Почта</label>
+              <input class="AboutList-ItemInput" readonly="readonly" type="text" id="emailAddress" value="npb.nikita@gmail.com"/>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="Fieldset">
+          <legend class="Fieldset-Title">Расскажите о себе чекбоксами</legend>
+          <p class="Fieldset-Subtitle">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+          <ul class="SkillsList">
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="bem" checked="checked"/>
+              <label class="SkillsList-ItemLabel" for="bem">БЭМ/OOCSS</label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="pug" checked="checked"/>
+              <label class="SkillsList-ItemLabel" for="pug">Pug (Jade)</label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="sass" checked="checked"/>
+              <label class="SkillsList-ItemLabel" for="sass">Stylus/LESS/SASS</label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="svg" checked="checked"/>
+              <label class="SkillsList-ItemLabel" for="svg">Работаю с SVG</label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="semanticHTML" checked="checked"/>
+              <label class="SkillsList-ItemLabel" for="semanticHTML">Верстаю семантично</label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="ally" checked="checked"/>
+              <label class="SkillsList-ItemLabel" for="ally">Accessibility (A11Y)</label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="ecmascript" checked="checked"/>
+              <label class="SkillsList-ItemLabel" for="ecmascript">ES2015/ES2016</label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="gulp" checked="checked"/>
+              <label class="SkillsList-ItemLabel" for="gulp">Gulp/GRUNT</label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="webpack"/>
+              <label class="SkillsList-ItemLabel" for="webpack">Webpack</label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="webGL"/>
+              <label class="SkillsList-ItemLabel" for="webGL">Дружу с WebGL</label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="jquery"/>
+              <label class="SkillsList-ItemLabel" for="jquery">jQuery</label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="angular"/>
+              <label class="SkillsList-ItemLabel" for="angular">Знаю/изучаю Angular</label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="react" checked="checked"/>
+              <label class="SkillsList-ItemLabel" for="react">Знаю/изучаю React</label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="nodejs" checked="checked"/>
+              <label class="SkillsList-ItemLabel" for="nodejs">Знаю/изучаю Node.js</label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="git" checked="checked"/>
+              <label class="SkillsList-ItemLabel" for="git">Использую Git</label>
+            </li>
+            <li class="SkillsList-Item SkillsList-Item_Miopia">
+              <input class="SkillsList-ItemInput" type="checkbox" id="miopia" checked>
+              <label class="SkillsList-ItemLabel" for="miopia"><span>С </span><span class="MiopiaSpanEye">глазомером </span><span class="MiopiaSpanAll">все </span><span class="MiopiaSpanOk">ок</span></label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="csssrBlog">
+              <label class="SkillsList-ItemLabel" for="csssrBlog">Читаю блог <a href="https://blog.csssr.ru/">blog.csssr.ru</a></label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="lazy"/>
+              <label class="SkillsList-ItemLabel" for="lazy">Я ленивый(-ая)</label>
+            </li>
+            <li class="SkillsList-Item">
+              <input class="SkillsList-ItemInput" type="checkbox" id="english" checked="checked"/>
+              <label class="SkillsList-ItemLabel" for="english">У меня хороший английский</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="Fieldset">
+          <legend class="Fieldset-Title">Уровень владения JavaScript</legend>
+          <div class="ProgSkillScale">
+            <label class="visually-hidden" for="progSkillScale">Оцените себя по шкале от 0 до 100</label>
+            <input class="ProgSkillScale-Input visually-hidden" type="range" value="80" min="0" max="100" step="5" oninput="output.value = progSkillScale.value" id="progSkillScale">
+            <div class="ProgSkillScale-Thumb"></div><span class="visually-hidden">Знаю JS на:
+              <output id="output" for="progSkillScale">80</output><span> из 100</span></span>
+          </div>
+          <ul class="ProgSkillsList">
+            <li class="ProgSkillsList-Item">
+              <button class="ProgSkillsList-ItemButton" type="button" title="0 баллов из 100">Не владею</button>
+            </li>
+            <li class="ProgSkillsList-Item">
+              <button class="ProgSkillsList-ItemButton" type="button" title="20 баллов из 100">Использую готовые решения</button>
+            </li>
+            <li class="ProgSkillsList-Item">
+              <button class="ProgSkillsList-ItemButton" type="button" title="50 баллов из 100">Использую готовые решения и умею их переделывать</button>
+            </li>
+            <li class="ProgSkillsList-Item">
+              <button class="ProgSkillsList-ItemButton" type="button" title="100/100. Да, я весьма хорош">Пишу сложный JS с нуля</button>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="Fieldset">
+          <legend class="Fieldset-Title"> 
+            <label for="userStory">Расскажите о себе словами</label>
+          </legend>
+          <p class="Fieldset-Subtitle">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.</p>
+          <textarea class="Fieldset-Textarea" id="userStory">
+Я Никита, люблю писать код и верстать. 
+Чем доволен с этой версткой: доступ к интерактивным элементам с клавиатуры, валидная верстка, есть prod и dev сборки, линтер и минификация. Использовал БЭМ нейминг типа &quot;Block-ElementName_modifierName_modifierValue&quot; которого сейчас придерживаются в React части Яндекса. Использовал тег form, ибо по сути резюме == форма. Если добавить сабмит и экшн на форму, то можно будет её отправить на сервер. 
+Чем не доволен: не сделал поддержку слайдера для тач устройств и он с .Fieldset-Textarea не работают в IE.
+Кажется у вас классно и мне интересно попробовать работать на удаленке.</textarea>
+        </fieldset>
+        <fieldset class="Fieldset">
+          <legend class="Fieldset-Title">Какие у вас планы на будущее?</legend>
+          <p class="Fieldset-Subtitle">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</p>
+          <ul class="PlansList">
+            <li class="PlansList-Item">
+              <input class="PlansList-ItemInput" type="radio" id="htmlcss" name="plans"/>
+              <label class="PlansList-ItemLabel" for="htmlcss">Верстать</label>
+            </li>
+            <li class="PlansList-Item">
+              <input class="PlansList-ItemInput" type="radio" id="makeJsGreatAgain" checked="checked" name="plans"/>
+              <label class="PlansList-ItemLabel" for="makeJsGreatAgain">Прокачиваться в JS</label>
+            </li>
+            <li class="PlansList-Item">
+              <input class="PlansList-ItemInput" type="radio" id="manageStuff" name="plans"/>
+              <label class="PlansList-ItemLabel" for="manageStuff">Менеджерство</label>
+            </li>
+            <li class="PlansList-Item">
+              <input class="PlansList-ItemInput" type="radio" id="otherPlans" name="plans"/>
+              <label class="PlansList-ItemLabel" for="otherPlans">Другое</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="Fieldset">
+          <div class="Fieldset-Date">
+            <label class="Fieldset-Title Fieldset-Title_Date" for="date">Дата заполнения</label>
+            <input class="Fieldset-DateInput" type="date" value="2019-02-06" id="date">
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <script src="js/page.js"></script>
+    <script src="js/modernizr-webP.js"></script>
+  </body>
+</html>

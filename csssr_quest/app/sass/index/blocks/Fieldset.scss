@@ -1,0 +1,91 @@
+@import '../../global/variables.scss';
+
+.Fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &-Title {
+    padding-left: 8px;
+    color: $color-font;
+    font: bold 24px/47px $font-PT-Sans;
+
+    &_Date {
+      font-size: 22px;
+    }
+  }
+
+  &-Subtitle {
+    margin: 0;
+    padding: 0 8px;
+    color: $color-font-secondary;
+    font: normal 15px/23px $font-PT-Sans;
+  }
+
+  &-Textarea {
+    width: 769px;
+    min-height: 200px;
+    margin: 23px 7px 0 7px;
+    padding-left: 6px;
+    overflow: hidden;
+    border: none;
+    color: $color-font-input;
+    font: normal 30px/59px $font-CourierNew;
+    resize: none;
+    overflow-wrap: break-word;
+
+    &:focus {
+      @include focus-outline;
+    }
+  }
+}
+
+.Fieldset-Date {
+  display: flex;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 190px;
+    width: 213px;
+    height: 35px;
+    pointer-events: none;
+  }
+
+  &Input {
+    width: 280px;
+    margin: -31px 0 0 19px;
+    padding-left: 9px;
+    border: none;
+    background: transparent;
+    color: #231F20;
+    font: normal 30px/36px $font-CourierNew;
+
+    &:focus {
+      @include focus-outline;
+    }
+  }
+}
+
+.no-webp {
+  .Fieldset-Textarea {
+    background: url('../img/form-underliner.png') 0 23px;
+  }
+
+  .Fieldset-Date::before {
+    background: url('../img/form-underliner.png');
+  }
+}
+
+.webp {
+  .Fieldset-Textarea {
+    background: url('../img/webp/form-underliner.webp') 0 23px;
+  }
+
+  .Fieldset-Date::before {
+    background: url('../img/webp/form-underliner.webp');
+  }
+
+}

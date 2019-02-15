@@ -1,0 +1,11 @@
+mixin inputTypeTextReadonly(inputClassname, labelClassname,label, value, id)
+  label(for=id  class=labelClassname)=label
+  input(readonly class=inputClassname type="text" id=id  value=value)
+
+mixin inputTypeCheckbox(inputClassname, labelClassname,label, id, isChecked=false)
+  input(type="checkbox" class=inputClassname id=id checked=isChecked)
+  label(for=id class=labelClassname)=label
+
+mixin inputTypeRadio(inputClassname, labelClassname,label, id, groupName, isChecked=false)
+  input(type="radio" class=inputClassname id=id checked=isChecked name=groupName )
+  label(for=id  class=labelClassname)=label

@@ -1,0 +1,41 @@
+@import '../../global/variables.scss';
+
+.AboutList {
+  margin-bottom: 22px;
+  padding: 9px 6px;
+
+  &-Item {
+    display: flex;
+    margin-bottom: 12px;
+    color: $color-font;
+    font: bold 22px/50px $font-PT-Sans;
+  }
+
+  &-ItemLabel {
+    margin-right: 18px;
+    white-space: nowrap;
+  }
+
+  &-ItemInput {
+    width: 100%;
+    margin: -7px 7px 0 0;
+    padding-left: 15px;
+    border: none;
+    border-bottom: 19px solid $color-underline;
+    background: transparent;
+    color: $color-font-input;
+    font: normal 30px/36px $font-CourierNew;
+
+    &:focus {
+      @include focus-outline;
+    }
+  }
+}
+
+.no-webp .AboutList-ItemInput {
+  border-image: url('../img/form-underliner.png') 40;
+}
+
+.webp .AboutList-ItemInput {
+  border-image: url('../img/webp/form-underliner.webp') 40;
+}

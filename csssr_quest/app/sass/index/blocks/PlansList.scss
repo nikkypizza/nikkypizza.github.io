@@ -1,0 +1,54 @@
+.PlansList {
+  display: flex;
+  margin-bottom: 80px;
+  padding: 0 13px;
+  font: bold 20px/50px $font-PT-Sans;
+
+  &-Item {
+    position: relative;
+    margin-right: 28px;
+  }
+
+  &-ItemLabel {
+    &::before {
+      position: relative;
+      top: 6px;
+      right: 6px;
+    }
+  }
+
+  &-ItemInput {
+    position: absolute;
+    opacity: 0;
+
+    &:checked+label::after {
+      position: absolute;
+      top: -1px;
+      left: 1px;
+    }
+
+    &:focus+label::before {
+      @include focus-outline;
+    }
+  }
+}
+
+.no-webp {
+  .PlansList-ItemLabel::before {
+    content: url('../img/radio-box.png');
+  }
+
+  .PlansList-ItemInput:checked+label::after {
+    content: url('../img/radio-tick.png');
+  }
+}
+
+.webp {
+  .PlansList-ItemLabel::before {
+    content: url('../img/webp/radio-box.webp');
+  }
+
+  .PlansList-ItemInput:checked+label::after {
+    content: url('../img/webp/radio-tick.webp');
+  }
+}
