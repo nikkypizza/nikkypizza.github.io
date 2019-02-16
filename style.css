@@ -53,7 +53,11 @@
   background-image: url('img/ya-logo-letter.svg');
 }
 
-.Works-Link_ya-home {
+.Works-Link_ya_entrance {
+  background-image: url('img/ya_home.svg');
+}
+
+.Works-Link_ya_home {
   background-image: url('img/ya-logo.svg');
 }
 
