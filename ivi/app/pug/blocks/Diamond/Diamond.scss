@@ -1,0 +1,33 @@
+@import '../../../sass/global/variables.scss';
+
+.Diamond {
+  display: flex;
+  width: 27vw;
+  height: 20vw;
+  margin: auto;
+  background: $color-accent;
+  clip-path: polygon(26% 1%, 75% 1%, 100% 34%, 50% 100%, 1% 33%);
+
+  &:before {
+    content: '1';
+    margin: 0 auto;
+
+    animation: counter 5s infinite;
+    color: white;
+    font: normal 17vw/0.9 $font-Times;
+  }
+}
+
+@keyframes counter{
+  10% {
+    content: '2';
+  }
+
+  20% {
+    content: '3';
+  }
+
+  30%, 90% {
+    content: 'Go!';
+  }
+}
