@@ -14,8 +14,8 @@ body {
   height: 20vw;
   margin: auto;
   background: #E60040;
-  -webkit-clip-path: polygon(26% 1%, 75% 1%, 100% 34%, 50% 100%, 1% 33%);
-          clip-path: polygon(26% 1%, 75% 1%, 100% 34%, 50% 100%, 1% 33%); }
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 33%, 50% 100%, 0% 33%);
+          clip-path: polygon(25% 0%, 75% 0%, 100% 33%, 50% 100%, 0% 33%); }
   .Diamond:before {
     content: '1';
     margin: 0 auto;
