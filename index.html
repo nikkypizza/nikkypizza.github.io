@@ -1,65 +1,383 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
   <meta charset="utf-8">
-  <meta name="theme-color" content="#A5819F">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Портфолио одного знакомого веб-разработчика">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <title>Nȉkkypȉzza</title>
-  <link rel="stylesheet" href="style.css">
+
+  <title>Никита ПБ</title>
+  <meta name="theme-color" content="#5555ff">
+  <meta name="description" content="Разработчик интерфейсов">
+  <meta property="og:title" content="Разработчик интерфейсов">
+  <meta property="og:description" content="Работы и рекомендации">
+  <meta property="og:image" content="./media/favicons/android-chrome-512x512.png">
+  <meta property="og:locale" content="ru_ru">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nikkypizza.github.io/">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./media/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./media/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./media/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./media/favicons/site.webmanifest">
+  <style>
+    :root {
+      --color--theme: #5555ff;
+    }
+
+    .visuallyhidden {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: auto;
+      margin: 0;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      white-space: nowrap;
+    }
+
+    body {
+      color: #222;
+      font-size: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      text-rendering: geometricPrecision;
+      margin: 0;
+      padding: 3rem 0;
+      box-sizing: border-box;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h1,
+    h2 {
+      font-size: 1.17em;
+      line-height: 1.1;
+      margin: 1rem 0;
+    }
+
+    a {
+      color: var(--color--theme);
+      text-decoration: none;
+    }
+
+    summary,
+    a {
+      outline-color: var(--color--theme);
+      cursor: pointer;
+    }
+
+    a:hover,
+    label:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    img,
+    video {
+      width: 100%;
+      display: block;
+      height: auto;
+      max-width: fit-content;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    label {
+      font-size: 14px;
+    }
+
+    summary {
+      margin-bottom: 10px;
+    }
+
+    .header {
+      font-size: 14px;
+      max-width: 57rem;
+      width: 100%;
+      margin: 0 auto 2.5rem;
+      padding: 0 1rem;
+      box-sizing: border-box;
+    }
+
+    .header__title {
+      color: inherit;
+      font-size: 2rem;
+      font-weight: bold;
+      hyphens: auto;
+    }
+
+    .header__nav {
+      user-select: none;
+    }
+
+    .header__nav-item {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .header__nav-item:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    .link {
+      color: #666;
+      padding: 0 0 10px;
+      display: inline-block;
+    }
+
+    .content {
+      max-width: 57rem;
+      line-height: 1.5;
+      margin: 0 auto;
+      padding: 0 1rem;
+      box-sizing: border-box;
+    }
+
+    .post-list {
+      padding: 0;
+      margin-bottom: 50px;
+    }
+
+    .post-item {
+      margin-bottom: 1rem;
+    }
+
+    .footer {
+      font-size: 14px;
+      max-width: 57rem;
+      width: 100%;
+      margin: 3rem auto 0;
+      padding: 0 1rem;
+      box-sizing: border-box;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .footer .link {
+      color: inherit;
+      padding: 7.5px 0;
+      display: block;
+    }
+
+    .deeds,
+    #toggle-deeds:checked~.content .description,
+    .footer .link--back {
+      display: none;
+    }
+
+    #toggle-deeds:checked~.content .deeds {
+      display: initial;
+    }
+
+    #toggle-deeds:checked~.footer .link--back {
+      display: block;
+    }
+
+    .note {
+      font-size: 0.85em;
+      font-style: italic;
+    }
+
+    img,
+    video {
+      background: no-repeat center / 50px url("./media/img/spinner.svg");
+    }
+
+  </style>
 </head>
 
-<body class="Page">
-  <main>
-    <section class="Works">
-      <h1 class="Works-Header">Работы - заботы</h1>
-      <ul class="Works-List">
-        <li class="Works-ListItem">
-          <a class="Works-Link Works-Link_ya" href="https://nikkypizza.github.io/shri-2018-II-task-1/" title="Ya.SHRI 2018 - Main work repo">
-            <span class="Works-LinkDescription">Основной проект с домашними заданиями для ШРИ 2018/2</span>
-          </a>
+<body>
+  <input type="checkbox" id="toggle-deeds" class="visuallyhidden">
+
+  <header class="header">
+    <h1 class="header__title">Никита Победоносцев</h1>
+    <nav class="header__nav">
+      <ul>
+        <li class="header__nav-item">
+          <label class="link" for="toggle-deeds">Работы и&nbsp;рекомендации</label>
         </li>
-        <li class="Works-ListItem">
-          <a class="Works-Link Works-Link_ya_entrance" href="https://nikkypizza.github.io/task-2.2-shri_msk_2018/" title="Ya.SHRI 2018 - Entrance task">
-            <span class="Works-LinkDescription">Второе вступительное задание в ШРИ</span>
-          </a>
+        <li class="header__nav-item">
+          <a class="link" href="https://career.habr.com/nikkypizza" target="_blank" rel="noopener">Резюме на&nbsp;Хабре</a>
         </li>
-        <li class="Works-ListItem">
-          <a class="Works-Link Works-Link_csssr" href="csssr_quest/dist/index.html" title="CSSSR quest">
-            <span class="Works-LinkDescription">Квест верстальщика для CSSSR</span>
-          </a>
+        <li class="header__nav-item">
+          <a class="link" href="https://github.com/nikkypizza" target="_blank" rel="noopener">GitHub</a>
         </li>
-        <li class="Works-ListItem">
-          <a class="Works-Link Works-Link_ya_home" href="https://nikkypizza.github.io/shri2018-2-performance/" title="Ya.SHRI 2018 - Performance task">
-            <span class="Works-LinkDescription">Проект ШРИ 2018/2 по теме Performance.</span>
-          </a>
-          <span class="Works-LinkDescription"> Не все подходы тут можно отнести к best practice, но цель была выжать все лишнее без потери функциональности и облика. Результат теститовал интеграционно через Hermione. Вот <a href="https://newbfg.github.io/shri2018-2-performance/">так</a> было до оптимизации</span>
-        </li>
-        <li class="Works-ListItem">
-          <a class="Works-Link Works-Link_mishka" href="mishka/index.html" title="Mishka - Online Toy Store">
-            <span class="Works-LinkDescription">Проект Mishka для HTML Academy</span>
-          </a>
-        </li>
-        <li class="Works-ListItem">
-          <a class="Works-Link Works-Link_kekstagram" href="kekstagram/index.html" title="Kekstagram - Share your lifestyle">
-            <span class="Works-LinkDescription">Проект Kekstagram для HTML Academy</span>
-          </a>
-        </li>
-        <li class="Works-ListItem">
-          <a class="Works-Link Works-Link_foo" href="fooseshoes/index.html" title="FooseShoes - Online Shoe Store">
-            <span class="Works-LinkDescription">Тренировочный макет обувного мазина</span>
-          </a>
-        </li>
-        <li class="Works-ListItem">
-          <a class="Works-Link Works-Link_sedona" href="sedona/index.html" title="Find Hotels In Sedona">
-            <span class="Works-LinkDescription">Проект Sedona для HTML Academy. Макет с которого начался мой путь</span>
-          </a>
+        <li class="header__nav-item">
+          <a class="link" href="https://www.instagram.com/nikkypizza/" target="_blank" rel="noopener">Instagram</a>
         </li>
       </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+
+    <div class="description">
+      <p>
+        Привет, я&nbsp;&mdash; разработчик интерфейсов. Работаю в&nbsp;<a href="https://sber-tech.com/" target="_blank" rel="noopener">SberTech</a>, наставничаю на&nbsp;интенсивах по&nbsp;веб-разработке в&nbsp;<a href="https://htmlacademy.ru/" target="_blank" rel="noopener">HTML&nbsp;Academy</a>. Люблю <a href="https://jsbench.me/user/nikkypizza" target="_blank" rel="noopener">рефакторить и&nbsp;оптимизировать код</a>, учиться новому и&nbsp;делиться знаниями.</p>
+      <p>
+        В&nbsp;2018 году закончил <a href="https://academy.yandex.ru/schools/frontend" target="_blank" rel="noopener">Школу разработки интерфейсов</a> Яндекса.
+      </p>
+    </div>
+
+    <section class="deeds">
+      <h2><a href="https://spark.ru/startup/flocktory" target="_blank" rel="noopener">Flocktory</a> <small class="note">2019-2021</small></h2>
+
+      <ul class="post-list">
+        <li class="post-item">
+          <details>
+            <summary>Новогодняя игра с&nbsp;выдачей промокодов</summary>
+            <video data-src="./media/video/tree.mp4" autoplay muted loop playsinline></video>
+            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=393649" target="_blank" rel="noopener">Смотреть превью <small class="note">/adaptive</small></a>
+          </details>
+        </li>
+        <li class="post-item">
+          <details>
+            <summary>Лотерея со&nbsp;стиранием полей на&nbsp;canvas</summary>
+            <video data-src="./media/video/lottery.mp4" autoplay muted loop playsinline></video>
+            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=357790" target="_blank" rel="noopener">Смотреть превью <small class="note">/desktop</small></a>
+          </details>
+        </li>
+        <li class="post-item">
+          <details>
+            <summary>Instagram-like сториз</summary>
+            <video data-src="./media/video/stories.mp4" autoplay muted loop playsinline></video>
+            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=423101" target="_blank" rel="noopener">Смотреть превью <small class="note">/adaptive</small></a>
+          </details>
+        </li>
+        <li class="post-item">
+          <details>
+            <summary>Колесо фортуны</summary>
+            <video data-src="./media/video/wheel.mp4" autoplay muted loop playsinline></video>
+            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=470985" target="_blank" rel="noopener">Смотреть превью <small class="note">/desktop</small></a> <br>
+            <a class="post-item__title" href="http://2747.demoshop.flocktory.com/?flocktory-preview-id=470797" target="_blank" rel="noopener">Смотреть превью <small class="note">/mobile</small></a> <br>
+            <a class="post-item__title" href="http://2747.demoshop.flocktory.com/?flocktory-preview-id=478183" target="_blank" rel="noopener">Вариация с&nbsp;выдачей промокода. Смотреть превью <small class="note">/desktop</small></a>
+          </details>
+        </li>
+        <li class="post-item">
+          <details>
+            <summary>Квиз</summary>
+            <video data-src="./media/video/quiz.mp4" autoplay muted loop playsinline></video>
+            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=237624" target="_blank" rel="noopener">Смотреть превью <small class="note">/adaptive</small></a>
+          </details>
+        </li>
+        <li class="post-item">
+          <details>
+            <summary>Витрина подарков от&nbsp;партнеров</summary>
+            <video data-src="./media/video/exchange.mp4" autoplay muted loop playsinline></video>
+            <a class="post-item__title" href="https://flocktory.com/interchange/login" target="_blank" rel="noopener">Смотреть превью <small class="note">/adaptive</small></a>
+          </details>
+        </li>
+        <li class="post-item">
+          <details>
+            <summary>Генератор js&nbsp;файла&nbsp;ID товаров</summary>
+            <video data-src="./media/video/file-generator.mp4" autoplay muted loop playsinline></video>
+            <p>
+              Файл нужен для срабатывания кампаний на&nbsp;определенных id&nbsp;товаров интернет магазина.
+            </p>
+            <p>
+              Почему вместо массива и&nbsp;бинарного поиска используется объект:<br>
+              Бинарный поиск исполняется за&nbsp;логарифмическое время <b>О(log n)</b>, в&nbsp;то&nbsp;время как доступ к&nbsp;ключу объекта исполняется за&nbsp;константное время <b>О(1)</b>, а&nbsp;значит будет быстрее при любом количестве входных данных, <a href="https://jsbench.me/9xk8g41xwb" target="_blank" rel="noopener">демо jsbench</a>
+            </p>
+            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=326768" target="_blank" rel="noopener">Смотреть превью <small class="note">/desktop</small></a>
+          </details>
+        </li>
+        <li class="post-item">
+          <details>
+            <summary>Сборщики лидов</summary>
+            <p>Сделал более сотни вариаций подобных виджетов</p>
+            <img src="./media/img/email_collector.png" alt="Скриншот сборщика пользовательской информации" loading="lazy" height="313">
+            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=472416" target="_blank" rel="noopener">Смотреть превью <small class="note">/mobile</small></a>
+          </details>
+        </li>
+        <li class="post-item">
+          <details>
+            <summary>Верстка писем с&nbsp;поддержкой MS&nbsp;Outlook</summary>
+            <img src="./media/img/email_markup.png" alt="Скриншот сборщика пользовательской информации" loading="lazy" height="982">
+          </details>
+        </li>
+        <!-- <li class="post-item">
+          <details>
+            <summary>Страница отписки от&nbsp;email-рассылок Flocktory</summary>
+            <video data-src="./media/video/unsub.mp4" autoplay muted loop playsinline></video>
+          </details>
+        </li> -->
+      </ul>
+
+      <h2>Разное</h2>
+
+      <ul class="post-list">
+        <li class="post-item">
+          <a class="post-item__title" href="https://six-cities-react-nikkypizza.vercel.app/" target="_blank" rel="noopener">Six Cities</a> — HTML Academy React <small class="note">/desktop</small> <small class="note"><a href="https://github.com/nikkypizza/six-cities-react/tree/master/project" rel="noopener" target="_blank">/repo</a></small>
+        </li>
+        <li class="post-item">
+          <a class="post-item__title" href="./media/JIT-final.key" rel="noopener">Презентация.key по&nbsp;итоговому проекту Я.Трекера</a> — Яндекс. Школа Разработки Интерфейсов.
+        </li>
+        <li class="post-item">
+          <a class="post-item__title" href="https://nikkypizza.github.io/shri-2018-II-task-1" target="_blank" rel="noopener">Лента событий умного дома</a> — Яндекс. Школа Разработки Интерфейсов. <small class="note">/adaptive</small>
+        </li>
+        <li class="post-item">
+          <a class="post-item__title" href="https://nikkypizza.github.io/task-2.2-shri_msk_2018" target="_blank" rel="noopener">Вступительное задание по верстке</a> — Яндекс. Школа Разработки Интерфейсов. <small class="note">/adaptive</small>
+        </li>
+        <li class="post-item">
+          <a class="post-item__title" href="https://nikkypizza.github.io/Kekstagram--js/" target="_blank" rel="noopener">Kekstagram</a> — HTML Academy JS-1 <small class="note">/desktop</small>
+        </li>
+        <li class="post-item">
+          <a class="post-item__title" href="https://nikkypizza.github.io/Mishka--css/" target="_blank" rel="noopener">Mishka</a> — HTML Academy HTML&CSS-2 <small class="note">/adaptive</small>
+        </li>
+        <!-- <li class="post-item">
+          <a class="post-item__title" href="https://nikkypizza.github.io/Sedona" target="_blank" rel="noopener">Sedona</a> — HTML Academy HTML&CSS-1 <small class="note">/desktop</small>
+        </li> -->
+        <li class="post-item">
+          <a class="post-item__title" href="https://nikkypizza.github.io/fooseshoes" target="_blank" rel="noopener">Fooseshoes</a> — Титульная страница магазина обуви <small class="note">/adaptive</small>
+        </li>
+      </ul>
+
+      <h2>Рекомендации</h2>
+
+      <ul class="post-list">
+        <li class="post-item">
+          <span class="post-item__body">
+            <a class="post-item__title" href="./media/credence/Flocktory.pdf" rel="noopener">Flocktory</a>
+          </span>
+        </li>
+        <li class="post-item">
+          <span class="post-item__body">
+            <a class="post-item__title" href="./media/credence/HTMLacademy.pdf" rel="noopener">HTML Academy</a>
+          </span>
+        </li>
+        <li class="post-item">
+          <span class="post-item__body">
+            <a class="post-item__title" href="./media/credence/BMWRussia.pdf" rel="noopener">BMW Russia</a>
+          </span>
+        </li>
+      </ul>
+
     </section>
   </main>
+
+  <footer class="footer">
+    <label class="link link--back" for="toggle-deeds">Вернуться к&nbsp;информации</label>
+    <a class="link" href="mailto:npb.nikita@gmail.com">npb.nikita@gmail.com</a>
+    <a class="link" href="https://t.me/nikkypizza" target="_blank" rel="noopener">@nikkypizza</a>
+  </footer>
+
+  <script>
+    const detailsVideoNodes = document.querySelectorAll("details > video");
+
+    const loadVideoOnToggle = (videoNode) => {
+      videoNode.parentElement.addEventListener("toggle", () => {
+        videoNode.src = videoNode.dataset.src;
+      }, { once: true });
+    };
+
+    detailsVideoNodes.forEach(loadVideoOnToggle);
+  </script>
 </body>
 
 </html>
