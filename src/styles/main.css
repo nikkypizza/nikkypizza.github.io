@@ -128,6 +128,11 @@ label {
   display: block;
 }
 
+.note {
+  font-size: 0.85em;
+  font-style: italic;
+}
+
 .deeds,
 #toggle-deeds:checked~.content .description,
 .footer .link--back {
@@ -139,7 +144,14 @@ label {
   display: block;
 }
 
-.note {
-  font-size: 0.85em;
-  font-style: italic;
+#toggle-deeds~.header .toggler-label::after {
+  content: 'Работы';
+}
+
+#toggle-deeds:checked~.header .toggler-label::after {
+  content: 'Назад к описанию';
+}
+
+#toggle-deeds:focus~.header .toggler-label {
+  text-decoration: none;
 }
