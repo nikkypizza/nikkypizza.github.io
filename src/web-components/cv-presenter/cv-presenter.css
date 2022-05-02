@@ -1,0 +1,28 @@
+small {
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+summary {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+video {
+  background: no-repeat center / 50px url(../../../src/media/img/spinner.svg);
+}
+
+a {
+  outline-color: var(--color--theme);
+  color: var(--color--theme);
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+img, video {
+  width: 100%;
+  display: block;
+  height: auto;
+  max-width: fit-content;
+}

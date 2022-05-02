@@ -12,190 +12,22 @@
   <meta name="description" content="Разработчик интерфейсов">
   <meta property="og:title" content="Разработчик интерфейсов">
   <meta property="og:description" content="Работы и рекомендации">
-  <meta property="og:image" content="./media/favicons/android-chrome-512x512.png">
+  <meta property="og:image" content="./src/media/favicons/android-chrome-512x512.png">
   <meta property="og:locale" content="ru_ru">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nikkypizza.github.io/">
   <meta name="twitter:card" content="summary">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="./media/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./media/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./media/favicons/favicon-16x16.png">
-  <link rel="manifest" href="./media/favicons/site.webmanifest">
-  <style>
-    :root {
-      --color--theme: #5555ff;
-      --color--link: #666666;
-    }
+  <link rel="apple-touch-icon" sizes="180x180" href="./src/media/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/media/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./src/media/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./src/media/favicons/site.webmanifest">
 
-    .visuallyhidden {
-      border: 0;
-      clip: rect(0 0 0 0);
-      height: auto;
-      margin: 0;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
-      white-space: nowrap;
-    }
-
-    body {
-      color: #222;
-      font-size: 16px;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      text-rendering: geometricPrecision;
-      margin: 0;
-      padding: 3rem 0;
-      box-sizing: border-box;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    h1,
-    h2 {
-      font-size: 1.17em;
-      line-height: 1.1;
-      margin: 1rem 0;
-    }
-
-    a {
-      color: var(--color--theme);
-      text-decoration: none;
-    }
-
-    summary,
-    a {
-      outline-color: var(--color--theme);
-      cursor: pointer;
-    }
-
-    a:hover,
-    label:hover {
-      text-decoration: underline;
-      cursor: pointer;
-    }
-
-    img,
-    video {
-      width: 100%;
-      display: block;
-      height: auto;
-      max-width: fit-content;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    label {
-      font-size: 14px;
-    }
-
-    summary {
-      margin-bottom: 10px;
-    }
-
-    .header {
-      font-size: 14px;
-      max-width: 57rem;
-      width: 100%;
-      margin: 0 auto 2.5rem;
-      padding: 0 1rem;
-      box-sizing: border-box;
-    }
-
-    .header__title {
-      color: inherit;
-      font-size: 2rem;
-      font-weight: bold;
-      hyphens: auto;
-    }
-
-    .header__nav {
-      user-select: none;
-    }
-
-    .header__nav-item {
-      display: inline-block;
-      vertical-align: middle;
-    }
-
-    .header__nav-item:not(:last-child) {
-      margin-right: 15px;
-    }
-
-    .link {
-      color: var(--color--link);
-      padding: 0 0 10px;
-      display: inline-block;
-    }
-
-    .content {
-      max-width: 57rem;
-      line-height: 1.5;
-      margin: 0 auto;
-      padding: 0 1rem;
-      box-sizing: border-box;
-    }
-
-    .post-list,
-    .content-wrapper {
-      padding: 0;
-      margin-bottom: 50px;
-    }
-
-    .post-item {
-      margin-bottom: 1rem;
-    }
-
-    .footer {
-      font-size: 14px;
-      max-width: 57rem;
-      width: 100%;
-      margin: 3rem auto 0;
-      padding: 0 1rem;
-      box-sizing: border-box;
-      color: var(--color--link);
-      line-height: 1.5;
-    }
-
-    .footer .link {
-      color: inherit;
-      padding: 7.5px 0;
-      display: block;
-    }
-
-    .deeds,
-    #toggle-deeds:checked~.content .description,
-    .footer .link--back {
-      content-visibility: hidden;
-    }
-
-    #toggle-deeds:checked~.content .deeds,
-    #toggle-deeds:checked~.footer .link--back {
-      content-visibility: auto;
-    }
-
-    .note {
-      font-size: 0.85em;
-      font-style: italic;
-    }
-
-    img,
-    video {
-      background: no-repeat center / 50px url("./media/img/spinner.svg");
-    }
-
-  </style>
+  <link rel="stylesheet" href="./src/styles/main.css">
 </head>
 
 <body>
   <input type="checkbox" id="toggle-deeds" class="visuallyhidden">
-
   <header class="header">
     <h1 class="header__title">Никита Победоносцев</h1>
     <nav class="header__nav">
@@ -232,17 +64,17 @@
       <ul class="post-list">
         <li class="post-item">
           <span class="post-item__body">
-            <a class="post-item__title" href="./media/credence/Flocktory.pdf">Flocktory</a>
+            <a class="post-item__title" href="./src/media/credence/Flocktory.pdf">Flocktory</a>
           </span>
         </li>
         <li class="post-item">
           <span class="post-item__body">
-            <a class="post-item__title" href="./media/credence/HTMLacademy.pdf">HTML Academy</a>
+            <a class="post-item__title" href="./src/media/credence/HTMLacademy.pdf">HTML Academy</a>
           </span>
         </li>
         <li class="post-item">
           <span class="post-item__body">
-            <a class="post-item__title" href="./media/credence/BMWRussia.pdf">BMW Russia</a>
+            <a class="post-item__title" href="./src/media/credence/BMWRussia.pdf">BMW Russia</a>
           </span>
         </li>
       </ul>
@@ -253,53 +85,25 @@
 
       <ul class="post-list">
         <li class="post-item">
-          <details>
-            <summary>Новогодняя игра с&nbsp;выдачей промокодов</summary>
-            <video data-src="./media/video/tree.mp4" autoplay muted loop playsinline></video>
-            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=393649">Смотреть превью <small class="note">/adaptive</small></a>
-          </details>
+          <cv-presenter summary="Новогодняя игра с&nbsp;выдачей промокодов" media="./src/media/video/tree.mp4" preview="/adaptive|https://2747.demoshop.flocktory.com/?flocktory-preview-id=393649"></cv-presenter>
         </li>
         <li class="post-item">
-          <details>
-            <summary>Лотерея со&nbsp;стиранием полей на&nbsp;canvas</summary>
-            <video data-src="./media/video/lottery.mp4" autoplay muted loop playsinline></video>
-            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=357790">Смотреть превью <small class="note">/desktop</small></a>
-          </details>
+          <cv-presenter summary="Лотерея со&nbsp;стиранием полей на&nbsp;canvas" media="./src/media/video/lottery.mp4" preview="/desktop|https://2747.demoshop.flocktory.com/?flocktory-preview-id=357790"></cv-presenter>
         </li>
         <li class="post-item">
-          <details>
-            <summary>Instagram-like сториз</summary>
-            <video data-src="./media/video/stories.mp4" autoplay muted loop playsinline></video>
-            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=423101">Смотреть превью <small class="note">/adaptive</small></a>
-          </details>
+          <cv-presenter summary="Instagram-like сториз" media="./src/media/video/stories.mp4" preview="/adaptive|https://2747.demoshop.flocktory.com/?flocktory-preview-id=423101"></cv-presenter>
         </li>
         <li class="post-item">
-          <details>
-            <summary>Колесо фортуны</summary>
-            <video data-src="./media/video/wheel.mp4" autoplay muted loop playsinline></video>
-            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=470985">Смотреть превью <small class="note">/desktop</small></a> <br>
-            <a class="post-item__title" href="http://2747.demoshop.flocktory.com/?flocktory-preview-id=470797">Смотреть превью <small class="note">/mobile</small></a> <br>
-            <a class="post-item__title" href="http://2747.demoshop.flocktory.com/?flocktory-preview-id=478183">Вариация с&nbsp;выдачей промокода. Смотреть превью <small class="note">/desktop</small></a>
-          </details>
+          <cv-presenter summary="Колесо фортуны" media="./src/media/video/wheel.mp4" preview="/desktop|https://2747.demoshop.flocktory.com/?flocktory-preview-id=470985||/mobile|http://2747.demoshop.flocktory.com/?flocktory-preview-id=470797||/desktop|http://2747.demoshop.flocktory.com/?flocktory-preview-id=478183|Вариация с&nbsp;выдачей промокода."></cv-presenter>
         </li>
         <li class="post-item">
-          <details>
-            <summary>Квиз</summary>
-            <video data-src="./media/video/quiz.mp4" autoplay muted loop playsinline></video>
-            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=237624">Смотреть превью <small class="note">/adaptive</small></a>
-          </details>
+          <cv-presenter summary="Квиз" media="./src/media/video/quiz.mp4" preview="/adaptive|https://2747.demoshop.flocktory.com/?flocktory-preview-id=237624"></cv-presenter>
         </li>
         <li class="post-item">
-          <details>
-            <summary>Витрина подарков от&nbsp;партнеров</summary>
-            <video data-src="./media/video/exchange.mp4" autoplay muted loop playsinline></video>
-            <a class="post-item__title" href="https://flocktory.com/interchange/login">Смотреть превью <small class="note">/adaptive</small></a>
-          </details>
+          <cv-presenter summary="Витрина подарков от&nbsp;партнеров" media="./src/media/video/exchange.mp4" preview="/adaptive|https://flocktory.com/interchange/login"></cv-presenter>
         </li>
         <li class="post-item">
-          <details>
-            <summary>Генератор js&nbsp;файла&nbsp;ID товаров</summary>
-            <video data-src="./media/video/file-generator.mp4" autoplay muted loop playsinline></video>
+          <cv-presenter summary="Генератор js&nbsp;файла&nbsp;ID товаров" media="./src/media/video/file-generator.mp4" preview="/desktop|https://2747.demoshop.flocktory.com/?flocktory-preview-id=326768">
             <p>
               Файл нужен для срабатывания кампаний на&nbsp;определенных id&nbsp;товаров интернет магазина.
             </p>
@@ -307,28 +111,18 @@
               Почему вместо массива и&nbsp;бинарного поиска используется объект:<br>
               Бинарный поиск исполняется за&nbsp;логарифмическое время <b>О(log n)</b>, в&nbsp;то&nbsp;время как доступ к&nbsp;ключу объекта исполняется за&nbsp;константное время <b>О(1)</b>, а&nbsp;значит будет быстрее при любом количестве входных данных, <a href="https://jsbench.me/9xk8g41xwb">демо jsbench</a>
             </p>
-            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=326768">Смотреть превью <small class="note">/desktop</small></a>
-          </details>
+          </cv-presenter>
         </li>
         <li class="post-item">
-          <details>
-            <summary>Сборщики лидов</summary>
+          <cv-presenter summary="Сборщики лидов" media="./src/media/img/email_collector.png" preview="/mobile|https://2747.demoshop.flocktory.com/?flocktory-preview-id=472416">
             <p>Сделал более сотни вариаций подобных виджетов</p>
-            <img src="./media/img/email_collector.png" alt="Скриншот сборщика пользовательской информации" loading="lazy" height="313">
-            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=472416">Смотреть превью <small class="note">/mobile</small></a>
-          </details>
+          </cv-presenter>
         </li>
         <li class="post-item">
-          <details>
-            <summary>Верстка писем с&nbsp;поддержкой MS&nbsp;Outlook</summary>
-            <img src="./media/img/email_markup.png" alt="Скриншот сборщика пользовательской информации" loading="lazy" height="982">
-          </details>
+          <cv-presenter summary="Верстка писем с&nbsp;поддержкой MS&nbsp;Outlook" media="./src/media/img/email_markup.png"></cv-presenter>
         </li>
         <!-- <li class="post-item">
-          <details>
-            <summary>Страница отписки от&nbsp;email-рассылок Flocktory</summary>
-            <video data-src="./media/video/unsub.mp4" autoplay muted loop playsinline></video>
-          </details>
+          <cv-presenter summary="Страница отписки от&nbsp;email-рассылок Flocktory" media="./src/media/video/unsub.mp4"></cv-presenter>
         </li> -->
       </ul>
 
@@ -339,7 +133,7 @@
           <a class="post-item__title" href="https://six-cities-react-nikkypizza.vercel.app/">Six Cities</a> — HTML Academy React <small class="note">/desktop</small> <small class="note"><a href="https://github.com/nikkypizza/six-cities-react/tree/master/project" target="_blank">/repo</a></small>
         </li>
         <li class="post-item">
-          <a class="post-item__title" href="./media/JIT-final.key">Презентация.key по&nbsp;итоговому проекту Я.Трекера</a> — Яндекс. Школа Разработки Интерфейсов.
+          <a class="post-item__title" href="./src/media/JIT-final.key">Презентация.key по&nbsp;итоговому проекту Я.Трекера</a> — Яндекс. Школа Разработки Интерфейсов.
         </li>
         <li class="post-item">
           <a class="post-item__title" href="https://nikkypizza.github.io/shri-2018-II-task-1">Лента событий умного дома</a> — Яндекс. Школа Разработки Интерфейсов. <small class="note">/adaptive</small>
@@ -358,103 +152,6 @@
         </li> -->
         <li class="post-item">
           <a class="post-item__title" href="https://nikkypizza.github.io/fooseshoes">Fooseshoes</a> — Титульная страница магазина обуви <small class="note">/adaptive</small>
-        </li>
-        <li class="post-item">
-          <details>
-            <summary>Квиз</summary>
-            <video data-src="./media/video/quiz.mp4" autoplay muted loop playsinline></video>
-            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=237624">Смотреть превью <small class="note">/adaptive</small></a>
-          </details>
-        </li>
-        <li class="post-item">
-          <details>
-            <summary>Витрина подарков от&nbsp;партнеров</summary>
-            <video data-src="./media/video/exchange.mp4" autoplay muted loop playsinline></video>
-            <a class="post-item__title" href="https://flocktory.com/interchange/login">Смотреть превью <small class="note">/adaptive</small></a>
-          </details>
-        </li>
-        <li class="post-item">
-          <details>
-            <summary>Генератор js&nbsp;файла&nbsp;ID товаров</summary>
-            <video data-src="./media/video/file-generator.mp4" autoplay muted loop playsinline></video>
-            <p>
-              Файл нужен для срабатывания кампаний на&nbsp;определенных id&nbsp;товаров интернет магазина.
-            </p>
-            <p>
-              Почему вместо массива и&nbsp;бинарного поиска используется объект:<br>
-              Бинарный поиск исполняется за&nbsp;логарифмическое время <b>О(log n)</b>, в&nbsp;то&nbsp;время как доступ к&nbsp;ключу объекта исполняется за&nbsp;константное время <b>О(1)</b>, а&nbsp;значит будет быстрее при любом количестве входных данных, <a href="https://jsbench.me/9xk8g41xwb">демо jsbench</a>
-            </p>
-            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=326768">Смотреть превью <small class="note">/desktop</small></a>
-          </details>
-        </li>
-        <li class="post-item">
-          <details>
-            <summary>Сборщики лидов</summary>
-            <p>Сделал более сотни вариаций подобных виджетов</p>
-            <img src="./media/img/email_collector.png" alt="Скриншот сборщика пользовательской информации" loading="lazy" height="313">
-            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=472416">Смотреть превью <small class="note">/mobile</small></a>
-          </details>
-        </li>
-        <li class="post-item">
-          <details>
-            <summary>Верстка писем с&nbsp;поддержкой MS&nbsp;Outlook</summary>
-            <img src="./media/img/email_markup.png" alt="Скриншот сборщика пользовательской информации" loading="lazy" height="982">
-          </details>
-        </li>
-        <!-- <li class="post-item">
-          <details>
-            <summary>Страница отписки от&nbsp;email-рассылок Flocktory</summary>
-            <video data-src="./media/video/unsub.mp4" autoplay muted loop playsinline></video>
-          </details>
-        </li> -->
-      </ul>
-
-      <h2>Разное</h2>
-
-      <ul class="post-list">
-        <li class="post-item">
-          <a class="post-item__title" href="https://six-cities-react-nikkypizza.vercel.app/">Six Cities</a> — HTML Academy React <small class="note">/desktop</small> <small class="note"><a href="https://github.com/nikkypizza/six-cities-react/tree/master/project" target="_blank">/repo</a></small>
-        </li>
-        <li class="post-item">
-          <a class="post-item__title" href="./media/JIT-final.key">Презентация.key по&nbsp;итоговому проекту Я.Трекера</a> — Яндекс. Школа Разработки Интерфейсов.
-        </li>
-        <li class="post-item">
-          <a class="post-item__title" href="https://nikkypizza.github.io/shri-2018-II-task-1">Лента событий умного дома</a> — Яндекс. Школа Разработки Интерфейсов. <small class="note">/adaptive</small>
-        </li>
-        <li class="post-item">
-          <a class="post-item__title" href="https://nikkypizza.github.io/task-2.2-shri_msk_2018">Вступительное задание по верстке</a> — Яндекс. Школа Разработки Интерфейсов. <small class="note">/adaptive</small>
-        </li>
-        <li class="post-item">
-          <a class="post-item__title" href="https://nikkypizza.github.io/Kekstagram--js/">Kekstagram</a> — HTML Academy JS-1 <small class="note">/desktop</small>
-        </li>
-        <li class="post-item">
-          <a class="post-item__title" href="https://nikkypizza.github.io/Mishka--css/">Mishka</a> — HTML Academy HTML&CSS-2 <small class="note">/adaptive</small>
-        </li>
-        <!-- <li class="post-item">
-          <a class="post-item__title" href="https://nikkypizza.github.io/Sedona">Sedona</a> — HTML Academy HTML&CSS-1 <small class="note">/desktop</small>
-        </li> -->
-        <li class="post-item">
-          <a class="post-item__title" href="https://nikkypizza.github.io/fooseshoes">Fooseshoes</a> — Титульная страница магазина обуви <small class="note">/adaptive</small>
-        </li>
-      </ul>
-
-      <h2>Рекомендации</h2>
-
-      <ul class="post-list">
-        <li class="post-item">
-          <span class="post-item__body">
-            <a class="post-item__title" href="./media/credence/Flocktory.pdf">Flocktory</a>
-          </span>
-        </li>
-        <li class="post-item">
-          <span class="post-item__body">
-            <a class="post-item__title" href="./media/credence/HTMLacademy.pdf">HTML Academy</a>
-          </span>
-        </li>
-        <li class="post-item">
-          <span class="post-item__body">
-            <a class="post-item__title" href="./media/credence/BMWRussia.pdf">BMW Russia</a>
-          </span>
         </li>
       </ul>
 
@@ -466,18 +163,7 @@
     <a class="link" href="mailto:npb.nikita@gmail.com">npb.nikita@gmail.com</a>
     <a class="link" href="https://t.me/nikkypizza">@nikkypizza</a>
   </footer>
-
-  <script>
-    const detailsVideoNodes = document.querySelectorAll("details > video");
-
-    const loadVideoOnToggle = (videoNode) => {
-      videoNode.parentElement.addEventListener("toggle", () => {
-        videoNode.src = videoNode.dataset.src;
-      }, { once: true });
-    };
-
-    detailsVideoNodes.forEach(loadVideoOnToggle);
-  </script>
+  <script src="./src/web-components/cv-presenter/index.js" type="module"></script>
 </body>
 
 </html>
