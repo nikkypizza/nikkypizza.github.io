@@ -1,0 +1,145 @@
+:root {
+  --color--theme: #5555ff;
+  --color--link: #666666;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+body {
+  color: #222;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  text-rendering: geometricPrecision;
+  margin: 0;
+  padding: 3rem 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h1,
+h2 {
+  font-size: 1.17em;
+  line-height: 1.1;
+  margin: 1rem 0;
+}
+
+a {
+  color: var(--color--theme);
+  text-decoration: none;
+  outline-color: var(--color--theme);
+  cursor: pointer;
+}
+
+a:hover,
+label:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+label {
+  font-size: 14px;
+}
+
+.header {
+  font-size: 14px;
+  max-width: 57rem;
+  width: 100%;
+  margin: 0 auto 2.5rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.header__title {
+  color: inherit;
+  font-size: 2rem;
+  font-weight: bold;
+  hyphens: auto;
+}
+
+.header__nav {
+  user-select: none;
+}
+
+.header__nav-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header__nav-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.link {
+  color: var(--color--link);
+  padding: 0 0 10px;
+  display: inline-block;
+}
+
+.content {
+  max-width: 57rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.post-list,
+.content-wrapper {
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.post-item {
+  margin-bottom: 1rem;
+}
+
+.footer {
+  font-size: 14px;
+  max-width: 57rem;
+  width: 100%;
+  margin: 3rem auto 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  color: var(--color--link);
+  line-height: 1.5;
+}
+
+.footer .link {
+  color: inherit;
+  padding: 7.5px 0;
+  display: block;
+}
+
+.deeds,
+#toggle-deeds:checked~.content .description,
+.footer .link--back {
+  display: none;
+}
+
+#toggle-deeds:checked~.content .deeds,
+#toggle-deeds:checked~.footer .link--back {
+  display: block;
+}
+
+.note {
+  font-size: 0.85em;
+  font-style: italic;
+}
