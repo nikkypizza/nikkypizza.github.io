@@ -142,7 +142,8 @@
       box-sizing: border-box;
     }
 
-    .post-list {
+    .post-list,
+    .content-wrapper {
       padding: 0;
       margin-bottom: 50px;
     }
@@ -171,15 +172,12 @@
     .deeds,
     #toggle-deeds:checked~.content .description,
     .footer .link--back {
-      display: none;
+      content-visibility: hidden;
     }
 
-    #toggle-deeds:checked~.content .deeds {
-      display: initial;
-    }
-
+    #toggle-deeds:checked~.content .deeds,
     #toggle-deeds:checked~.footer .link--back {
-      display: block;
+      content-visibility: auto;
     }
 
     .note {
@@ -203,7 +201,7 @@
     <nav class="header__nav">
       <ul>
         <li class="header__nav-item">
-          <label class="link" for="toggle-deeds">Работы и&nbsp;рекомендации</label>
+          <label class="link" for="toggle-deeds">Работы</label>
         </li>
         <li class="header__nav-item">
           <a class="link" href="https://career.habr.com/nikkypizza">Резюме на&nbsp;Хабре</a>
@@ -221,11 +219,33 @@
   <main class="content">
 
     <div class="description">
-      <p>
-        Привет, я&nbsp;&mdash; разработчик интерфейсов. Работаю в&nbsp;<a href="https://sber-tech.com/">SberTech</a>, наставничаю на&nbsp;интенсивах по&nbsp;веб-разработке в&nbsp;<a href="https://htmlacademy.ru/">HTML&nbsp;Academy</a>. Люблю <a href="https://jsbench.me/user/nikkypizza">рефакторить и&nbsp;оптимизировать код</a>, учиться новому и&nbsp;делиться знаниями.</p>
-      <p>
-        В&nbsp;2018 году закончил <a href="https://academy.yandex.ru/schools/frontend">Школу разработки интерфейсов</a> Яндекса.
-      </p>
+      <div class="content-wrapper">
+        <p>
+          Привет, я&nbsp;&mdash; разработчик интерфейсов. Работаю в&nbsp;<a href="https://sber-tech.com/">SberTech</a>, наставничаю на&nbsp;интенсивах по&nbsp;веб-разработке в&nbsp;<a href="https://htmlacademy.ru/">HTML&nbsp;Academy</a>. Люблю <a href="https://jsbench.me/user/nikkypizza">рефакторить и&nbsp;оптимизировать код</a>, учиться новому и&nbsp;делиться знаниями.</p>
+        <p>
+          В&nbsp;2018 году закончил <a href="https://academy.yandex.ru/schools/frontend">Школу разработки интерфейсов</a> Яндекса.
+        </p>
+      </div>
+
+      <h2>Рекомендации</h2>
+
+      <ul class="post-list">
+        <li class="post-item">
+          <span class="post-item__body">
+            <a class="post-item__title" href="./media/credence/Flocktory.pdf">Flocktory</a>
+          </span>
+        </li>
+        <li class="post-item">
+          <span class="post-item__body">
+            <a class="post-item__title" href="./media/credence/HTMLacademy.pdf">HTML Academy</a>
+          </span>
+        </li>
+        <li class="post-item">
+          <span class="post-item__body">
+            <a class="post-item__title" href="./media/credence/BMWRussia.pdf">BMW Russia</a>
+          </span>
+        </li>
+      </ul>
     </div>
 
     <section class="deeds">
@@ -261,6 +281,83 @@
             <a class="post-item__title" href="http://2747.demoshop.flocktory.com/?flocktory-preview-id=470797">Смотреть превью <small class="note">/mobile</small></a> <br>
             <a class="post-item__title" href="http://2747.demoshop.flocktory.com/?flocktory-preview-id=478183">Вариация с&nbsp;выдачей промокода. Смотреть превью <small class="note">/desktop</small></a>
           </details>
+        </li>
+        <li class="post-item">
+          <details>
+            <summary>Квиз</summary>
+            <video data-src="./media/video/quiz.mp4" autoplay muted loop playsinline></video>
+            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=237624">Смотреть превью <small class="note">/adaptive</small></a>
+          </details>
+        </li>
+        <li class="post-item">
+          <details>
+            <summary>Витрина подарков от&nbsp;партнеров</summary>
+            <video data-src="./media/video/exchange.mp4" autoplay muted loop playsinline></video>
+            <a class="post-item__title" href="https://flocktory.com/interchange/login">Смотреть превью <small class="note">/adaptive</small></a>
+          </details>
+        </li>
+        <li class="post-item">
+          <details>
+            <summary>Генератор js&nbsp;файла&nbsp;ID товаров</summary>
+            <video data-src="./media/video/file-generator.mp4" autoplay muted loop playsinline></video>
+            <p>
+              Файл нужен для срабатывания кампаний на&nbsp;определенных id&nbsp;товаров интернет магазина.
+            </p>
+            <p>
+              Почему вместо массива и&nbsp;бинарного поиска используется объект:<br>
+              Бинарный поиск исполняется за&nbsp;логарифмическое время <b>О(log n)</b>, в&nbsp;то&nbsp;время как доступ к&nbsp;ключу объекта исполняется за&nbsp;константное время <b>О(1)</b>, а&nbsp;значит будет быстрее при любом количестве входных данных, <a href="https://jsbench.me/9xk8g41xwb">демо jsbench</a>
+            </p>
+            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=326768">Смотреть превью <small class="note">/desktop</small></a>
+          </details>
+        </li>
+        <li class="post-item">
+          <details>
+            <summary>Сборщики лидов</summary>
+            <p>Сделал более сотни вариаций подобных виджетов</p>
+            <img src="./media/img/email_collector.png" alt="Скриншот сборщика пользовательской информации" loading="lazy" height="313">
+            <a class="post-item__title" href="https://2747.demoshop.flocktory.com/?flocktory-preview-id=472416">Смотреть превью <small class="note">/mobile</small></a>
+          </details>
+        </li>
+        <li class="post-item">
+          <details>
+            <summary>Верстка писем с&nbsp;поддержкой MS&nbsp;Outlook</summary>
+            <img src="./media/img/email_markup.png" alt="Скриншот сборщика пользовательской информации" loading="lazy" height="982">
+          </details>
+        </li>
+        <!-- <li class="post-item">
+          <details>
+            <summary>Страница отписки от&nbsp;email-рассылок Flocktory</summary>
+            <video data-src="./media/video/unsub.mp4" autoplay muted loop playsinline></video>
+          </details>
+        </li> -->
+      </ul>
+
+      <h2>Разное</h2>
+
+      <ul class="post-list">
+        <li class="post-item">
+          <a class="post-item__title" href="https://six-cities-react-nikkypizza.vercel.app/">Six Cities</a> — HTML Academy React <small class="note">/desktop</small> <small class="note"><a href="https://github.com/nikkypizza/six-cities-react/tree/master/project" target="_blank">/repo</a></small>
+        </li>
+        <li class="post-item">
+          <a class="post-item__title" href="./media/JIT-final.key">Презентация.key по&nbsp;итоговому проекту Я.Трекера</a> — Яндекс. Школа Разработки Интерфейсов.
+        </li>
+        <li class="post-item">
+          <a class="post-item__title" href="https://nikkypizza.github.io/shri-2018-II-task-1">Лента событий умного дома</a> — Яндекс. Школа Разработки Интерфейсов. <small class="note">/adaptive</small>
+        </li>
+        <li class="post-item">
+          <a class="post-item__title" href="https://nikkypizza.github.io/task-2.2-shri_msk_2018">Вступительное задание по верстке</a> — Яндекс. Школа Разработки Интерфейсов. <small class="note">/adaptive</small>
+        </li>
+        <li class="post-item">
+          <a class="post-item__title" href="https://nikkypizza.github.io/Kekstagram--js/">Kekstagram</a> — HTML Academy JS-1 <small class="note">/desktop</small>
+        </li>
+        <li class="post-item">
+          <a class="post-item__title" href="https://nikkypizza.github.io/Mishka--css/">Mishka</a> — HTML Academy HTML&CSS-2 <small class="note">/adaptive</small>
+        </li>
+        <!-- <li class="post-item">
+          <a class="post-item__title" href="https://nikkypizza.github.io/Sedona">Sedona</a> — HTML Academy HTML&CSS-1 <small class="note">/desktop</small>
+        </li> -->
+        <li class="post-item">
+          <a class="post-item__title" href="https://nikkypizza.github.io/fooseshoes">Fooseshoes</a> — Титульная страница магазина обуви <small class="note">/adaptive</small>
         </li>
         <li class="post-item">
           <details>
