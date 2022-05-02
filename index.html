@@ -33,7 +33,8 @@
     <nav class="header__nav">
       <ul>
         <li class="header__nav-item">
-          <label class="link" for="toggle-deeds">Работы</label>
+          <!-- Контент генерися в CSS -->
+          <label class="link toggler-label" for="toggle-deeds"></label>
         </li>
         <li class="header__nav-item">
           <a class="link" href="https://career.habr.com/nikkypizza">Резюме на&nbsp;Хабре</a>
@@ -114,12 +115,12 @@
           </cv-presenter>
         </li>
         <li class="post-item">
-          <cv-presenter summary="Сборщики лидов" media="./src/media/img/email_collector.png" preview="/mobile|https://2747.demoshop.flocktory.com/?flocktory-preview-id=472416">
+          <cv-presenter summary="Сборщики лидов" text="Пример сборщика лидов" media="./src/media/img/email_collector.png" preview="/mobile|https://2747.demoshop.flocktory.com/?flocktory-preview-id=472416">
             <p>Сделал более сотни вариаций подобных виджетов</p>
           </cv-presenter>
         </li>
         <li class="post-item">
-          <cv-presenter summary="Верстка писем с&nbsp;поддержкой MS&nbsp;Outlook" media="./src/media/img/email_markup.png"></cv-presenter>
+          <cv-presenter summary="Верстка писем с&nbsp;поддержкой MS&nbsp;Outlook" text="Примеры верстки писем" media="./src/media/img/email_markup.png"></cv-presenter>
         </li>
         <!-- <li class="post-item">
           <cv-presenter summary="Страница отписки от&nbsp;email-рассылок Flocktory" media="./src/media/video/unsub.mp4"></cv-presenter>
@@ -159,7 +160,7 @@
   </main>
 
   <footer class="footer">
-    <label class="link link--back" for="toggle-deeds">Вернуться к&nbsp;информации</label>
+    <label class="link link--back" for="toggle-deeds">Назад к&nbsp;описанию</label>
     <a class="link" href="mailto:npb.nikita@gmail.com">npb.nikita@gmail.com</a>
     <a class="link" href="https://t.me/nikkypizza">@nikkypizza</a>
   </footer>
