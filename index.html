@@ -131,6 +131,9 @@
 
       <ul class="post-list">
         <li class="post-item">
+          <a class="post-item__title codewars" title="Codewars: nikkypizza" href="https://www.codewars.com/users/nikkypizza"></a> — Codewars
+        </li>
+        <li class="post-item">
           <a class="post-item__title" href="https://six-cities-react-nikkypizza.vercel.app/">Six Cities</a> — HTML Academy React <small class="note">/desktop</small> <small class="note"><a href="https://github.com/nikkypizza/six-cities-react/tree/master/project" target="_blank">/repo</a></small>
         </li>
         <li class="post-item">
@@ -162,9 +165,16 @@
   <footer class="footer">
     <label class="link link--back" for="toggle-deeds">Назад к&nbsp;описанию</label>
     <a class="link" href="mailto:npb.nikita@gmail.com">npb.nikita@gmail.com</a>
-    <a class="link" href="https://t.me/nikkypizza">@nikkypizza</a>
+    <a class="link" title="Telegram" href="https://t.me/nikkypizza">@nikkypizza</a>
   </footer>
   <script src="./src/web-components/cv-presenter/index.js" type="module"></script>
+  <script>
+    const codewarsNode = document.querySelector('.codewars');
+    fetch('https://www.codewars.com/api/v1/users/nikkypizza')
+      .then((res) => res.json())
+      .then(({ranks: {overall: {name}}, honor}) => codewarsNode.textContent = `${name}, honor: ${honor}`)
+      .catch((e) => codewarsNode.textContent = 'nikkypizza');
+  </script>
 </body>
 
 </html>
