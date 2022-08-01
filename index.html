@@ -54,7 +54,7 @@
     <div class="description">
       <div class="content-wrapper">
         <p>
-          Привет, я&nbsp;&mdash; разработчик интерфейсов. Работаю в&nbsp;<a href="https://sber-tech.com/">SberTech</a>, наставничаю на&nbsp;интенсивах по&nbsp;веб-разработке в&nbsp;<a href="https://htmlacademy.ru/">HTML&nbsp;Academy</a>. Люблю <a href="https://jsbench.me/user/nikkypizza">рефакторить и&nbsp;оптимизировать код</a>, учиться новому и&nbsp;делиться знаниями.</p>
+          Привет, я&nbsp;&mdash; разработчик интерфейсов. Работаю в&nbsp;<a href="https://sbertech.ru/">Sber Tech</a>, наставничаю на&nbsp;интенсивах по&nbsp;веб-разработке в&nbsp;<a href="https://htmlacademy.ru/">HTML&nbsp;Academy</a>. Люблю <a href="https://jsbench.me/user/nikkypizza">рефакторить и&nbsp;оптимизировать код</a>, учиться новому и&nbsp;делиться знаниями.</p>
         <p>
           В&nbsp;2018 году закончил <a href="https://academy.yandex.ru/schools/frontend">Школу разработки интерфейсов</a> Яндекса.
         </p>
@@ -63,6 +63,11 @@
       <h2>Рекомендации</h2>
 
       <ul class="post-list">
+        <li class="post-item">
+          <span class="post-item__body">
+            <a class="post-item__title" href="./src/media/credence/SberTech.pdf">Sber Tech</a>
+          </span>
+        </li>
         <li class="post-item">
           <span class="post-item__body">
             <a class="post-item__title" href="./src/media/credence/Flocktory.pdf">Flocktory</a>
@@ -122,9 +127,9 @@
         <li class="post-item">
           <cv-presenter summary="Верстка писем с&nbsp;поддержкой MS&nbsp;Outlook" text="Примеры верстки писем" media="./src/media/img/email_markup.png"></cv-presenter>
         </li>
-        <!-- <li class="post-item">
+        <li class="post-item">
           <cv-presenter summary="Страница отписки от&nbsp;email-рассылок Flocktory" media="./src/media/video/unsub.mp4"></cv-presenter>
-        </li> -->
+        </li>
       </ul>
 
       <h2>Разное</h2>
@@ -132,6 +137,9 @@
       <ul class="post-list">
         <li class="post-item">
           <a class="post-item__title codewars" title="Codewars: nikkypizza" href="https://www.codewars.com/users/nikkypizza"></a> — Codewars
+        </li>
+        <li class="post-item">
+          <a class="post-item__title cssbattle" title="CSS Battle: nikkypizza" href="https://cssbattle.dev/player/nikkypizza"></a> — CSS Battle
         </li>
         <li class="post-item">
           <a class="post-item__title" href="https://six-cities-react-nikkypizza.vercel.app/">Six Cities</a> — HTML Academy React <small class="note">/desktop</small> <small class="note"><a href="https://github.com/nikkypizza/six-cities-react/tree/master/project" target="_blank">/repo</a></small>
@@ -170,6 +178,13 @@
   <script src="./src/web-components/cv-presenter/index.js" type="module"></script>
   <script>
     const codewarsNode = document.querySelector('.codewars');
+    const cssBattleNode = document.querySelector('.cssbattle');
+
+    fetch('https://cssbattle.dev/api/getRank?userId=8icQsvYbk0ZtKe1uUM6RPSLJtAd2')
+      .then(res => res.json())
+      .then(({ score, rank }) => cssBattleNode.textContent = (`score: ${new Intl.NumberFormat('ru-RU').format(Math.round(score))}, rank: #${rank}`))
+      .catch((e) => cssBattleNode.textContent = 'nikkypizza');
+
     fetch('https://www.codewars.com/api/v1/users/nikkypizza')
       .then((res) => res.json())
       .then(({ranks: {overall: {name}}, honor}) => codewarsNode.textContent = `${name}, honor: ${honor}`)
