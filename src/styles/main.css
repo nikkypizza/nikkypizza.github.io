@@ -18,7 +18,8 @@
 body {
   color: #222;
   font-size: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif;
   text-rendering: geometricPrecision;
   margin: 0;
   padding: 3rem 0;
@@ -101,6 +102,12 @@ label {
   box-sizing: border-box;
 }
 
+.post-list--credence {
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: fit-content(150px) fit-content(150px);
+}
+
 .post-list,
 .content-wrapper {
   padding: 0;
@@ -134,24 +141,24 @@ label {
 }
 
 .deeds,
-#toggle-deeds:checked~.content .description,
+#toggle-deeds:checked ~ .content .description,
 .footer .link--back {
   display: none;
 }
 
-#toggle-deeds:checked~.content .deeds,
-#toggle-deeds:checked~.footer .link--back {
+#toggle-deeds:checked ~ .content .deeds,
+#toggle-deeds:checked ~ .footer .link--back {
   display: block;
 }
 
-#toggle-deeds~.header .toggler-label::after {
+#toggle-deeds ~ .header .toggler-label::after {
   content: 'Работы';
 }
 
-#toggle-deeds:checked~.header .toggler-label::after {
+#toggle-deeds:checked ~ .header .toggler-label::after {
   content: 'Назад к описанию';
 }
 
-#toggle-deeds:focus~.header .toggler-label {
+#toggle-deeds:focus ~ .header .toggler-label {
   text-decoration: none;
 }

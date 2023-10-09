@@ -20,9 +20,11 @@ a {
   margin: 10px 0;
 }
 
-img, video {
+img,
+video {
   width: 100%;
   display: block;
   height: auto;
   max-width: fit-content;
+  max-height: 800px;
 }
