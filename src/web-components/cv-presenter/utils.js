@@ -5,13 +5,13 @@ const DefaultAttrs = {
       alt: ctx.getAttribute('text'),
       src: ctx.getAttribute('media'),
       loading: 'lazy',
-    }
+    };
   },
 };
 
 const MediaFormat = {
   IMG: 'png',
-  VIDEO: 'mp4'
+  VIDEO: 'mp4',
 };
 
 const getMediaFormat = (ctx) => ctx.getAttribute('media').split('.').pop();
@@ -28,9 +28,13 @@ const generateVideo = (ctx, parent) => {
   videoNode.dataset.src = ctx.getAttribute('media');
   DefaultAttrs.VIDEO.forEach(it => videoNode.setAttribute(it, ''));
 
-  parent.addEventListener("toggle", () => videoNode.src = videoNode.dataset.src, {
-    once: true
-  });
+  parent.addEventListener(
+    'toggle', () => {
+      videoNode.src = videoNode.dataset.src;
+      delete videoNode.dataset.src;
+    },
+    { once: true }
+  );
   return videoNode;
 };
 
@@ -42,7 +46,7 @@ const generateMedia = (ctx, parent) => {
 };
 
 const generatePreview = (ctx, parent) => {
-  // Группы даннх разделяются через '||' и дробятся внутри через '|'
+  // Группы данных разделяются через '||' и дробятся внутри через '|'
   const previews = ctx.getAttribute('preview').split('||');
 
   previews.forEach((it, i) => {
