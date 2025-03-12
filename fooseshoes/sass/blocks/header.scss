@@ -1,0 +1,74 @@
+  .header__wrapper {
+    background-color: $body-bg-color;
+  }
+
+  .header__logo {
+    align-self: center;
+    padding: 12px 0 5px 12px;
+  }
+
+  .header__menu-toggler {
+    box-sizing: content-box;
+    width: 30px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  .header__login {
+    display: flex;
+    align-self: center;
+  }
+
+  .header__login-search {
+    background-color: transparent;
+    border: none;
+    padding: 0 21px;
+
+    &:hover svg {
+      @include svg-hover-regular;
+    }
+    &:active svg {
+      @include svg-active-regular;
+    }
+  }
+
+  .header__login-register {
+    font-size: 14px;
+    line-height: 25px;
+    color: $header-font-color;
+    border: none;
+    background-color: transparent;
+    padding: 9px 23px;
+  }
+
+  .header__login-register:hover {
+    color: $accent-color;
+  }
+
+  .header__login-register:active {
+    color: darken($accent-color, 20%);
+  }
+
+  @media ($tablet-width) {
+
+    .header__login {
+      margin: 0 0 0 auto;
+    }
+
+    .header__logo {
+      padding: 12px 0 9px 12px;
+    }
+  }
+
+  @media ($desktop-width) {
+    .header__logo {
+      padding: 12px 0 9px 0;
+    }
+    .header__login-register {
+      border-top: none;
+      border-bottom: none;
+      border-left: 1px solid #383838;
+      border-right: 1px solid #383838;
+    }
+  }
