@@ -24,22 +24,12 @@
   <link rel="manifest" href="./src/media/favicons/site.webmanifest">
 
   <link rel="stylesheet" href="./src/styles/main.css">
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-    ym(100300432, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-    });
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/100300432" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- Yandex.Metrika counter -->
+  <script src="./src/scripts/yandexMetrics.js"></script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/100300432" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
   <!-- /Yandex.Metrika counter -->
 </head>
 
@@ -71,9 +61,9 @@
     <div class="description">
       <div class="content-wrapper">
         <p>
-          Привет, я&nbsp;&mdash; разработчик интерфейсов.
-          <!-- , работаю в&nbsp;<a href="https://ed-industry.ru/">СберОбразовании</a>. -->
-           <br> Люблю <a href="https://jsbench.me/user/nikkypizza">рефакторить и&nbsp;оптимизировать код</a>, учиться новому и&nbsp;делиться знаниями.</p>
+          Привет, я&nbsp;&mdash; разработчик интерфейсов, работаю в&nbsp;<a href="https://yandex.ru/company">Яндексе</a>.
+          <br> Люблю <a href="https://jsbench.me/user/nikkypizza">рефакторить и&nbsp;оптимизировать код</a>, учиться новому и&nbsp;делиться знаниями.
+        </p>
         <p>
           2 года был наставником на&nbsp;интенсивах по&nbsp;веб-разработке в&nbsp;<a href="https://htmlacademy.ru/">HTML&nbsp;Academy</a>.
         </p>
@@ -128,12 +118,28 @@
         </li>
       </ul>
 
+      <h2><a href="https://yandex.ru/company">Яндекс</a> <small class="note">2025 — now</small></h2>
+
+      <ul class="post-list">
+        <li class="post-item">
+          <cv-presenter summary="FrontTalks: новогодний frontend special | Яндекс 360" media="./src/media/img/happy-front-talks.jpg" preview="(запись выступления)|https://disk.yandex.ru/i/OexXWJuafrMx4A||(перзентация.pdf)|https://disk.yandex.ru/i/Tl4GGDUoCAfAfg"></cv-presenter>
+        </li>
+        <li class="post-item">
+          <cv-presenter summary="Новогоднево — Новогоднее Бинго, где всё сбудется | Яндекс 360" media="./src/media/video/ny-2025.mp4" preview=": 360.yandex.ru/novogodnevo26|https://360.yandex.ru/novogodnevo26/"></cv-presenter>
+        </li>
+        <li class="post-item">
+          <cv-presenter summary="Снято на память — фотоистории на карте воспоминаний | Яндекс 360" media="./src/media/video/snyato.mp4" preview=": 360.yandex.ru/snyato|https://360.yandex.ru/snyato"></cv-presenter>
+        </li>
+      </ul>
+
       <h2><a href="https://sbertech.ru/">CберТех</a> / <a href="https://ed-industry.ru/">СберОбразование</a> <small class="note">2021 — 2025</small></h2>
 
       <ul class="post-list">
         <li class="post-item">
           <cv-presenter summary="PizzaChart — интерактивная круговая диаграмма на svg" media="./src/media/video/pizza-chart/pizza-chart.mp4"></cv-presenter>
-          <cv-presenter summary="Курс по промпт-инжинирингу" media="./src/media/video/sber-prompting.mp4" preview=": sberedu.ru/kids/prompting (десктоп онли, пароль — шесть нулей)|https://ump-profile.stage.educ.pp.ru/kids/prompting">
+        </li>
+        <li class="post-item">
+          <cv-presenter summary="Курс по промпт-инжинирингу" media="./src/media/video/sber-prompting.mp4">
             <p>
               Курс реализован за 2 месяца c нуля силами двух FE разработчиков. Выбор стека, организация работы и бóльшая часть кодинга была на мне.
             </p>
@@ -148,17 +154,17 @@
             <p>
               Стек:
             </p>
-              <ul>
-                <li><code>Next.js 15 (React 18 / TS 5)</code></li>
-                <li><code>Effector</code></li>
-                <li><code>SCSS modules</code></li>
-                <li><code>REST API (Axios)</code></li>
-              </ul>
+            <ul>
+              <li><code>Next.js 15 (React 18 / TS 5)</code></li>
+              <li><code>Effector</code></li>
+              <li><code>SCSS modules</code></li>
+              <li><code>REST API (Axios)</code></li>
+            </ul>
           </cv-presenter>
         </li>
       </ul>
 
-      <h2><a href="https://spark.ru/startup/flocktory">Flocktory</a> <small class="note">2019 — 2021</small></h2>
+      <h2><a href="https://www.flocktory.com">Flocktory</a> <small class="note">2019 — 2021</small></h2>
 
       <ul class="post-list">
         <li class="post-item">
@@ -244,31 +250,7 @@
     <a class="link" title="Telegram" href="https://t.me/nikkypizza">@nikkypizza</a>
   </footer>
   <script src="./src/web-components/cv-presenter/index.js" type="module"></script>
-  <script>
-    const codewarsNode = document.querySelector('.codewars');
-    fetch('https://www.codewars.com/api/v1/users/nikkypizza')
-      .then((res) => res.json())
-      .then(({ ranks: { overall: { name } }, codeChallenges: { totalCompleted }, honor }) => codewarsNode.textContent = `${name}, completed: ${totalCompleted}, honor: ${honor}`)
-      .catch((e) => codewarsNode.textContent = 'nikkypizza');
-
-    const leetCodeNode = document.querySelector('.leetcode');
-    fetch('https://alfa-leetcode-api.onrender.com/userProfile/nikkypizza')
-      .then((res) => res.json())
-      .then((user) => leetCodeNode.textContent = `completed: ${user.totalSolved}`)
-      .catch((e) => leetCodeNode.textContent = 'nikkypizza');
-
-    // Апишку CSSBattle закрыли корсом :'(
-
-    /*
-     const cssBattleNode = document.querySelector('.cssbattle');
-
-     fetch('https://us-central1-cssbattleapp.cloudfunctions.net/getRank?userId=8icQsvYbk0ZtKe1uUM6RPSLJtAd2')
-     fetch('https://cssbattle.dev/api/getRank?userId=8icQsvYbk0ZtKe1uUM6RPSLJtAd2')
-       .then(res => res.json())
-       .then(({ score, rank }) => cssBattleNode.textContent = (`score: ${new Intl.NumberFormat('ru-RU').format(Math.round(score))}, rank: #${rank}`))
-       .catch((e) => cssBattleNode.textContent = 'nikkypizza');
-    */
-  </script>
+  <script src="./src/scripts/page.js"></script>
 </body>
 
 </html>
