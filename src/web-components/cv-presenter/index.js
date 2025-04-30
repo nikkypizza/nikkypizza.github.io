@@ -19,7 +19,9 @@ customElements.define('cv-presenter', class extends HTMLElement {
     
     if (this.hasAttribute('summary')) {
       const summaryNode = document.createElement('summary');
-      summaryNode.textContent = this.getAttribute('summary');
+      const title = this.getAttribute('summary');
+      summaryNode.textContent = title;
+      summaryNode.addEventListener('click', () => ymReachGoal('expandDetails', {title}), {once: true})
       detailsNode.append(summaryNode);
     }
 
