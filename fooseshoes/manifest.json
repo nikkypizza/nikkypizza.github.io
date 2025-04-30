@@ -1,0 +1,26 @@
+{
+  "name": "Foose Shoes",
+  "short_name": "FooShoe",
+  "dir": "ltr",
+  "lang": "en-US",
+  "background_color": "aliceblue",
+  "theme_color": "#57c5a0",
+  "display" : "fullscreen",
+  "description": "Best online shoe store! 10/10",
+  "icons": [
+  {
+    "src": "img/svg/icon-arrow.svg",
+    "type": "icon",
+    "sizes": "16x16"
+  },
+  {
+    "src": "img/svg/icon-arrow.svg",
+    "type": "image/svg",
+    "sizes": "96x96"
+  },
+  {
+    "src": "img/svg/icon-arrow.svg",
+    "type": "image/svg",
+    "sizes": "512x512"
+  }]
+}

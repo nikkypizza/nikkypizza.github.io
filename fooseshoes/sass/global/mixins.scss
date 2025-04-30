@@ -1,0 +1,30 @@
+  @mixin clear-li() {
+    list-style: none;
+    padding: 0;
+  }
+
+  @mixin text-event-regular() {
+    &:hover {
+      color: $accent-color;
+    }
+    &:active {
+      transition: none;
+      color: darken($accent-color, 20%);
+    }
+  }
+
+  @mixin svg-hover-regular() {
+    fill: $accent-color;
+  }
+
+  @mixin svg-active-regular() {
+    fill: darken($accent-color, 20%);
+  }
+
+  @mixin hover-shadow() {
+    box-shadow: 0 5px 15px 0px grey;
+  }
+
+  @mixin active-shadow() {
+    box-shadow: 0 2px 5px 0 grey;
+  }

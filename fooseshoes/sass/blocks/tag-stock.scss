@@ -1,0 +1,16 @@
+.tag-stock {
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 15px;
+  background-color: $out-of-stock-color;
+  color: $font-light-color;
+  position: absolute;
+  text-align: center;
+  right: 11px;
+  top: 0;
+  padding: 18px 12px;
+}
+
+@media ($tablet-width) {
+  
+}

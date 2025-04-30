@@ -1,0 +1,39 @@
+.show-all-btn {
+  display: none;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 25px;
+  align-self: center;
+  margin-top: 11px;
+  padding: 2px 21px;
+  color: $show-all-btn-color;
+  border: 1px solid $show-all-btn-color;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: darken($catalog-bg-color, 5%);
+  }
+
+  &:active {
+    border-color: darken($show-all-btn-color, 15%);
+    color: darken($show-all-btn-color, 15%);
+    outline: none;
+  }
+}
+
+.show-all-btn--mobile {
+  display: block;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  width: 300px;
+}
+
+@media ($tablet-width) {
+.show-all-btn {
+  display: block;
+}
+.show-all-btn--mobile {
+  display: none;
+}
+}
