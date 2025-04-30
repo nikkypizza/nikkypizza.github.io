@@ -1,0 +1,31 @@
+.product-panel {
+  display: none;
+  @include clear-li();
+  margin: 15px 0 0 0;
+}
+
+.product-panel--item {
+  position: absolute;
+  bottom: 5px;
+  padding: 0 14px;
+  right: 12px;
+  background-color: white;
+}
+
+.product-panel-btn {
+  display: block;
+  background-color: $bg-white-color;
+  width: 38px;
+  height: 38px;
+  margin: 0 5px 0 0;
+  border: none;
+  cursor: pointer;
+
+  &:hover svg {
+    @include svg-hover-regular;
+  }
+
+  &:active svg {
+    @include svg-active-regular;
+  }
+}

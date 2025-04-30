@@ -1,0 +1,36 @@
+.display-none {
+  display: none;
+}
+
+body {
+  min-width: 300px;
+  font-family: $font-Aller;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+button {
+  font-family: $font-Aller;
+  cursor: pointer;
+}
+
+input {
+  font-family: $font-Aller;
+}
+
+svg {
+  fill: #7d7d7d;
+}

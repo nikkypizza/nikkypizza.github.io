@@ -1,0 +1,84 @@
+.slider {
+  display: none;
+  background-color: $slider-bg-color;
+}
+
+.slider__list {
+  @include clear-li;
+  text-align: center;
+  display: flex;
+  padding-left: 3px;
+  width: 950px;
+}
+
+.slider__list-item {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  &:hover h3 {
+    color: lighten($slider-title-font-color, 30%);
+  }
+  &:hover span {
+    color: lighten($slider-info-font-color, 30%);
+  }
+}
+
+.slider__list-item-highlight {
+  position: absolute;
+  top: -19px;
+  left: 10px;
+  width: 170px;
+  height: 6px;
+  transition: 0.4s ease-out;
+}
+
+.slider__list-item-title {
+  color: $slider-title-font-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+  transition: 0.4s ease-out;
+}
+
+.slider__list-item-title label {
+  cursor: pointer;
+}
+
+.slider__list-item-info {
+  color: $slider-info-font-color;
+  font-size: 12px;
+  line-height: 25px;
+  margin: -4px 0 0 0;
+  transition: 0.4s ease-out;
+}
+
+// Не использовал "input[type="radio"]:checked..." для большей специфичности на гипотетический кейс, в котором появятся дополнительные радио инпуты
+#radio-1:checked+.slider__list-item-highlight,
+#radio-2:checked+.slider__list-item-highlight,
+#radio-3:checked+.slider__list-item-highlight,
+#radio-4:checked+.slider__list-item-highlight,
+#radio-5:checked+.slider__list-item-highlight {
+  background-color: $accent-color;
+  transition: 0.3s ease-out;
+}
+
+#radio-1:checked+.slider__list-item-highlight+h3,
+#radio-2:checked+.slider__list-item-highlight+h3,
+#radio-3:checked+.slider__list-item-highlight+h3,
+#radio-4:checked+.slider__list-item-highlight+h3,
+#radio-5:checked+.slider__list-item-highlight+h3 {
+  color: $font-light-color;
+  transition: 0.3s ease-out;
+}
+
+#radio-1:checked+.slider__list-item-highlight+h3+span,
+#radio-2:checked+.slider__list-item-highlight+h3+span,
+#radio-3:checked+.slider__list-item-highlight+h3+span,
+#radio-4:checked+.slider__list-item-highlight+h3+span,
+#radio-5:checked+.slider__list-item-highlight+h3+span {
+  color: $slider-info-font-color-active;
+  transition: 0.3s ease-out;
+}

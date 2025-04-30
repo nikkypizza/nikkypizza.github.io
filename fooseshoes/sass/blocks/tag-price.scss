@@ -1,0 +1,21 @@
+.tag-price {
+  display: block;
+  text-align: center;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 25px;
+  width: 68px;
+  align-self: center;
+  color: $font-light-color;
+  background-color: $accent-color;
+  padding: 21px 0;
+  margin-top: -17px;
+  margin-left: 13px;
+  z-index: 1;
+}
+
+.tag-price--promo {
+  display: none;
+  margin-top: 20px; // 70
+  margin-left: 2px;
+}

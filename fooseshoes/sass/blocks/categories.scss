@@ -1,0 +1,94 @@
+.categories {
+  background-color: $body-bg-color;
+}
+
+.categories__list {
+  @include clear-li;
+  text-transform: uppercase;
+  line-height: 60px;
+  color: $font-light-color;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 26px 0;
+}
+
+.categories__list-item {
+  height: 180px;
+  margin: 10px 0;
+  width: 300px;
+  display: flex;
+  align-self: center;
+  background-image: url('../img/categories-sprite.png');
+}
+
+.categories__list-item-title {
+  background-color: rgba($body-bg-color, 0.8);
+  font-weight: 300;
+  font-size: 25px;
+  align-self: center;
+  text-align: center;
+  min-width: 180px;
+  margin: 0 auto;
+
+  & a {
+    padding: 18px 23px;
+    color: $font-light-color;
+    transition: 0.1s linear;
+
+    &:hover {
+      color: darken($font-light-color, 35%);
+      transition: 0.1s linear;
+    }
+
+    &:active {
+      color: darken($font-light-color, 55%);
+      transition: none;
+    }
+  }
+}
+
+.categories__list-item:nth-of-type(1) .categories__list-item-title a {
+  padding: 18px 43px;
+}
+
+.categories__list-item:nth-of-type(2) .categories__list-item-title a {
+  padding: 18px 23px;
+}
+
+.categories__list-item--sale {
+  background-position: 0 -180px;
+}
+
+.categories__list-item--offers {
+  background-position: 0 -360px;
+}
+
+.categories__list-item--must-have {
+  background-position: 0 0;
+}
+
+@media($tablet-width) {
+  .categories__list {
+    max-width: 960px;
+    margin: 26px 16px;
+    flex-direction: row;
+    align-self: center;
+  }
+
+  .categories__list-item {
+    margin: 0px 10px;
+    width: 100%;
+  }
+
+  .categories__list-item-title {
+    font-size: 2.7vw;
+    width: auto;
+  }
+}
+
+@media($desktop-width) {
+  .categories__list-item-title {
+    font-size: 27px;
+  }
+}

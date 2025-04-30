@@ -1,0 +1,102 @@
+.extra {
+  display: none;
+  background-color: $catalog-bg-color;
+  padding: 26px 0 23px 0;
+}
+
+.extra article {
+  background-color: $extra-article-bg-color;
+  min-height: 185px;
+}
+
+.extra__shipping {
+  width: 220px;
+}
+
+.extra__block-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 40px;
+  color: $font-dark-color;
+  margin: 0;
+  padding: 18px 16px 0 16px;
+}
+
+.extra a {
+  color: $font-dark-color;
+}
+
+.extra__block-text {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  padding: 0 16px;
+}
+
+.extra__testimonials {
+  width: 220px;
+}
+
+.extra__testimonials-author {
+  font-style: italic;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 6px 19px;
+}
+
+.extra__news {
+  width: 460px;
+}
+
+.extra__block-text--news {
+  padding: 0;
+  width: 390px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.extra__news-item {
+  display: flex;
+  margin: 8px 0 14px 18px;
+}
+
+.extra__news-title {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  width: 390px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.extra__news-text {
+  padding: 1px 8px 0 8px;
+
+  &:hover {
+    outline: 2px solid $accent-color;
+  }
+  &:active {
+    outline: none;
+  }
+}
+
+.extra__news-date {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 12px;
+  padding: 6px 0;
+  width: 36px;
+  text-align: center;
+  align-self: center;
+  color: $font-light-color;
+  background-color: $accent-color;
+}
+
+@media ($tablet-width) {
+  .extra {
+    // display: flex;
+  }
+}
